@@ -3,8 +3,9 @@
  * Dev server that serves GPX files from tracks/ and provides a JSON API.
  *
  * Endpoints:
- *   GET /api/tracks    — JSON list of available GPX files
+ *   GET /tracks.json   — JSON manifest of available GPX files
  *   GET /tracks/*.gpx  — individual GPX files
+ *   GET /api/tracks    — (legacy) same as tracks.json
  *
  * Usage: node serve.js [port]
  * Default port: 3456
@@ -73,7 +74,10 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => {
   const files = listGpxFiles();
+  // Auto-generate tracks.json so the dev server matches the GitHub Pages format
+  const manifestPath = path.join(ROOT, 'tracks.json');
+  fs.writeFileSync(manifestPath, JSON.stringify(files, null, 2) + '\n', 'utf-8');
   console.log(`GPX dev server running at http://localhost:${PORT}`);
   console.log(`${files.length} track(s) in tracks/`);
-  console.log(`API: http://localhost:${PORT}/api/tracks`);
+  console.log(`Manifest: http://localhost:${PORT}/tracks.json`);
 });

@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "start": "node serve.js",
-    "build": "node scripts/convert-gpx.js"
+    "build": "node scripts/convert-gpx.js",
+    "manifest": "node scripts/generate-manifest.js"
   }
 }

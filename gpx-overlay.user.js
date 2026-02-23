@@ -17,6 +17,8 @@
   // Avoid red, blue, green, black — those are used by the site's own overlays
   const COLORS = ['#ff9900', '#9933cc', '#cc0066', '#e6b800', '#00b3b3', '#8b4513', '#ff6699', '#7b68ee'];
 
+  // Remote URL (GitHub Pages). Set to null to disable.
+  const REMOTE_URL = 'https://janthemanheier.github.io/randonee-overlay';
   // Local dev server URL (node serve.js). Set to null to disable.
   const DEV_SERVER = 'http://localhost:3456';
 
@@ -95,20 +97,21 @@
     mapRef = map;
 
     addUI(map);
-    loadTracksFromServer().catch(() => loadEmbeddedTracks());
+    loadTracksFromServer()
+      .catch(() => loadTracksFromRemote())
+      .catch(() => loadEmbeddedTracks());
   }
 
-  // Try loading tracks live from the dev server
-  async function loadTracksFromServer() {
-    if (!DEV_SERVER) throw new Error('no server configured');
-    const res = await fetch(`${DEV_SERVER}/api/tracks`);
-    if (!res.ok) throw new Error(`server returned ${res.status}`);
+  // Try loading tracks from a base URL using tracks.json manifest
+  async function loadTracksFromUrl(baseUrl, label) {
+    const res = await fetch(`${baseUrl}/tracks.json`);
+    if (!res.ok) throw new Error(`${label} returned ${res.status}`);
     const files = await res.json();
-    if (!files.length) throw new Error('no tracks on server');
+    if (!files.length) throw new Error(`no tracks at ${label}`);
 
-    console.log(`[GPX Overlay] Loading ${files.length} track(s) from dev server`);
+    console.log(`[GPX Overlay] Loading ${files.length} track(s) from ${label}`);
     for (const file of files) {
-      const gpxRes = await fetch(`${DEV_SERVER}/tracks/${file}`);
+      const gpxRes = await fetch(`${baseUrl}/tracks/${file}`);
       if (!gpxRes.ok) continue;
       const gpxText = await gpxRes.text();
       const { coords, name, date } = parseGpx(gpxText);
@@ -116,6 +119,18 @@
         addTrack(coords, name || file.replace(/\.gpx$/i, ''), false, date);
       }
     }
+  }
+
+  // Try loading from local dev server first
+  async function loadTracksFromServer() {
+    if (!DEV_SERVER) throw new Error('no dev server configured');
+    return loadTracksFromUrl(DEV_SERVER, 'dev server');
+  }
+
+  // Try loading from remote (GitHub Pages)
+  async function loadTracksFromRemote() {
+    if (!REMOTE_URL) throw new Error('no remote URL configured');
+    return loadTracksFromUrl(REMOTE_URL, 'remote');
   }
 
   // Fallback: use embedded tracks

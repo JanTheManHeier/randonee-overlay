@@ -75,9 +75,15 @@ const output = template.replace(
   `const EMBEDDED_TRACKS = ${json};`
 );
 
-// Write
+// Write userscript
 const distDir = path.join(repoRoot, 'dist');
 if (!fs.existsSync(distDir)) fs.mkdirSync(distDir, { recursive: true });
 const outPath = path.join(distDir, 'topptur-gpx-overlay.user.js');
 fs.writeFileSync(outPath, output, 'utf-8');
 console.log(`Written: dist/topptur-gpx-overlay.user.js (${(Buffer.byteLength(output) / 1024).toFixed(1)} KB)`);
+
+// Also generate tracks.json manifest
+const manifest = gpxFiles.map(f => path.basename(f));
+const manifestPath = path.join(repoRoot, 'tracks.json');
+fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n', 'utf-8');
+console.log(`Written: tracks.json (${manifest.length} track(s))`);
