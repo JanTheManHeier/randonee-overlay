@@ -257,9 +257,9 @@
 
     // ── Weather ───────────────────────────────────────────────────
     async function fetchWeather() {
-      const res = await fetch(`${MET_API}?lat=${TROMSO.lat}&lon=${TROMSO.lon}`, {
-        headers: { 'User-Agent': USER_AGENT }
-      });
+      // Note: User-Agent is a forbidden header in browser fetch (Safari rejects it).
+      // The browser sends its own User-Agent; MET API doesn't require a custom one.
+      const res = await fetch(`${MET_API}?lat=${TROMSO.lat}&lon=${TROMSO.lon}`);
       if (!res.ok) throw new Error(`Weather API returned ${res.status}`);
       return res.json();
     }
