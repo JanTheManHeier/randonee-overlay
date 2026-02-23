@@ -131,6 +131,7 @@
     const ATES_LABELS = ['Not rated', 'Simple', 'Challenging', 'Complex', 'Extreme'];
     const WIND_LIMIT = 5;
     const WIND_WARN = 8;
+    const MIN_TOURING_ASCENT = 400; // ignore quick local runs for fitness estimation
 
     // Weather symbol → emoji mapping
     const SYMBOL_EMOJI = {
@@ -221,11 +222,19 @@
     }
 
     // ── Fitness estimation ────────────────────────────────────────
+    function percentile(arr, p) {
+      const sorted = [...arr].sort((a, b) => a - b);
+      return sorted[Math.floor(sorted.length * p)] || sorted[sorted.length - 1];
+    }
+
     function estimateFitness(userTracks) {
       const today = new Date();
       const todayDoy = dayOfYear(today);
 
-      const nearbyTracks = userTracks.filter(t => {
+      // Only consider proper touring days (not quick local runs)
+      const touringTracks = userTracks.filter(t => t.ascent >= MIN_TOURING_ASCENT);
+
+      const nearbyTracks = touringTracks.filter(t => {
         if (!t.date) return false;
         const trackDoy = dayOfYear(t.date);
         const diff = Math.abs(trackDoy - todayDoy);
@@ -233,23 +242,16 @@
         return wrappedDiff <= SEASON_WINDOW_DAYS;
       });
 
-      if (nearbyTracks.length === 0) {
-        // Fallback: use all tracks
-        const allWithStats = userTracks.filter(t => t.ascent > 0);
-        if (allWithStats.length === 0) return { avgAscent: 600, avgDistance: 8, count: 0 };
-        return {
-          avgAscent: Math.round(allWithStats.reduce((s, t) => s + t.ascent, 0) / allWithStats.length),
-          avgDistance: Math.round(allWithStats.reduce((s, t) => s + t.distance, 0) / allWithStats.length * 10) / 10,
-          count: allWithStats.length,
-          period: 'all-time',
-        };
-      }
+      // Use 75th percentile to target bigger days (user prefers 800-1200m range)
+      const source = nearbyTracks.length >= 3 ? nearbyTracks : touringTracks;
+      const period = nearbyTracks.length >= 3 ? `±${SEASON_WINDOW_DAYS} days` : 'all-time';
+      if (source.length === 0) return { avgAscent: 800, avgDistance: 10, count: 0 };
 
       return {
-        avgAscent: Math.round(nearbyTracks.reduce((s, t) => s + t.ascent, 0) / nearbyTracks.length),
-        avgDistance: Math.round(nearbyTracks.reduce((s, t) => s + t.distance, 0) / nearbyTracks.length * 10) / 10,
-        count: nearbyTracks.length,
-        period: `±${SEASON_WINDOW_DAYS} days`,
+        avgAscent: Math.round(percentile(source.map(t => t.ascent), 0.75)),
+        avgDistance: Math.round(percentile(source.map(t => t.distance), 0.75) * 10) / 10,
+        count: source.length,
+        period,
       };
     }
 
@@ -465,8 +467,8 @@
         // Fitness banner
         if (fitness.count > 0) {
           html += `<div class="fitness-banner">
-            Based on <strong>${fitness.count} tracks</strong> around this date (${fitness.period}):
-            avg <strong>${fitness.avgAscent} m</strong> ascent, <strong>${fitness.avgDistance} km</strong> distance
+            Target based on <strong>${fitness.count} day tours</strong> (${fitness.period}):
+            <strong>${fitness.avgAscent} m</strong> ascent, <strong>${fitness.avgDistance} km</strong> distance
           </div>`;
         }
 
