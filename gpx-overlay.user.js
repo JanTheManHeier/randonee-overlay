@@ -6,6 +6,8 @@
 // @match        https://topptur.guide/*
 // @run-at       document-idle
 // @grant        none
+// @updateURL    https://raw.githubusercontent.com/JanTheManHeier/randonee-overlay/main/gpx-overlay.user.js
+// @downloadURL  https://raw.githubusercontent.com/JanTheManHeier/randonee-overlay/main/gpx-overlay.user.js
 // ==/UserScript==
 
 (function () {
