@@ -802,11 +802,15 @@
           updateTrackList();
         };
 
-        // Click on item = select and show info
+        // Click on item = select, show info, and ensure track is visible
         item.onclick = () => {
           if (selectedTrack === t) {
             hideTrackDetail();
           } else {
+            if (!t.visible) {
+              t.visible = true;
+              t.layer.addTo(mapRef);
+            }
             showTrackDetail(t);
             updateTrackList();
           }
