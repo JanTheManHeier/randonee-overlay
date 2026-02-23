@@ -6,6 +6,10 @@
   "scripts": {
     "start": "node serve.js",
     "build": "node scripts/convert-gpx.js",
-    "manifest": "node scripts/generate-manifest.js"
+    "manifest": "node scripts/generate-manifest.js",
+    "sync": "node scripts/sync-garmin.js"
+  },
+  "dependencies": {
+    "garmin-connect": "^1.6.2"
   }
 }
