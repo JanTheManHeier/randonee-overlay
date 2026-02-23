@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topptur of the Day</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; color: #333;
+      max-width: 640px; margin: 0 auto; padding: 16px; line-height: 1.5;
+      background: #f5f5f5; }
+
+    .header { text-align: center; margin-bottom: 20px; }
+    .header h1 { font-size: 24px; margin-bottom: 2px; }
+    .header .date { color: #888; font-size: 14px; }
+
+    .loading { text-align: center; padding: 40px; color: #888; }
+    .loading .spinner { display: inline-block; width: 28px; height: 28px;
+      border: 3px solid #ddd; border-top-color: #ff9900;
+      border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 8px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .error { background: #fee; color: #c00; padding: 12px; border-radius: 8px;
+      margin-bottom: 16px; font-size: 13px; }
+
+    /* Weather card */
+    .weather-card { background: white; border-radius: 12px; padding: 16px;
+      margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+    .weather-title { font-weight: 700; font-size: 15px; margin-bottom: 10px;
+      display: flex; align-items: center; gap: 6px; }
+    .weather-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .weather-day { background: #f8f8f8; border-radius: 8px; padding: 12px; }
+    .weather-day-label { font-weight: 600; font-size: 13px; margin-bottom: 6px; }
+    .weather-day-icon { font-size: 28px; margin-bottom: 4px; }
+    .weather-day-temp { font-size: 20px; font-weight: 700; }
+    .weather-day-details { font-size: 12px; color: #666; margin-top: 4px; }
+    .weather-day-details span { display: block; }
+    .weather-verdict { margin-top: 12px; padding: 10px; border-radius: 8px;
+      font-weight: 600; font-size: 14px; text-align: center; }
+    .verdict-go { background: #d4edda; color: #155724; }
+    .verdict-maybe { background: #fff3cd; color: #856404; }
+    .verdict-nogo { background: #f8d7da; color: #721c24; }
+
+    /* Fitness banner */
+    .fitness-banner { background: white; border-radius: 12px; padding: 14px 16px;
+      margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.08);
+      font-size: 13px; color: #555; }
+    .fitness-banner strong { color: #333; }
+
+    /* Section */
+    .section { margin-bottom: 20px; }
+    .section-title { font-size: 16px; font-weight: 700; margin-bottom: 10px;
+      display: flex; align-items: center; gap: 6px; }
+    .section-subtitle { font-size: 13px; color: #888; font-weight: 400; }
+
+    /* Tour card */
+    .tour-card { background: white; border-radius: 12px; padding: 14px 16px;
+      margin-bottom: 10px; box-shadow: 0 1px 4px rgba(0,0,0,.08);
+      text-decoration: none; color: inherit; display: block;
+      transition: box-shadow 0.15s; }
+    .tour-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,.15); }
+    .tour-card-header { display: flex; align-items: flex-start; justify-content: space-between;
+      margin-bottom: 8px; }
+    .tour-card-name { font-weight: 700; font-size: 15px; line-height: 1.3; }
+    .tour-card-link { color: #ff9900; font-size: 12px; font-weight: 600;
+      white-space: nowrap; margin-left: 8px; }
+    .ates-badge { display: inline-block; padding: 2px 8px; border-radius: 4px;
+      font-size: 11px; font-weight: 600; color: white; margin-bottom: 6px; }
+    .ates-1 { background: #00B050; }
+    .ates-2 { background: #0070C0; }
+    .ates-3 { background: #FF0000; }
+    .ates-4 { background: #000000; }
+    .tour-card-stats { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: #666; }
+    .tour-card-stats .stat { display: flex; align-items: center; gap: 3px; }
+    .tour-card-stats .stat-icon { font-size: 14px; }
+    .tour-card-weather { display: flex; align-items: center; gap: 8px;
+      margin-top: 8px; padding-top: 8px; border-top: 1px solid #eee;
+      font-size: 12px; color: #666; }
+    .tour-card-desc { font-size: 12px; color: #888; margin-top: 6px;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+      overflow: hidden; }
+    .tour-card-history { font-size: 12px; color: #ff9900; font-weight: 600;
+      margin-top: 6px; }
+    .wind-ok { color: #155724; }
+    .wind-warn { color: #856404; }
+    .wind-bad { color: #721c24; }
+
+    .empty-msg { color: #888; font-size: 13px; padding: 12px; text-align: center;
+      background: white; border-radius: 8px; }
+
+    .footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 24px;
+      padding-top: 16px; border-top: 1px solid #e0e0e0; }
+    .footer a { color: #ff9900; }
+
+    .credit { font-size: 11px; color: #aaa; margin-top: 8px; }
+    .credit a { color: #999; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Topptur of the Day</h1>
+    <div class="date" id="today-date"></div>
+  </div>
+
+  <div id="content">
+    <div class="loading">
+      <div class="spinner"></div>
+      <div>Loading weather and tours...</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="index.html">GPX Overlay install</a> &middot;
+    <a href="https://github.com/JanTheManHeier/randonee-overlay">GitHub</a>
+    <div class="credit">
+      Weather: <a href="https://www.met.no/">MET Norway</a> &middot;
+      Tours: <a href="https://topptur.guide/">topptur.guide</a>
+    </div>
+  </div>
+
+  <script>
+    // ── Configuration ─────────────────────────────────────────────
+    const TROMSO = { lat: 69.6492, lon: 18.9553 };
+    const BBOX = { minLat: 69.3, maxLat: 70.0, minLon: 18.0, maxLon: 20.5 };
+    const MAX_DRIVE_KM = 65; // straight-line km ≈ 90 min drive
+    const TRACKS_URL = 'https://janthemanheier.github.io/randonee-overlay';
+    const MET_API = 'https://api.met.no/weatherapi/locationforecast/2.0/compact';
+    const USER_AGENT = 'randonee-overlay/1.0 github.com/JanTheManHeier/randonee-overlay';
+    const TOPPTUR_BASE = 'https://topptur.guide';
+    const MATCH_RADIUS_KM = 1.5;
+    const MATCH_ELE_TOLERANCE = 150;
+    const SEASON_WINDOW_DAYS = 14;
+    const ATES_LABELS = ['Not rated', 'Simple', 'Challenging', 'Complex', 'Extreme'];
+    const WIND_LIMIT = 5;
+    const WIND_WARN = 8;
+
+    // Weather symbol → emoji mapping
+    const SYMBOL_EMOJI = {
+      clearsky_day: '☀️', clearsky_night: '🌙', clearsky_polartwilight: '☀️',
+      fair_day: '🌤️', fair_night: '🌤️', fair_polartwilight: '🌤️',
+      partlycloudy_day: '⛅', partlycloudy_night: '⛅', partlycloudy_polartwilight: '⛅',
+      cloudy: '☁️',
+      lightrainshowers_day: '🌦️', lightrainshowers_night: '🌧️',
+      lightrain: '🌧️', rain: '🌧️', heavyrain: '🌧️',
+      rainshowers_day: '🌦️', rainshowers_night: '🌧️',
+      heavyrainshowers_day: '🌧️', heavyrainshowers_night: '🌧️',
+      lightsnowshowers_day: '🌨️', lightsnowshowers_night: '🌨️',
+      lightsnow: '🌨️', snow: '❄️', heavysnow: '❄️',
+      snowshowers_day: '🌨️', snowshowers_night: '🌨️',
+      heavysnowshowers_day: '❄️', heavysnowshowers_night: '❄️',
+      sleet: '🌨️', lightsleet: '🌨️', heavysleet: '🌨️',
+      sleetshowers_day: '🌨️', sleetshowers_night: '🌨️',
+      fog: '🌫️',
+    };
+
+    function symbolEmoji(code) {
+      return SYMBOL_EMOJI[code] || '🌥️';
+    }
+
+    // ── Helpers ───────────────────────────────────────────────────
+    function haversineKm(lat1, lon1, lat2, lon2) {
+      const R = 6371;
+      const dLat = (lat2 - lat1) * Math.PI / 180;
+      const dLon = (lon2 - lon1) * Math.PI / 180;
+      const a = Math.sin(dLat / 2) ** 2 +
+        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+        Math.sin(dLon / 2) ** 2;
+      return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    }
+
+    function driveTimeLabel(km) {
+      if (km < 25) return '< 30 min';
+      if (km < 40) return '30–60 min';
+      if (km < 65) return '60–90 min';
+      return '> 90 min';
+    }
+
+    function formatDate(d) {
+      const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+      return `${days[d.getDay()]}, ${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
+    }
+
+    function dayOfYear(d) {
+      const start = new Date(d.getFullYear(), 0, 0);
+      return Math.floor((d - start) / 86400000);
+    }
+
+    // ── Fetch topptur.guide tours ─────────────────────────────────
+    async function fetchTours() {
+      // Try to discover the current tours file hash from the main page
+      const pageRes = await fetch(TOPPTUR_BASE + '/');
+      const pageHtml = await pageRes.text();
+
+      // Find the main JS bundle reference
+      const indexMatch = pageHtml.match(/src="\/assets\/index\.([A-Za-z0-9_-]+)\.js"/);
+      if (!indexMatch) throw new Error('Could not find index.js reference');
+
+      const indexUrl = `${TOPPTUR_BASE}/assets/index.${indexMatch[1]}.js`;
+      const indexRes = await fetch(indexUrl);
+      const indexJs = await indexRes.text();
+
+      // Find tours file reference in the bundle
+      const toursMatch = indexJs.match(/tours\.([A-Za-z0-9_-]+)\.js/);
+      if (!toursMatch) throw new Error('Could not find tours.js reference');
+
+      const toursUrl = `${TOPPTUR_BASE}/assets/tours.${toursMatch[1]}.js`;
+      const toursRes = await fetch(toursUrl);
+      const toursJs = await toursRes.text();
+
+      // Parse: const e=JSON.parse('...');export{e as default}
+      const jsonMatch = toursJs.match(/JSON\.parse\('(.+?)'\)/s);
+      if (!jsonMatch) throw new Error('Could not parse tours JSON');
+
+      const jsonStr = jsonMatch[1].replace(/\\'/g, "'").replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+      return JSON.parse(jsonStr);
+    }
+
+    function computeTourStats(tour) {
+      const coords = tour.coordinates;
+      if (!coords || coords.length < 2) return null;
+
+      let ascent = 0, distance = 0, maxEle = -Infinity;
+      const startLon = coords[0][0], startLat = coords[0][1], startEle = coords[0][2] || 0;
+
+      for (let i = 0; i < coords.length; i++) {
+        const ele = coords[i][2] || 0;
+        if (ele > maxEle) maxEle = ele;
+        if (i === 0) continue;
+        const [lon1, lat1, e1] = coords[i - 1];
+        const [lon2, lat2, e2] = coords[i];
+        distance += haversineKm(lat1, lon1, lat2, lon2);
+        const delta = (e2 || 0) - (e1 || 0);
+        if (delta > 0) ascent += delta;
+      }
+
+      const distFromTromso = haversineKm(TROMSO.lat, TROMSO.lon, startLat, startLon);
+
+      return {
+        ascent: Math.round(ascent),
+        distance: Math.round(distance * 10) / 10,
+        maxEle: Math.round(maxEle),
+        startLat, startLon, startEle,
+        distFromTromso: Math.round(distFromTromso * 10) / 10,
+      };
+    }
+
+    // ── Fetch user tracks ─────────────────────────────────────────
+    async function fetchUserTracks() {
+      const res = await fetch(`${TRACKS_URL}/tracks.json`);
+      if (!res.ok) return [];
+      const files = await res.json();
+
+      // Fetch GPX files in parallel (batched to avoid overwhelming)
+      const trackData = [];
+      const batchSize = 10;
+      for (let i = 0; i < files.length; i += batchSize) {
+        const batch = files.slice(i, i + batchSize);
+        const results = await Promise.allSettled(
+          batch.map(async f => {
+            const gpxRes = await fetch(`${TRACKS_URL}/tracks/${f}`);
+            if (!gpxRes.ok) return null;
+            const text = await gpxRes.text();
+            return parseGpxSummary(text, f);
+          })
+        );
+        results.forEach(r => { if (r.status === 'fulfilled' && r.value) trackData.push(r.value); });
+      }
+      return trackData;
+    }
+
+    function parseGpxSummary(gpxText, filename) {
+      const doc = new DOMParser().parseFromString(gpxText, 'application/xml');
+      const pts = doc.querySelectorAll('trkpt');
+      if (pts.length === 0) return null;
+
+      const firstPt = pts[0];
+      const startLat = parseFloat(firstPt.getAttribute('lat'));
+      const startLon = parseFloat(firstPt.getAttribute('lon'));
+      if (isNaN(startLat) || isNaN(startLon)) return null;
+
+      let maxEle = -Infinity;
+      let date = null;
+      pts.forEach(pt => {
+        const eleEl = pt.querySelector('ele');
+        if (eleEl) {
+          const e = parseFloat(eleEl.textContent);
+          if (e > maxEle) maxEle = e;
+        }
+      });
+
+      // Get date from metadata or first trackpoint
+      const timeEl = doc.querySelector('metadata > time') || doc.querySelector('trkpt > time');
+      if (timeEl) date = new Date(timeEl.textContent);
+
+      // Get name
+      const nameEl = doc.querySelector('trk > name');
+      const name = nameEl ? nameEl.textContent : filename.replace(/\.gpx$/i, '');
+
+      // Compute basic stats for fitness estimation
+      let distance = 0, ascent = 0;
+      const points = [];
+      pts.forEach(pt => {
+        const lat = parseFloat(pt.getAttribute('lat'));
+        const lon = parseFloat(pt.getAttribute('lon'));
+        const eleEl = pt.querySelector('ele');
+        const ele = eleEl ? parseFloat(eleEl.textContent) : null;
+        points.push({ lat, lon, ele });
+      });
+
+      for (let i = 1; i < points.length; i++) {
+        const prev = points[i - 1], curr = points[i];
+        const segDist = haversineKm(prev.lat, prev.lon, curr.lat, curr.lon);
+        if (segDist > 2) continue; // skip GPS glitches
+        distance += segDist;
+        if (prev.ele !== null && curr.ele !== null) {
+          const delta = curr.ele - prev.ele;
+          if (delta > 2 && Math.abs(delta) < 200) ascent += delta;
+        }
+      }
+
+      return {
+        startLat, startLon,
+        maxEle: maxEle === -Infinity ? null : Math.round(maxEle),
+        date, name, filename,
+        distance: Math.round(distance * 10) / 10,
+        ascent: Math.round(ascent),
+      };
+    }
+
+    // ── Match tracks to tours ─────────────────────────────────────
+    function matchTracksToTours(tours, userTracks) {
+      tours.forEach(tour => {
+        tour.userMatches = [];
+        if (!tour.stats) return;
+        userTracks.forEach(track => {
+          const dist = haversineKm(tour.stats.startLat, tour.stats.startLon, track.startLat, track.startLon);
+          const eleClose = track.maxEle === null || tour.stats.maxEle === null ||
+            Math.abs(track.maxEle - tour.stats.maxEle) < MATCH_ELE_TOLERANCE;
+          if (dist < MATCH_RADIUS_KM && eleClose) {
+            tour.userMatches.push(track);
+          }
+        });
+        // Sort matches by date (newest first)
+        tour.userMatches.sort((a, b) => (b.date || 0) - (a.date || 0));
+      });
+    }
+
+    // ── Fitness estimation ────────────────────────────────────────
+    function estimateFitness(userTracks) {
+      const today = new Date();
+      const todayDoy = dayOfYear(today);
+
+      const nearbyTracks = userTracks.filter(t => {
+        if (!t.date) return false;
+        const trackDoy = dayOfYear(t.date);
+        const diff = Math.abs(trackDoy - todayDoy);
+        const wrappedDiff = Math.min(diff, 365 - diff);
+        return wrappedDiff <= SEASON_WINDOW_DAYS;
+      });
+
+      if (nearbyTracks.length === 0) {
+        // Fallback: use all tracks
+        const allWithStats = userTracks.filter(t => t.ascent > 0);
+        if (allWithStats.length === 0) return { avgAscent: 600, avgDistance: 8, count: 0 };
+        return {
+          avgAscent: Math.round(allWithStats.reduce((s, t) => s + t.ascent, 0) / allWithStats.length),
+          avgDistance: Math.round(allWithStats.reduce((s, t) => s + t.distance, 0) / allWithStats.length * 10) / 10,
+          count: allWithStats.length,
+          period: 'all-time',
+        };
+      }
+
+      return {
+        avgAscent: Math.round(nearbyTracks.reduce((s, t) => s + t.ascent, 0) / nearbyTracks.length),
+        avgDistance: Math.round(nearbyTracks.reduce((s, t) => s + t.distance, 0) / nearbyTracks.length * 10) / 10,
+        count: nearbyTracks.length,
+        period: `±${SEASON_WINDOW_DAYS} days`,
+      };
+    }
+
+    // ── Weather ───────────────────────────────────────────────────
+    async function fetchWeather() {
+      const res = await fetch(`${MET_API}?lat=${TROMSO.lat}&lon=${TROMSO.lon}`, {
+        headers: { 'User-Agent': USER_AGENT }
+      });
+      if (!res.ok) throw new Error(`Weather API returned ${res.status}`);
+      return res.json();
+    }
+
+    function extractDayForecast(weather, dayOffset) {
+      const target = new Date();
+      target.setDate(target.getDate() + dayOffset);
+      const targetDateStr = target.toISOString().slice(0, 10);
+
+      const timeseries = weather.properties.timeseries;
+      // Find entries for the target day, prefer daytime hours (8-16)
+      const dayEntries = timeseries.filter(t => t.time.startsWith(targetDateStr));
+      if (dayEntries.length === 0) return null;
+
+      // Get midday entry (around 12:00) for representative conditions
+      const middayEntry = dayEntries.find(t => t.time.includes('T12:00')) ||
+        dayEntries.find(t => t.time.includes('T11:00')) ||
+        dayEntries.find(t => t.time.includes('T13:00')) ||
+        dayEntries[Math.floor(dayEntries.length / 2)];
+
+      const inst = middayEntry.data.instant.details;
+      const next6 = middayEntry.data.next_6_hours;
+      const next1 = middayEntry.data.next_1_hours;
+
+      // Find max wind across daytime hours (8-16)
+      let maxWind = 0, maxGust = 0;
+      dayEntries.forEach(e => {
+        const hour = parseInt(e.time.slice(11, 13));
+        if (hour >= 7 && hour <= 17) {
+          const d = e.data.instant.details;
+          if (d.wind_speed > maxWind) maxWind = d.wind_speed;
+          if (d.wind_speed_of_gust > maxGust) maxGust = d.wind_speed_of_gust;
+        }
+      });
+
+      // Sum precipitation across daytime
+      let totalPrecip = 0;
+      dayEntries.forEach(e => {
+        const hour = parseInt(e.time.slice(11, 13));
+        if (hour >= 7 && hour <= 17 && e.data.next_1_hours) {
+          totalPrecip += e.data.next_1_hours.details.precipitation_amount || 0;
+        }
+      });
+
+      const symbolCode = (next6 && next6.summary) ? next6.summary.symbol_code :
+        (next1 && next1.summary) ? next1.summary.symbol_code : 'cloudy';
+
+      return {
+        date: target,
+        label: dayOffset === 0 ? 'Today' : 'Tomorrow',
+        temp: Math.round(inst.air_temperature),
+        tempMax: next6 ? Math.round(next6.details.air_temperature_max) : null,
+        tempMin: next6 ? Math.round(next6.details.air_temperature_min) : null,
+        wind: Math.round(inst.wind_speed * 10) / 10,
+        maxWind: Math.round(maxWind * 10) / 10,
+        gust: Math.round(maxGust * 10) / 10,
+        cloudCover: Math.round(inst.cloud_area_fraction),
+        precip: Math.round(totalPrecip * 10) / 10,
+        symbolCode,
+      };
+    }
+
+    function weatherVerdict(forecast) {
+      if (!forecast) return { cls: 'verdict-nogo', text: 'No forecast available' };
+      if (forecast.maxWind > WIND_WARN || forecast.precip > 2) {
+        return { cls: 'verdict-nogo', text: 'Not recommended — strong wind or heavy precipitation' };
+      }
+      if (forecast.maxWind > WIND_LIMIT || forecast.precip > 0.5) {
+        return { cls: 'verdict-maybe', text: 'Marginal conditions — check details carefully' };
+      }
+      return { cls: 'verdict-go', text: 'Good conditions for ski touring!' };
+    }
+
+    // ── Scoring ───────────────────────────────────────────────────
+    function scoreTour(tour, fitness, todayForecast) {
+      if (!tour.stats) return 0;
+      let score = 100;
+
+      // Fitness match: prefer tours within 80-120% of typical ascent
+      if (fitness.avgAscent > 0) {
+        const ratio = tour.stats.ascent / fitness.avgAscent;
+        if (ratio >= 0.8 && ratio <= 1.2) score += 20;
+        else if (ratio >= 0.5 && ratio <= 1.5) score += 10;
+        else if (ratio > 2.0) score -= 20;
+      }
+
+      // Drive time: closer is better
+      if (tour.stats.distFromTromso < 25) score += 15;
+      else if (tour.stats.distFromTromso < 40) score += 10;
+      else if (tour.stats.distFromTromso < 55) score += 5;
+
+      // Weather: prefer lower ATES in bad conditions
+      if (todayForecast && todayForecast.maxWind > WIND_LIMIT) {
+        if (tour.ates <= 1) score += 10;
+        else if (tour.ates >= 3) score -= 15;
+      }
+
+      // Prefer tours with good ascent (not too trivial)
+      if (tour.stats.ascent >= 400 && tour.stats.ascent <= 1000) score += 5;
+
+      return score;
+    }
+
+    // ── Render ────────────────────────────────────────────────────
+    function renderWeatherCard(today, tomorrow) {
+      const verdict = weatherVerdict(today);
+      return `
+        <div class="weather-card">
+          <div class="weather-title">Weather in Tromsø</div>
+          <div class="weather-grid">
+            ${[today, tomorrow].filter(Boolean).map(f => `
+              <div class="weather-day">
+                <div class="weather-day-label">${f.label}</div>
+                <div class="weather-day-icon">${symbolEmoji(f.symbolCode)}</div>
+                <div class="weather-day-temp">${f.temp}°C</div>
+                <div class="weather-day-details">
+                  <span class="${f.maxWind <= WIND_LIMIT ? 'wind-ok' : f.maxWind <= WIND_WARN ? 'wind-warn' : 'wind-bad'}">
+                    Wind: ${f.maxWind} m/s (gusts ${f.gust} m/s)</span>
+                  <span>Precip: ${f.precip} mm</span>
+                  <span>Clouds: ${f.cloudCover}%</span>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+          <div class="weather-verdict ${verdict.cls}">${verdict.text}</div>
+        </div>`;
+    }
+
+    function renderTourCard(tour, isNew) {
+      const s = tour.stats;
+      if (!s) return '';
+      const windClass = tour._weather ? (tour._weather.maxWind <= WIND_LIMIT ? 'wind-ok' : tour._weather.maxWind <= WIND_WARN ? 'wind-warn' : 'wind-bad') : '';
+
+      let historyHtml = '';
+      if (!isNew && tour.userMatches.length > 0) {
+        const lastDate = tour.userMatches[0].date;
+        const lastStr = lastDate ? `${lastDate.getDate()} ${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][lastDate.getMonth()]} ${lastDate.getFullYear()}` : 'unknown date';
+        historyHtml = `<div class="tour-card-history">Done ${tour.userMatches.length}x — last: ${lastStr}</div>`;
+      }
+
+      const descHtml = isNew && tour.description
+        ? `<div class="tour-card-desc">${tour.description}</div>` : '';
+
+      return `
+        <a class="tour-card" href="${TOPPTUR_BASE}/${tour.id}" target="_blank" rel="noopener">
+          <div class="tour-card-header">
+            <div>
+              <div class="tour-card-name">${tour.name}</div>
+              <span class="ates-badge ates-${tour.ates}">${ATES_LABELS[tour.ates] || 'Unknown'}</span>
+            </div>
+            <span class="tour-card-link">Open →</span>
+          </div>
+          <div class="tour-card-stats">
+            <span class="stat"><span class="stat-icon">↑</span> ${s.ascent} m</span>
+            <span class="stat"><span class="stat-icon">⛰</span> ${s.maxEle} m</span>
+            <span class="stat"><span class="stat-icon">↔</span> ${s.distance} km</span>
+            <span class="stat"><span class="stat-icon">🚗</span> ${driveTimeLabel(s.distFromTromso)}</span>
+          </div>
+          ${descHtml}
+          ${historyHtml}
+        </a>`;
+    }
+
+    // ── Main ──────────────────────────────────────────────────────
+    async function main() {
+      document.getElementById('today-date').textContent = formatDate(new Date());
+      const contentEl = document.getElementById('content');
+
+      try {
+        // Fetch everything in parallel
+        const [allTours, weather, userTracks] = await Promise.all([
+          fetchTours().catch(err => { console.error('Tours fetch failed:', err); return []; }),
+          fetchWeather().catch(err => { console.error('Weather fetch failed:', err); return null; }),
+          fetchUserTracks().catch(err => { console.error('Tracks fetch failed:', err); return []; }),
+        ]);
+
+        // Filter tours to Tromsø area
+        const tours = allTours.filter(t => {
+          if (!t.coordinates || t.coordinates.length === 0) return false;
+          const [lon, lat] = t.coordinates[0];
+          return lat >= BBOX.minLat && lat <= BBOX.maxLat &&
+                 lon >= BBOX.minLon && lon <= BBOX.maxLon;
+        });
+
+        // Compute stats for each tour
+        tours.forEach(t => { t.stats = computeTourStats(t); });
+        const validTours = tours.filter(t => t.stats && t.stats.distFromTromso <= MAX_DRIVE_KM);
+
+        // Match user tracks to tours
+        matchTracksToTours(validTours, userTracks);
+
+        // Fitness estimation
+        const fitness = estimateFitness(userTracks);
+
+        // Weather
+        const todayForecast = weather ? extractDayForecast(weather, 0) : null;
+        const tomorrowForecast = weather ? extractDayForecast(weather, 1) : null;
+
+        // Score tours
+        validTours.forEach(t => {
+          t._score = scoreTour(t, fitness, todayForecast);
+          t._weather = todayForecast;
+        });
+
+        // Split into new and revisit
+        const newTours = validTours.filter(t => t.userMatches.length === 0)
+          .sort((a, b) => b._score - a._score);
+        const revisitTours = validTours.filter(t => t.userMatches.length > 0)
+          .sort((a, b) => b._score - a._score);
+
+        // Render
+        let html = '';
+
+        // Weather card
+        if (todayForecast || tomorrowForecast) {
+          html += renderWeatherCard(todayForecast, tomorrowForecast);
+        }
+
+        // Fitness banner
+        if (fitness.count > 0) {
+          html += `<div class="fitness-banner">
+            Based on <strong>${fitness.count} tracks</strong> around this date (${fitness.period}):
+            avg <strong>${fitness.avgAscent} m</strong> ascent, <strong>${fitness.avgDistance} km</strong> distance
+          </div>`;
+        }
+
+        // New tours
+        html += `<div class="section">
+          <div class="section-title">Try something new
+            <span class="section-subtitle">(${newTours.length} tours you haven't done)</span>
+          </div>`;
+        if (newTours.length > 0) {
+          newTours.slice(0, 5).forEach(t => { html += renderTourCard(t, true); });
+        } else {
+          html += '<div class="empty-msg">You\'ve done them all! Impressive.</div>';
+        }
+        html += '</div>';
+
+        // Revisit tours
+        html += `<div class="section">
+          <div class="section-title">A classic to revisit
+            <span class="section-subtitle">(${revisitTours.length} tours you know)</span>
+          </div>`;
+        if (revisitTours.length > 0) {
+          revisitTours.slice(0, 5).forEach(t => { html += renderTourCard(t, false); });
+        } else {
+          html += '<div class="empty-msg">No matches found with your tracks yet.</div>';
+        }
+        html += '</div>';
+
+        contentEl.innerHTML = html;
+
+      } catch (err) {
+        contentEl.innerHTML = `<div class="error">Failed to load: ${err.message}</div>`;
+        console.error(err);
+      }
+    }
+
+    main();
+  </script>
+</body>
+</html>
