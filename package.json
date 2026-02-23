@@ -1,0 +1,10 @@
+{
+  "name": "randonee-overlay",
+  "version": "1.0.0",
+  "description": "GPX track overlay for topptur.guide",
+  "private": true,
+  "scripts": {
+    "start": "node serve.js",
+    "build": "node scripts/convert-gpx.js"
+  }
+}
