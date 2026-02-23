@@ -7,7 +7,9 @@
     "start": "node serve.js",
     "build": "node scripts/convert-gpx.js",
     "manifest": "node scripts/generate-manifest.js",
-    "sync": "node scripts/sync-garmin.js"
+    "sync": "node scripts/sync-garmin.js",
+    "fetch-tours": "node scripts/fetch-tours.js",
+    "build-summaries": "node scripts/build-track-summaries.js"
   },
   "dependencies": {
     "garmin-connect": "^1.6.2"

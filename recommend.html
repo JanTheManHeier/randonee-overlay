@@ -121,8 +121,6 @@
   <script>
     // ── Configuration ─────────────────────────────────────────────
     const TROMSO = { lat: 69.6492, lon: 18.9553 };
-    const BBOX = { minLat: 69.3, maxLat: 70.0, minLon: 18.0, maxLon: 20.5 };
-    const MAX_DRIVE_KM = 65; // straight-line km ≈ 90 min drive
     const TRACKS_URL = 'https://janthemanheier.github.io/randonee-overlay';
     const MET_API = 'https://api.met.no/weatherapi/locationforecast/2.0/compact';
     const USER_AGENT = 'randonee-overlay/1.0 github.com/JanTheManHeier/randonee-overlay';
@@ -186,157 +184,33 @@
       return Math.floor((d - start) / 86400000);
     }
 
-    // ── Fetch topptur.guide tours ─────────────────────────────────
+    // ── Load local tours data (pre-extracted by scripts/fetch-tours.js) ──
     async function fetchTours() {
-      // Try to discover the current tours file hash from the main page
-      const pageRes = await fetch(TOPPTUR_BASE + '/');
-      const pageHtml = await pageRes.text();
-
-      // Find the main JS bundle reference
-      const indexMatch = pageHtml.match(/src="\/assets\/index\.([A-Za-z0-9_-]+)\.js"/);
-      if (!indexMatch) throw new Error('Could not find index.js reference');
-
-      const indexUrl = `${TOPPTUR_BASE}/assets/index.${indexMatch[1]}.js`;
-      const indexRes = await fetch(indexUrl);
-      const indexJs = await indexRes.text();
-
-      // Find tours file reference in the bundle
-      const toursMatch = indexJs.match(/tours\.([A-Za-z0-9_-]+)\.js/);
-      if (!toursMatch) throw new Error('Could not find tours.js reference');
-
-      const toursUrl = `${TOPPTUR_BASE}/assets/tours.${toursMatch[1]}.js`;
-      const toursRes = await fetch(toursUrl);
-      const toursJs = await toursRes.text();
-
-      // Parse: const e=JSON.parse('...');export{e as default}
-      const jsonMatch = toursJs.match(/JSON\.parse\('(.+?)'\)/s);
-      if (!jsonMatch) throw new Error('Could not parse tours JSON');
-
-      const jsonStr = jsonMatch[1].replace(/\\'/g, "'").replace(/\\"/g, '"').replace(/\\\\/g, '\\');
-      return JSON.parse(jsonStr);
+      const res = await fetch(`${TRACKS_URL}/topptur-tours.json`);
+      if (!res.ok) throw new Error(`Failed to load tours: ${res.status}`);
+      return res.json();
     }
 
-    function computeTourStats(tour) {
-      const coords = tour.coordinates;
-      if (!coords || coords.length < 2) return null;
-
-      let ascent = 0, distance = 0, maxEle = -Infinity;
-      const startLon = coords[0][0], startLat = coords[0][1], startEle = coords[0][2] || 0;
-
-      for (let i = 0; i < coords.length; i++) {
-        const ele = coords[i][2] || 0;
-        if (ele > maxEle) maxEle = ele;
-        if (i === 0) continue;
-        const [lon1, lat1, e1] = coords[i - 1];
-        const [lon2, lat2, e2] = coords[i];
-        distance += haversineKm(lat1, lon1, lat2, lon2);
-        const delta = (e2 || 0) - (e1 || 0);
-        if (delta > 0) ascent += delta;
-      }
-
-      const distFromTromso = haversineKm(TROMSO.lat, TROMSO.lon, startLat, startLon);
-
-      return {
-        ascent: Math.round(ascent),
-        distance: Math.round(distance * 10) / 10,
-        maxEle: Math.round(maxEle),
-        startLat, startLon, startEle,
-        distFromTromso: Math.round(distFromTromso * 10) / 10,
-      };
-    }
-
-    // ── Fetch user tracks ─────────────────────────────────────────
+    // ── Load local track summaries (pre-computed by scripts/build-track-summaries.js) ──
     async function fetchUserTracks() {
-      const res = await fetch(`${TRACKS_URL}/tracks.json`);
+      const res = await fetch(`${TRACKS_URL}/track-summaries.json`);
       if (!res.ok) return [];
-      const files = await res.json();
-
-      // Fetch GPX files in parallel (batched to avoid overwhelming)
-      const trackData = [];
-      const batchSize = 10;
-      for (let i = 0; i < files.length; i += batchSize) {
-        const batch = files.slice(i, i + batchSize);
-        const results = await Promise.allSettled(
-          batch.map(async f => {
-            const gpxRes = await fetch(`${TRACKS_URL}/tracks/${f}`);
-            if (!gpxRes.ok) return null;
-            const text = await gpxRes.text();
-            return parseGpxSummary(text, f);
-          })
-        );
-        results.forEach(r => { if (r.status === 'fulfilled' && r.value) trackData.push(r.value); });
-      }
-      return trackData;
-    }
-
-    function parseGpxSummary(gpxText, filename) {
-      const doc = new DOMParser().parseFromString(gpxText, 'application/xml');
-      const pts = doc.querySelectorAll('trkpt');
-      if (pts.length === 0) return null;
-
-      const firstPt = pts[0];
-      const startLat = parseFloat(firstPt.getAttribute('lat'));
-      const startLon = parseFloat(firstPt.getAttribute('lon'));
-      if (isNaN(startLat) || isNaN(startLon)) return null;
-
-      let maxEle = -Infinity;
-      let date = null;
-      pts.forEach(pt => {
-        const eleEl = pt.querySelector('ele');
-        if (eleEl) {
-          const e = parseFloat(eleEl.textContent);
-          if (e > maxEle) maxEle = e;
-        }
-      });
-
-      // Get date from metadata or first trackpoint
-      const timeEl = doc.querySelector('metadata > time') || doc.querySelector('trkpt > time');
-      if (timeEl) date = new Date(timeEl.textContent);
-
-      // Get name
-      const nameEl = doc.querySelector('trk > name');
-      const name = nameEl ? nameEl.textContent : filename.replace(/\.gpx$/i, '');
-
-      // Compute basic stats for fitness estimation
-      let distance = 0, ascent = 0;
-      const points = [];
-      pts.forEach(pt => {
-        const lat = parseFloat(pt.getAttribute('lat'));
-        const lon = parseFloat(pt.getAttribute('lon'));
-        const eleEl = pt.querySelector('ele');
-        const ele = eleEl ? parseFloat(eleEl.textContent) : null;
-        points.push({ lat, lon, ele });
-      });
-
-      for (let i = 1; i < points.length; i++) {
-        const prev = points[i - 1], curr = points[i];
-        const segDist = haversineKm(prev.lat, prev.lon, curr.lat, curr.lon);
-        if (segDist > 2) continue; // skip GPS glitches
-        distance += segDist;
-        if (prev.ele !== null && curr.ele !== null) {
-          const delta = curr.ele - prev.ele;
-          if (delta > 2 && Math.abs(delta) < 200) ascent += delta;
-        }
-      }
-
-      return {
-        startLat, startLon,
-        maxEle: maxEle === -Infinity ? null : Math.round(maxEle),
-        date, name, filename,
-        distance: Math.round(distance * 10) / 10,
-        ascent: Math.round(ascent),
-      };
+      const tracks = await res.json();
+      // Parse date strings into Date objects
+      return tracks.map(t => ({
+        ...t,
+        date: t.date ? new Date(t.date) : null,
+      }));
     }
 
     // ── Match tracks to tours ─────────────────────────────────────
     function matchTracksToTours(tours, userTracks) {
       tours.forEach(tour => {
         tour.userMatches = [];
-        if (!tour.stats) return;
         userTracks.forEach(track => {
-          const dist = haversineKm(tour.stats.startLat, tour.stats.startLon, track.startLat, track.startLon);
-          const eleClose = track.maxEle === null || tour.stats.maxEle === null ||
-            Math.abs(track.maxEle - tour.stats.maxEle) < MATCH_ELE_TOLERANCE;
+          const dist = haversineKm(tour.startLat, tour.startLon, track.startLat, track.startLon);
+          const eleClose = track.maxEle === null || tour.maxEle === null ||
+            Math.abs(track.maxEle - tour.maxEle) < MATCH_ELE_TOLERANCE;
           if (dist < MATCH_RADIUS_KM && eleClose) {
             tour.userMatches.push(track);
           }
@@ -459,21 +333,20 @@
 
     // ── Scoring ───────────────────────────────────────────────────
     function scoreTour(tour, fitness, todayForecast) {
-      if (!tour.stats) return 0;
       let score = 100;
 
       // Fitness match: prefer tours within 80-120% of typical ascent
       if (fitness.avgAscent > 0) {
-        const ratio = tour.stats.ascent / fitness.avgAscent;
+        const ratio = tour.ascent / fitness.avgAscent;
         if (ratio >= 0.8 && ratio <= 1.2) score += 20;
         else if (ratio >= 0.5 && ratio <= 1.5) score += 10;
         else if (ratio > 2.0) score -= 20;
       }
 
       // Drive time: closer is better
-      if (tour.stats.distFromTromso < 25) score += 15;
-      else if (tour.stats.distFromTromso < 40) score += 10;
-      else if (tour.stats.distFromTromso < 55) score += 5;
+      if (tour.distFromTromso < 25) score += 15;
+      else if (tour.distFromTromso < 40) score += 10;
+      else if (tour.distFromTromso < 55) score += 5;
 
       // Weather: prefer lower ATES in bad conditions
       if (todayForecast && todayForecast.maxWind > WIND_LIMIT) {
@@ -482,7 +355,7 @@
       }
 
       // Prefer tours with good ascent (not too trivial)
-      if (tour.stats.ascent >= 400 && tour.stats.ascent <= 1000) score += 5;
+      if (tour.ascent >= 400 && tour.ascent <= 1000) score += 5;
 
       return score;
     }
@@ -513,10 +386,6 @@
     }
 
     function renderTourCard(tour, isNew) {
-      const s = tour.stats;
-      if (!s) return '';
-      const windClass = tour._weather ? (tour._weather.maxWind <= WIND_LIMIT ? 'wind-ok' : tour._weather.maxWind <= WIND_WARN ? 'wind-warn' : 'wind-bad') : '';
-
       let historyHtml = '';
       if (!isNew && tour.userMatches.length > 0) {
         const lastDate = tour.userMatches[0].date;
@@ -537,10 +406,10 @@
             <span class="tour-card-link">Open →</span>
           </div>
           <div class="tour-card-stats">
-            <span class="stat"><span class="stat-icon">↑</span> ${s.ascent} m</span>
-            <span class="stat"><span class="stat-icon">⛰</span> ${s.maxEle} m</span>
-            <span class="stat"><span class="stat-icon">↔</span> ${s.distance} km</span>
-            <span class="stat"><span class="stat-icon">🚗</span> ${driveTimeLabel(s.distFromTromso)}</span>
+            <span class="stat"><span class="stat-icon">↑</span> ${tour.ascent} m</span>
+            <span class="stat"><span class="stat-icon">⛰</span> ${tour.maxEle} m</span>
+            <span class="stat"><span class="stat-icon">↔</span> ${tour.distance} km</span>
+            <span class="stat"><span class="stat-icon">🚗</span> ${driveTimeLabel(tour.distFromTromso)}</span>
           </div>
           ${descHtml}
           ${historyHtml}
@@ -560,17 +429,8 @@
           fetchUserTracks().catch(err => { console.error('Tracks fetch failed:', err); return []; }),
         ]);
 
-        // Filter tours to Tromsø area
-        const tours = allTours.filter(t => {
-          if (!t.coordinates || t.coordinates.length === 0) return false;
-          const [lon, lat] = t.coordinates[0];
-          return lat >= BBOX.minLat && lat <= BBOX.maxLat &&
-                 lon >= BBOX.minLon && lon <= BBOX.maxLon;
-        });
-
-        // Compute stats for each tour
-        tours.forEach(t => { t.stats = computeTourStats(t); });
-        const validTours = tours.filter(t => t.stats && t.stats.distFromTromso <= MAX_DRIVE_KM);
+        // Tours are already pre-filtered and pre-computed by scripts/fetch-tours.js
+        const validTours = allTours;
 
         // Match user tracks to tours
         matchTracksToTours(validTours, userTracks);
