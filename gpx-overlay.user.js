@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Topptur GPX Overlay
 // @namespace    https://github.com/randonee-overlay
-// @version      1.5.0
+// @version      1.6.0
 // @description  Overlay GPX tracks on the topptur.guide Leaflet map
 // @match        https://topptur.guide/*
 // @run-at       document-idle
@@ -345,6 +345,7 @@
 
   // ── Formatting helpers ────────────────────────────────────────────
   let trackListEl = null;
+  let panelMinimized = window.innerWidth < 600; // start minimized on mobile
   const expandedSeasons = new Set(); // seasons the user has expanded (all start collapsed)
   const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
@@ -578,10 +579,18 @@
       .gpx-dot.off { opacity:.25; }
       .gpx-tracks { position:fixed; bottom:120px; right:16px; z-index:10000;
         background:white; border:2px solid rgba(0,0,0,.2); border-radius:8px;
-        padding:8px 12px; box-shadow:0 2px 6px rgba(0,0,0,.15);
+        box-shadow:0 2px 6px rgba(0,0,0,.15);
         font:13px/1.6 system-ui,sans-serif; color:#333; max-width:280px; }
       .gpx-tracks:empty { display:none; }
-      .gpx-tracks { max-height:60vh; overflow-y:auto; }
+      .gpx-panel-header { display:flex; align-items:center; justify-content:space-between;
+        padding:6px 12px; cursor:pointer; user-select:none; border-bottom:1px solid #e8e8e8; }
+      .gpx-panel-header:hover { background:#f8f8f8; }
+      .gpx-panel-title { font-weight:700; font-size:13px; }
+      .gpx-panel-toggle { font-size:10px; color:#888; transition:transform .15s; }
+      .gpx-panel-toggle.minimized { transform:rotate(180deg); }
+      .gpx-panel-body { max-height:50vh; overflow-y:auto; padding:4px 12px 8px; }
+      .gpx-tracks.minimized .gpx-panel-body { display:none; }
+      .gpx-tracks.minimized .gpx-panel-header { border-bottom:none; }
       .gpx-year { font-weight:700; font-size:13px; padding:6px 0 2px; cursor:pointer;
         display:flex; align-items:center; gap:4px; user-select:none; border-bottom:1px solid #e0e0e0; margin-bottom:2px; }
       .gpx-year:hover { color:#000; }
@@ -735,8 +744,25 @@
 
   function updateTrackList() {
     if (!trackListEl) return;
-    const scrollTop = trackListEl.scrollTop;
     trackListEl.innerHTML = '';
+    trackListEl.className = `gpx-tracks${panelMinimized ? ' minimized' : ''}`;
+
+    // Panel header (always visible)
+    const visibleCount = tracks.filter(t => t.visible).length;
+    const panelHeader = document.createElement('div');
+    panelHeader.className = 'gpx-panel-header';
+    panelHeader.innerHTML =
+      `<span class="gpx-panel-title">Tracks (${visibleCount}/${tracks.length})</span>` +
+      `<span class="gpx-panel-toggle${panelMinimized ? ' minimized' : ''}">&#9660;</span>`;
+    panelHeader.onclick = () => {
+      panelMinimized = !panelMinimized;
+      updateTrackList();
+    };
+    trackListEl.appendChild(panelHeader);
+
+    // Panel body (hidden when minimized)
+    const body = document.createElement('div');
+    body.className = 'gpx-panel-body';
 
     // Sort tracks by date (newest first), undated at end
     const sorted = [...tracks].sort((a, b) => {
@@ -778,7 +804,7 @@
         else expandedSeasons.add(season);
         updateTrackList();
       };
-      trackListEl.appendChild(header);
+      body.appendChild(header);
 
       const group = document.createElement('div');
       group.className = `gpx-year-group${isCollapsed ? ' collapsed' : ''}`;
@@ -819,9 +845,15 @@
         group.appendChild(item);
       });
 
-      trackListEl.appendChild(group);
+      body.appendChild(group);
     });
 
-    trackListEl.scrollTop = scrollTop;
+    trackListEl.appendChild(body);
+
+    // Restore scroll position on body
+    if (!panelMinimized) {
+      body.scrollTop = trackListEl._savedScroll || 0;
+      body.onscroll = () => { trackListEl._savedScroll = body.scrollTop; };
+    }
   }
 })();
