@@ -14,7 +14,9 @@ const path = require('path');
 
 const repoRoot = path.resolve(__dirname, '..');
 const tracksDir = path.join(repoRoot, 'tracks');
-const trkptRegex = /<trkpt\s+lat="([^"]+)"\s+lon="([^"]+)"/g;
+const trkptBlockRegex = /<trkpt\s+lat="([^"]+)"\s+lon="([^"]+)"[^>]*>([\s\S]*?)<\/trkpt>/g;
+const eleRegex = /<ele>([^<]+)<\/ele>/;
+const timeInBlockRegex = /<time>([^<]+)<\/time>/;
 const nameRegex = /<trk>\s*<name>([^<]+)<\/name>/;
 const dateRegex = /<metadata>\s*(?:<[^>]+>[^<]*<\/[^>]+>\s*)*<time>([^<]+)<\/time>/;
 const trkptTimeRegex = /<trkpt[^>]*>[\s\S]*?<time>([^<]+)<\/time>/;
@@ -22,21 +24,31 @@ const trkptTimeRegex = /<trkpt[^>]*>[\s\S]*?<time>([^<]+)<\/time>/;
 function parseGpx(filePath) {
   const text = fs.readFileSync(filePath, 'utf-8');
   const coords = [];
+  const points = []; // compact: [lat, lon, ele, epochMs]
   let match;
-  trkptRegex.lastIndex = 0;
-  while ((match = trkptRegex.exec(text)) !== null) {
+  trkptBlockRegex.lastIndex = 0;
+  while ((match = trkptBlockRegex.exec(text)) !== null) {
     const lat = parseFloat(match[1]);
     const lon = parseFloat(match[2]);
-    if (!isNaN(lat) && !isNaN(lon)) {
-      coords.push([Math.round(lat * 1e6) / 1e6, Math.round(lon * 1e6) / 1e6]);
-    }
+    if (isNaN(lat) || isNaN(lon)) continue;
+    const body = match[3];
+    const roundLat = Math.round(lat * 1e6) / 1e6;
+    const roundLon = Math.round(lon * 1e6) / 1e6;
+    coords.push([roundLat, roundLon]);
+    const eleMatch = body.match(eleRegex);
+    const timeMatch = body.match(timeInBlockRegex);
+    points.push([
+      roundLat, roundLon,
+      eleMatch ? Math.round(parseFloat(eleMatch[1]) * 10) / 10 : null,
+      timeMatch ? new Date(timeMatch[1]).getTime() : null,
+    ]);
   }
   const nameMatch = text.match(nameRegex);
   const name = nameMatch ? nameMatch[1] : path.basename(filePath, '.gpx');
   // Extract date from metadata or first trackpoint
   const dateMatch = text.match(dateRegex) || text.match(trkptTimeRegex);
   const date = dateMatch ? dateMatch[1] : null;
-  return { name, coords, date };
+  return { name, coords, date, points };
 }
 
 // Collect GPX files
@@ -60,9 +72,9 @@ if (gpxFiles.length === 0) {
 
 // Parse all
 const embedded = gpxFiles.map(f => {
-  const { name, coords, date } = parseGpx(f);
-  console.log(`  ${path.basename(f)}: "${name}" ${date ? date.slice(0,10) : '(no date)'} — ${coords.length} points`);
-  return { name, coords, date };
+  const { name, coords, date, points } = parseGpx(f);
+  console.log(`  ${path.basename(f)}: "${name}" ${date ? date.slice(0,10) : '(no date)'} — ${coords.length} points, ${points.length} with ele/time`);
+  return { name, coords, date, points };
 }).filter(t => t.coords.length > 0);
 
 console.log(`\nEmbedding ${embedded.length} track(s)`);
