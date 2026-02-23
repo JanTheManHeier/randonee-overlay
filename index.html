@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topptur GPX Overlay</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; color: #333;
+      max-width: 600px; margin: 0 auto; padding: 24px 16px; line-height: 1.6; }
+    h1 { font-size: 22px; margin-bottom: 4px; }
+    .subtitle { color: #888; font-size: 14px; margin-bottom: 24px; }
+    h2 { font-size: 16px; margin: 24px 0 8px; }
+    .step { background: #f8f8f8; border-radius: 8px; padding: 16px; margin-bottom: 12px; }
+    .step-num { display: inline-block; background: #ff9900; color: white; font-weight: 700;
+      width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px;
+      font-size: 13px; margin-right: 8px; }
+    .bookmarklet-link { display: inline-block; background: #ff9900; color: white;
+      font-weight: 600; padding: 10px 20px; border-radius: 8px; text-decoration: none;
+      font-size: 15px; margin: 8px 0; }
+    .bookmarklet-link:active { background: #e68a00; }
+    code { background: #eee; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+    .note { color: #888; font-size: 13px; margin-top: 8px; }
+    .section { margin-bottom: 32px; }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 32px 0; }
+  </style>
+</head>
+<body>
+  <h1>Topptur GPX Overlay</h1>
+  <p class="subtitle">Overlay your GPX tracks on topptur.guide</p>
+
+  <div class="section">
+    <h2>iPhone / iPad (Bookmarklet)</h2>
+    <p>No app or extension needed. Works in Safari.</p>
+
+    <div class="step">
+      <span class="step-num">1</span>
+      <strong>Bookmark this page</strong><br>
+      Tap the share button and choose "Add Bookmark". Save it anywhere.
+    </div>
+
+    <div class="step">
+      <span class="step-num">2</span>
+      <strong>Edit the bookmark</strong><br>
+      Open your bookmarks, find the one you just saved, and tap <strong>Edit</strong>.
+      Replace the URL with this code:
+      <br><br>
+      <a class="bookmarklet-link" href="javascript:void(fetch('https://janthemanheier.github.io/randonee-overlay/gpx-overlay.user.js').then(r=>r.text()).then(t=>eval(t.replace(/^\/\/.*==UserScript==[\s\S]*?\/\/.*==\/UserScript==/,''))))">
+        GPX Overlay
+      </a>
+      <br>
+      <p class="note">On desktop: drag the button above to your bookmarks bar.<br>
+      On iPhone: copy the code below and paste it as the bookmark URL.</p>
+      <br>
+      <code style="display:block;word-break:break-all;padding:8px;font-size:11px;line-height:1.4;">javascript:void(fetch('https://janthemanheier.github.io/randonee-overlay/gpx-overlay.user.js').then(r=>r.text()).then(t=>eval(t.replace(/^\/\/.*==UserScript==[\s\S]*?\/\/.*==\/UserScript==/,''))))</code>
+    </div>
+
+    <div class="step">
+      <span class="step-num">3</span>
+      <strong>Use it</strong><br>
+      Go to <a href="https://topptur.guide">topptur.guide</a>, wait for the map to load, then open your bookmarks and tap <strong>GPX Overlay</strong>.
+      Your tracks will appear on the map.
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h2>Desktop (Tampermonkey)</h2>
+    <p>For automatic loading every time you visit topptur.guide:</p>
+    <div class="step">
+      <span class="step-num">1</span> Install <a href="https://www.tampermonkey.net/">Tampermonkey</a> browser extension
+    </div>
+    <div class="step">
+      <span class="step-num">2</span>
+      <a href="https://raw.githubusercontent.com/JanTheManHeier/randonee-overlay/main/gpx-overlay.user.js">Click here to install the userscript</a>
+    </div>
+    <p class="note">The script auto-updates when new versions are pushed to GitHub.</p>
+  </div>
+
+  <hr>
+  <p class="note" style="text-align:center">
+    <a href="https://github.com/JanTheManHeier/randonee-overlay">GitHub</a>
+  </p>
+</body>
+</html>
