@@ -15,7 +15,9 @@
       "steepSegment": {
         "verticalDrop": 334,
         "horizDistM": 579,
-        "avgGradientDeg": 30
+        "avgGradientDeg": 30,
+        "startEle": 1047,
+        "endEle": 713
       }
     },
     "score": 133.4
@@ -36,7 +38,9 @@
       "steepSegment": {
         "verticalDrop": 214,
         "horizDistM": 363,
-        "avgGradientDeg": 30.5
+        "avgGradientDeg": 30.5,
+        "startEle": 1404,
+        "endEle": 1190
       }
     },
     "score": 121.4
@@ -57,7 +61,9 @@
       "steepSegment": {
         "verticalDrop": 275,
         "horizDistM": 458,
-        "avgGradientDeg": 31
+        "avgGradientDeg": 31,
+        "startEle": 619,
+        "endEle": 344
       }
     },
     "score": 116.8
@@ -78,7 +84,9 @@
       "steepSegment": {
         "verticalDrop": 152,
         "horizDistM": 291,
-        "avgGradientDeg": 27.6
+        "avgGradientDeg": 27.6,
+        "startEle": 833,
+        "endEle": 681
       }
     },
     "score": 115.2
@@ -99,7 +107,9 @@
       "steepSegment": {
         "verticalDrop": 209,
         "horizDistM": 329,
-        "avgGradientDeg": 32.4
+        "avgGradientDeg": 32.4,
+        "startEle": 997,
+        "endEle": 788
       }
     },
     "score": 114.7
@@ -120,7 +130,9 @@
       "steepSegment": {
         "verticalDrop": 154,
         "horizDistM": 261,
-        "avgGradientDeg": 30.5
+        "avgGradientDeg": 30.5,
+        "startEle": 618,
+        "endEle": 464
       }
     },
     "score": 114.3
@@ -139,7 +151,9 @@
       "steepSegment": {
         "verticalDrop": 155,
         "horizDistM": 303,
-        "avgGradientDeg": 27.1
+        "avgGradientDeg": 27.1,
+        "startEle": 1158,
+        "endEle": 1004
       }
     },
     "score": 113.9
@@ -160,7 +174,9 @@
       "steepSegment": {
         "verticalDrop": 136,
         "horizDistM": 258,
-        "avgGradientDeg": 27.8
+        "avgGradientDeg": 27.8,
+        "startEle": 832,
+        "endEle": 696
       }
     },
     "score": 113.6
@@ -181,7 +197,9 @@
       "steepSegment": {
         "verticalDrop": 125,
         "horizDistM": 207,
-        "avgGradientDeg": 31.2
+        "avgGradientDeg": 31.2,
+        "startEle": 803,
+        "endEle": 678
       }
     },
     "score": 112.5
@@ -202,7 +220,9 @@
       "steepSegment": {
         "verticalDrop": 132,
         "horizDistM": 204,
-        "avgGradientDeg": 32.9
+        "avgGradientDeg": 32.9,
+        "startEle": 1197,
+        "endEle": 1065
       }
     },
     "score": 112.3
@@ -223,7 +243,9 @@
       "steepSegment": {
         "verticalDrop": 107,
         "horizDistM": 215,
-        "avgGradientDeg": 26.5
+        "avgGradientDeg": 26.5,
+        "startEle": 1365,
+        "endEle": 1258
       }
     },
     "score": 110.7
@@ -244,7 +266,9 @@
       "steepSegment": {
         "verticalDrop": 106,
         "horizDistM": 170,
-        "avgGradientDeg": 31.9
+        "avgGradientDeg": 31.9,
+        "startEle": 938,
+        "endEle": 832
       }
     },
     "score": 110.6
@@ -265,7 +289,9 @@
       "steepSegment": {
         "verticalDrop": 94,
         "horizDistM": 148,
-        "avgGradientDeg": 32.4
+        "avgGradientDeg": 32.4,
+        "startEle": 1454,
+        "endEle": 1360
       }
     },
     "score": 109.4
@@ -286,7 +312,9 @@
       "steepSegment": {
         "verticalDrop": 82,
         "horizDistM": 167,
-        "avgGradientDeg": 26.2
+        "avgGradientDeg": 26.2,
+        "startEle": 399,
+        "endEle": 317
       }
     },
     "score": 108.2
@@ -305,7 +333,9 @@
       "steepSegment": {
         "verticalDrop": 79,
         "horizDistM": 157,
-        "avgGradientDeg": 26.7
+        "avgGradientDeg": 26.7,
+        "startEle": 971,
+        "endEle": 892
       }
     },
     "score": 107.9
@@ -326,7 +356,9 @@
       "steepSegment": {
         "verticalDrop": 74,
         "horizDistM": 116,
-        "avgGradientDeg": 32.5
+        "avgGradientDeg": 32.5,
+        "startEle": 1131,
+        "endEle": 1057
       }
     },
     "score": 107.4
@@ -347,7 +379,9 @@
       "steepSegment": {
         "verticalDrop": 123,
         "horizDistM": 223,
-        "avgGradientDeg": 28.8
+        "avgGradientDeg": 28.8,
+        "startEle": 998,
+        "endEle": 875
       }
     },
     "score": 106.7
@@ -368,7 +402,9 @@
       "steepSegment": {
         "verticalDrop": 64,
         "horizDistM": 124,
-        "avgGradientDeg": 27.3
+        "avgGradientDeg": 27.3,
+        "startEle": 1182,
+        "endEle": 1118
       }
     },
     "score": 106.4
@@ -387,7 +423,9 @@
       "steepSegment": {
         "verticalDrop": 63,
         "horizDistM": 108,
-        "avgGradientDeg": 30.3
+        "avgGradientDeg": 30.3,
+        "startEle": 1034,
+        "endEle": 971
       }
     },
     "score": 106.3
@@ -406,7 +444,9 @@
       "steepSegment": {
         "verticalDrop": 60,
         "horizDistM": 110,
-        "avgGradientDeg": 28.7
+        "avgGradientDeg": 28.7,
+        "startEle": 3056,
+        "endEle": 2996
       }
     },
     "score": 106
@@ -427,7 +467,9 @@
       "steepSegment": {
         "verticalDrop": 58,
         "horizDistM": 104,
-        "avgGradientDeg": 29.2
+        "avgGradientDeg": 29.2,
+        "startEle": 448,
+        "endEle": 390
       }
     },
     "score": 105.8
@@ -446,7 +488,9 @@
       "steepSegment": {
         "verticalDrop": 52,
         "horizDistM": 100,
-        "avgGradientDeg": 27.4
+        "avgGradientDeg": 27.4,
+        "startEle": 992,
+        "endEle": 940
       }
     },
     "score": 105.2
@@ -467,7 +511,9 @@
       "steepSegment": {
         "verticalDrop": 51,
         "horizDistM": 106,
-        "avgGradientDeg": 25.8
+        "avgGradientDeg": 25.8,
+        "startEle": 1340,
+        "endEle": 1289
       }
     },
     "score": 105.1
@@ -486,7 +532,9 @@
       "steepSegment": {
         "verticalDrop": 52,
         "horizDistM": 104,
-        "avgGradientDeg": 26.4
+        "avgGradientDeg": 26.4,
+        "startEle": 395,
+        "endEle": 343
       }
     },
     "score": 105
@@ -507,7 +555,9 @@
       "steepSegment": {
         "verticalDrop": 43,
         "horizDistM": 90,
-        "avgGradientDeg": 25.6
+        "avgGradientDeg": 25.6,
+        "startEle": 1123,
+        "endEle": 1080
       }
     },
     "score": 104.3
@@ -528,7 +578,9 @@
       "steepSegment": {
         "verticalDrop": 98,
         "horizDistM": 186,
-        "avgGradientDeg": 27.8
+        "avgGradientDeg": 27.8,
+        "startEle": 655,
+        "endEle": 557
       }
     },
     "score": 104.2
@@ -549,7 +601,9 @@
       "steepSegment": {
         "verticalDrop": 42,
         "horizDistM": 81,
-        "avgGradientDeg": 27.5
+        "avgGradientDeg": 27.5,
+        "startEle": 1069,
+        "endEle": 1027
       }
     },
     "score": 104.2
@@ -570,7 +624,9 @@
       "steepSegment": {
         "verticalDrop": 168,
         "horizDistM": 289,
-        "avgGradientDeg": 30.2
+        "avgGradientDeg": 30.2,
+        "startEle": 1132,
+        "endEle": 964
       }
     },
     "score": 103.9
@@ -591,7 +647,9 @@
       "steepSegment": {
         "verticalDrop": 38,
         "horizDistM": 60,
-        "avgGradientDeg": 32.5
+        "avgGradientDeg": 32.5,
+        "startEle": 1286,
+        "endEle": 1248
       }
     },
     "score": 103.8
@@ -612,7 +670,9 @@
       "steepSegment": {
         "verticalDrop": 80,
         "horizDistM": 163,
-        "avgGradientDeg": 26.1
+        "avgGradientDeg": 26.1,
+        "startEle": 858,
+        "endEle": 778
       }
     },
     "score": 103.3
@@ -631,7 +691,9 @@
       "steepSegment": {
         "verticalDrop": 30,
         "horizDistM": 52,
-        "avgGradientDeg": 29.9
+        "avgGradientDeg": 29.9,
+        "startEle": 1049,
+        "endEle": 1019
       }
     },
     "score": 103
@@ -650,7 +712,9 @@
       "steepSegment": {
         "verticalDrop": 53,
         "horizDistM": 109,
-        "avgGradientDeg": 25.7
+        "avgGradientDeg": 25.7,
+        "startEle": 974,
+        "endEle": 921
       }
     },
     "score": 102.8
@@ -669,7 +733,9 @@
       "steepSegment": {
         "verticalDrop": 28,
         "horizDistM": 51,
-        "avgGradientDeg": 28.6
+        "avgGradientDeg": 28.6,
+        "startEle": 3153,
+        "endEle": 3125
       }
     },
     "score": 102.8
@@ -688,7 +754,9 @@
       "steepSegment": {
         "verticalDrop": 27,
         "horizDistM": 51,
-        "avgGradientDeg": 27.7
+        "avgGradientDeg": 27.7,
+        "startEle": 479,
+        "endEle": 452
       }
     },
     "score": 102.7
@@ -709,7 +777,9 @@
       "steepSegment": {
         "verticalDrop": 187,
         "horizDistM": 359,
-        "avgGradientDeg": 27.5
+        "avgGradientDeg": 27.5,
+        "startEle": 750,
+        "endEle": 563
       }
     },
     "score": 102.5
@@ -730,7 +800,9 @@
       "steepSegment": {
         "verticalDrop": 71,
         "horizDistM": 126,
-        "avgGradientDeg": 29.5
+        "avgGradientDeg": 29.5,
+        "startEle": 1061,
+        "endEle": 990
       }
     },
     "score": 102.2
@@ -749,7 +821,9 @@
       "steepSegment": {
         "verticalDrop": 26,
         "horizDistM": 50,
-        "avgGradientDeg": 27.3
+        "avgGradientDeg": 27.3,
+        "startEle": 1046,
+        "endEle": 1020
       }
     },
     "score": 101.3
@@ -770,7 +844,9 @@
       "steepSegment": {
         "verticalDrop": 272,
         "horizDistM": 506,
-        "avgGradientDeg": 28.3
+        "avgGradientDeg": 28.3,
+        "startEle": 457,
+        "endEle": 185
       }
     },
     "score": 101.1
@@ -789,7 +865,9 @@
       "steepSegment": {
         "verticalDrop": 32,
         "horizDistM": 53,
-        "avgGradientDeg": 31.5
+        "avgGradientDeg": 31.5,
+        "startEle": 1058,
+        "endEle": 1026
       }
     },
     "score": 100
@@ -825,7 +903,9 @@
       "steepSegment": {
         "verticalDrop": 116,
         "horizDistM": 209,
-        "avgGradientDeg": 28.9
+        "avgGradientDeg": 28.9,
+        "startEle": 816,
+        "endEle": 700
       }
     },
     "score": 99.9
@@ -846,7 +926,9 @@
       "steepSegment": {
         "verticalDrop": 42,
         "horizDistM": 88,
-        "avgGradientDeg": 25.6
+        "avgGradientDeg": 25.6,
+        "startEle": 975,
+        "endEle": 933
       }
     },
     "score": 99.8
@@ -867,7 +949,9 @@
       "steepSegment": {
         "verticalDrop": 27,
         "horizDistM": 58,
-        "avgGradientDeg": 25.1
+        "avgGradientDeg": 25.1,
+        "startEle": 1162,
+        "endEle": 1135
       }
     },
     "score": 99
@@ -888,7 +972,9 @@
       "steepSegment": {
         "verticalDrop": 76,
         "horizDistM": 130,
-        "avgGradientDeg": 30.3
+        "avgGradientDeg": 30.3,
+        "startEle": 885,
+        "endEle": 809
       }
     },
     "score": 97.9
@@ -907,7 +993,9 @@
       "steepSegment": {
         "verticalDrop": 27,
         "horizDistM": 52,
-        "avgGradientDeg": 26.9
+        "avgGradientDeg": 26.9,
+        "startEle": 958,
+        "endEle": 931
       }
     },
     "score": 97.5
@@ -928,7 +1016,9 @@
       "steepSegment": {
         "verticalDrop": 109,
         "horizDistM": 222,
-        "avgGradientDeg": 26.2
+        "avgGradientDeg": 26.2,
+        "startEle": 1023,
+        "endEle": 914
       }
     },
     "score": 97.2
@@ -949,7 +1039,9 @@
       "steepSegment": {
         "verticalDrop": 88,
         "horizDistM": 142,
-        "avgGradientDeg": 31.9
+        "avgGradientDeg": 31.9,
+        "startEle": 1022,
+        "endEle": 934
       }
     },
     "score": 97.1
@@ -968,7 +1060,9 @@
       "steepSegment": {
         "verticalDrop": 85,
         "horizDistM": 154,
-        "avgGradientDeg": 28.8
+        "avgGradientDeg": 28.8,
+        "startEle": 791,
+        "endEle": 706
       }
     },
     "score": 96.9
@@ -989,7 +1083,9 @@
       "steepSegment": {
         "verticalDrop": 94,
         "horizDistM": 162,
-        "avgGradientDeg": 30.1
+        "avgGradientDeg": 30.1,
+        "startEle": 502,
+        "endEle": 408
       }
     },
     "score": 95.9
@@ -1010,7 +1106,9 @@
       "steepSegment": {
         "verticalDrop": 35,
         "horizDistM": 69,
-        "avgGradientDeg": 27
+        "avgGradientDeg": 27,
+        "startEle": 830,
+        "endEle": 795
       }
     },
     "score": 95.8
@@ -1031,7 +1129,9 @@
       "steepSegment": {
         "verticalDrop": 210,
         "horizDistM": 377,
-        "avgGradientDeg": 29.1
+        "avgGradientDeg": 29.1,
+        "startEle": 491,
+        "endEle": 281
       }
     },
     "score": 95.5
@@ -1052,7 +1152,9 @@
       "steepSegment": {
         "verticalDrop": 34,
         "horizDistM": 64,
-        "avgGradientDeg": 27.9
+        "avgGradientDeg": 27.9,
+        "startEle": 1003,
+        "endEle": 969
       }
     },
     "score": 95
@@ -1073,7 +1175,9 @@
       "steepSegment": {
         "verticalDrop": 145,
         "horizDistM": 274,
-        "avgGradientDeg": 27.9
+        "avgGradientDeg": 27.9,
+        "startEle": 1023,
+        "endEle": 878
       }
     },
     "score": 94.4
@@ -1094,7 +1198,9 @@
       "steepSegment": {
         "verticalDrop": 28,
         "horizDistM": 58,
-        "avgGradientDeg": 25.7
+        "avgGradientDeg": 25.7,
+        "startEle": 825,
+        "endEle": 797
       }
     },
     "score": 94.2
@@ -1115,7 +1221,9 @@
       "steepSegment": {
         "verticalDrop": 89,
         "horizDistM": 173,
-        "avgGradientDeg": 27.3
+        "avgGradientDeg": 27.3,
+        "startEle": 878,
+        "endEle": 789
       }
     },
     "score": 93
@@ -1136,7 +1244,9 @@
       "steepSegment": {
         "verticalDrop": 41,
         "horizDistM": 77,
-        "avgGradientDeg": 27.9
+        "avgGradientDeg": 27.9,
+        "startEle": 418,
+        "endEle": 377
       }
     },
     "score": 92.9
@@ -1157,7 +1267,9 @@
       "steepSegment": {
         "verticalDrop": 315,
         "horizDistM": 554,
-        "avgGradientDeg": 29.6
+        "avgGradientDeg": 29.6,
+        "startEle": 578,
+        "endEle": 263
       }
     },
     "score": 92.6
@@ -1191,7 +1303,9 @@
       "steepSegment": {
         "verticalDrop": 58,
         "horizDistM": 105,
-        "avgGradientDeg": 28.7
+        "avgGradientDeg": 28.7,
+        "startEle": 883,
+        "endEle": 825
       }
     },
     "score": 92.3
@@ -1212,7 +1326,9 @@
       "steepSegment": {
         "verticalDrop": 70,
         "horizDistM": 132,
-        "avgGradientDeg": 27.9
+        "avgGradientDeg": 27.9,
+        "startEle": 962,
+        "endEle": 892
       }
     },
     "score": 91.7
@@ -1233,7 +1349,9 @@
       "steepSegment": {
         "verticalDrop": 147,
         "horizDistM": 265,
-        "avgGradientDeg": 29.1
+        "avgGradientDeg": 29.1,
+        "startEle": 553,
+        "endEle": 406
       }
     },
     "score": 91.3
@@ -1254,7 +1372,9 @@
       "steepSegment": {
         "verticalDrop": 157,
         "horizDistM": 276,
-        "avgGradientDeg": 29.6
+        "avgGradientDeg": 29.6,
+        "startEle": 625,
+        "endEle": 468
       }
     },
     "score": 91
@@ -1273,7 +1393,9 @@
       "steepSegment": {
         "verticalDrop": 82,
         "horizDistM": 157,
-        "avgGradientDeg": 27.5
+        "avgGradientDeg": 27.5,
+        "startEle": 719,
+        "endEle": 637
       }
     },
     "score": 90
@@ -1294,7 +1416,9 @@
       "steepSegment": {
         "verticalDrop": 123,
         "horizDistM": 230,
-        "avgGradientDeg": 28.1
+        "avgGradientDeg": 28.1,
+        "startEle": 595,
+        "endEle": 472
       }
     },
     "score": 90
@@ -1313,7 +1437,9 @@
       "steepSegment": {
         "verticalDrop": 82,
         "horizDistM": 154,
-        "avgGradientDeg": 28.2
+        "avgGradientDeg": 28.2,
+        "startEle": 969,
+        "endEle": 887
       }
     },
     "score": 89.5
@@ -1334,7 +1460,9 @@
       "steepSegment": {
         "verticalDrop": 63,
         "horizDistM": 125,
-        "avgGradientDeg": 26.8
+        "avgGradientDeg": 26.8,
+        "startEle": 182,
+        "endEle": 119
       }
     },
     "score": 89.1
@@ -1355,7 +1483,9 @@
       "steepSegment": {
         "verticalDrop": 47,
         "horizDistM": 90,
-        "avgGradientDeg": 27.6
+        "avgGradientDeg": 27.6,
+        "startEle": 938,
+        "endEle": 891
       }
     },
     "score": 89
@@ -1376,7 +1506,9 @@
       "steepSegment": {
         "verticalDrop": 30,
         "horizDistM": 64,
-        "avgGradientDeg": 25.2
+        "avgGradientDeg": 25.2,
+        "startEle": 728,
+        "endEle": 698
       }
     },
     "score": 88.9
@@ -1397,7 +1529,9 @@
       "steepSegment": {
         "verticalDrop": 101,
         "horizDistM": 186,
-        "avgGradientDeg": 28.6
+        "avgGradientDeg": 28.6,
+        "startEle": 829,
+        "endEle": 728
       }
     },
     "score": 88.7
@@ -1418,7 +1552,9 @@
       "steepSegment": {
         "verticalDrop": 97,
         "horizDistM": 180,
-        "avgGradientDeg": 28.4
+        "avgGradientDeg": 28.4,
+        "startEle": 998,
+        "endEle": 901
       }
     },
     "score": 88.3
@@ -1437,7 +1573,9 @@
       "steepSegment": {
         "verticalDrop": 28,
         "horizDistM": 51,
-        "avgGradientDeg": 28.8
+        "avgGradientDeg": 28.8,
+        "startEle": 978,
+        "endEle": 950
       }
     },
     "score": 87.9
@@ -1458,7 +1596,9 @@
       "steepSegment": {
         "verticalDrop": 82,
         "horizDistM": 168,
-        "avgGradientDeg": 26
+        "avgGradientDeg": 26,
+        "startEle": 220,
+        "endEle": 138
       }
     },
     "score": 87.5
@@ -1477,7 +1617,9 @@
       "steepSegment": {
         "verticalDrop": 88,
         "horizDistM": 155,
-        "avgGradientDeg": 29.4
+        "avgGradientDeg": 29.4,
+        "startEle": 698,
+        "endEle": 611
       }
     },
     "score": 87.4
@@ -1498,7 +1640,9 @@
       "steepSegment": {
         "verticalDrop": 91,
         "horizDistM": 161,
-        "avgGradientDeg": 29.5
+        "avgGradientDeg": 29.5,
+        "startEle": 686,
+        "endEle": 595
       }
     },
     "score": 87.4
@@ -1532,7 +1676,9 @@
       "steepSegment": {
         "verticalDrop": 61,
         "horizDistM": 110,
-        "avgGradientDeg": 28.8
+        "avgGradientDeg": 28.8,
+        "startEle": 542,
+        "endEle": 481
       }
     },
     "score": 86.9
@@ -1553,7 +1699,9 @@
       "steepSegment": {
         "verticalDrop": 124,
         "horizDistM": 201,
-        "avgGradientDeg": 31.7
+        "avgGradientDeg": 31.7,
+        "startEle": 843,
+        "endEle": 719
       }
     },
     "score": 86.5
@@ -1574,7 +1722,9 @@
       "steepSegment": {
         "verticalDrop": 57,
         "horizDistM": 119,
-        "avgGradientDeg": 25.5
+        "avgGradientDeg": 25.5,
+        "startEle": 168,
+        "endEle": 111
       }
     },
     "score": 86.4
@@ -1593,7 +1743,9 @@
       "steepSegment": {
         "verticalDrop": 160,
         "horizDistM": 266,
-        "avgGradientDeg": 31
+        "avgGradientDeg": 31,
+        "startEle": 834,
+        "endEle": 674
       }
     },
     "score": 86.3
@@ -1612,7 +1764,9 @@
       "steepSegment": {
         "verticalDrop": 24,
         "horizDistM": 50,
-        "avgGradientDeg": 25.2
+        "avgGradientDeg": 25.2,
+        "startEle": 393,
+        "endEle": 370
       }
     },
     "score": 86.3
@@ -1633,7 +1787,9 @@
       "steepSegment": {
         "verticalDrop": 137,
         "horizDistM": 250,
-        "avgGradientDeg": 28.7
+        "avgGradientDeg": 28.7,
+        "startEle": 748,
+        "endEle": 611
       }
     },
     "score": 85.9
@@ -1652,7 +1808,9 @@
       "steepSegment": {
         "verticalDrop": 31,
         "horizDistM": 53,
-        "avgGradientDeg": 29.9
+        "avgGradientDeg": 29.9,
+        "startEle": 977,
+        "endEle": 947
       }
     },
     "score": 85.4
@@ -1673,7 +1831,9 @@
       "steepSegment": {
         "verticalDrop": 169,
         "horizDistM": 268,
-        "avgGradientDeg": 32.3
+        "avgGradientDeg": 32.3,
+        "startEle": 632,
+        "endEle": 463
       }
     },
     "score": 85.2
@@ -1694,7 +1854,9 @@
       "steepSegment": {
         "verticalDrop": 106,
         "horizDistM": 174,
-        "avgGradientDeg": 31.4
+        "avgGradientDeg": 31.4,
+        "startEle": 763,
+        "endEle": 657
       }
     },
     "score": 84.7
@@ -1713,7 +1875,9 @@
       "steepSegment": {
         "verticalDrop": 61,
         "horizDistM": 104,
-        "avgGradientDeg": 30.6
+        "avgGradientDeg": 30.6,
+        "startEle": 519,
+        "endEle": 458
       }
     },
     "score": 84.5
@@ -1732,7 +1896,9 @@
       "steepSegment": {
         "verticalDrop": 28,
         "horizDistM": 57,
-        "avgGradientDeg": 26.2
+        "avgGradientDeg": 26.2,
+        "startEle": 887,
+        "endEle": 859
       }
     },
     "score": 84.5
@@ -1770,7 +1936,9 @@
       "steepSegment": {
         "verticalDrop": 31,
         "horizDistM": 51,
-        "avgGradientDeg": 31.4
+        "avgGradientDeg": 31.4,
+        "startEle": 822,
+        "endEle": 791
       }
     },
     "score": 84.1
@@ -1804,7 +1972,9 @@
       "steepSegment": {
         "verticalDrop": 52,
         "horizDistM": 103,
-        "avgGradientDeg": 26.9
+        "avgGradientDeg": 26.9,
+        "startEle": 823,
+        "endEle": 771
       }
     },
     "score": 82.2
@@ -1825,7 +1995,9 @@
       "steepSegment": {
         "verticalDrop": 92,
         "horizDistM": 182,
-        "avgGradientDeg": 26.9
+        "avgGradientDeg": 26.9,
+        "startEle": 836,
+        "endEle": 744
       }
     },
     "score": 82.2
@@ -1846,7 +2018,9 @@
       "steepSegment": {
         "verticalDrop": 37,
         "horizDistM": 61,
-        "avgGradientDeg": 31.2
+        "avgGradientDeg": 31.2,
+        "startEle": 947,
+        "endEle": 910
       }
     },
     "score": 82.2
@@ -1867,7 +2041,9 @@
       "steepSegment": {
         "verticalDrop": 27,
         "horizDistM": 52,
-        "avgGradientDeg": 27.6
+        "avgGradientDeg": 27.6,
+        "startEle": 635,
+        "endEle": 608
       }
     },
     "score": 81.8
@@ -1886,7 +2062,9 @@
       "steepSegment": {
         "verticalDrop": 25,
         "horizDistM": 53,
-        "avgGradientDeg": 25.6
+        "avgGradientDeg": 25.6,
+        "startEle": 715,
+        "endEle": 689
       }
     },
     "score": 81.5
@@ -1907,7 +2085,9 @@
       "steepSegment": {
         "verticalDrop": 48,
         "horizDistM": 102,
-        "avgGradientDeg": 25.1
+        "avgGradientDeg": 25.1,
+        "startEle": 851,
+        "endEle": 803
       }
     },
     "score": 80.4
@@ -1926,7 +2106,9 @@
       "steepSegment": {
         "verticalDrop": 49,
         "horizDistM": 105,
-        "avgGradientDeg": 25.1
+        "avgGradientDeg": 25.1,
+        "startEle": 652,
+        "endEle": 603
       }
     },
     "score": 79.7
@@ -1947,7 +2129,9 @@
       "steepSegment": {
         "verticalDrop": 143,
         "horizDistM": 254,
-        "avgGradientDeg": 29.4
+        "avgGradientDeg": 29.4,
+        "startEle": 1180,
+        "endEle": 1037
       }
     },
     "score": 79.5
@@ -1985,7 +2169,9 @@
       "steepSegment": {
         "verticalDrop": 81,
         "horizDistM": 139,
-        "avgGradientDeg": 30.2
+        "avgGradientDeg": 30.2,
+        "startEle": 1148,
+        "endEle": 1067
       }
     },
     "score": 79.4
@@ -2006,7 +2192,9 @@
       "steepSegment": {
         "verticalDrop": 67,
         "horizDistM": 125,
-        "avgGradientDeg": 28.1
+        "avgGradientDeg": 28.1,
+        "startEle": 668,
+        "endEle": 601
       }
     },
     "score": 79.3
@@ -2025,7 +2213,9 @@
       "steepSegment": {
         "verticalDrop": 27,
         "horizDistM": 50,
-        "avgGradientDeg": 27.9
+        "avgGradientDeg": 27.9,
+        "startEle": 511,
+        "endEle": 484
       }
     },
     "score": 79.1
@@ -2046,7 +2236,9 @@
       "steepSegment": {
         "verticalDrop": 62,
         "horizDistM": 121,
-        "avgGradientDeg": 27.1
+        "avgGradientDeg": 27.1,
+        "startEle": 217,
+        "endEle": 155
       }
     },
     "score": 79
@@ -2065,7 +2257,9 @@
       "steepSegment": {
         "verticalDrop": 52,
         "horizDistM": 104,
-        "avgGradientDeg": 26.6
+        "avgGradientDeg": 26.6,
+        "startEle": 531,
+        "endEle": 479
       }
     },
     "score": 78.9
@@ -2084,7 +2278,9 @@
       "steepSegment": {
         "verticalDrop": 71,
         "horizDistM": 105,
-        "avgGradientDeg": 34
+        "avgGradientDeg": 34,
+        "startEle": 790,
+        "endEle": 719
       }
     },
     "score": 78.7
@@ -2120,7 +2316,9 @@
       "steepSegment": {
         "verticalDrop": 110,
         "horizDistM": 214,
-        "avgGradientDeg": 27.1
+        "avgGradientDeg": 27.1,
+        "startEle": 638,
+        "endEle": 528
       }
     },
     "score": 77.7
@@ -2141,7 +2339,9 @@
       "steepSegment": {
         "verticalDrop": 263,
         "horizDistM": 439,
-        "avgGradientDeg": 30.9
+        "avgGradientDeg": 30.9,
+        "startEle": 378,
+        "endEle": 115
       }
     },
     "score": 77.5
@@ -2175,7 +2375,9 @@
       "steepSegment": {
         "verticalDrop": 25,
         "horizDistM": 50,
-        "avgGradientDeg": 26.3
+        "avgGradientDeg": 26.3,
+        "startEle": 756,
+        "endEle": 731
       }
     },
     "score": 77.1
@@ -2194,7 +2396,9 @@
       "steepSegment": {
         "verticalDrop": 29,
         "horizDistM": 52,
-        "avgGradientDeg": 28.5
+        "avgGradientDeg": 28.5,
+        "startEle": 546,
+        "endEle": 518
       }
     },
     "score": 77
@@ -2213,7 +2417,9 @@
       "steepSegment": {
         "verticalDrop": 121,
         "horizDistM": 211,
-        "avgGradientDeg": 29.7
+        "avgGradientDeg": 29.7,
+        "startEle": 798,
+        "endEle": 678
       }
     },
     "score": 77
@@ -2249,7 +2455,9 @@
       "steepSegment": {
         "verticalDrop": 101,
         "horizDistM": 203,
-        "avgGradientDeg": 26.5
+        "avgGradientDeg": 26.5,
+        "startEle": 633,
+        "endEle": 532
       }
     },
     "score": 76.7
@@ -2268,7 +2476,9 @@
       "steepSegment": {
         "verticalDrop": 32,
         "horizDistM": 53,
-        "avgGradientDeg": 31.1
+        "avgGradientDeg": 31.1,
+        "startEle": 962,
+        "endEle": 930
       }
     },
     "score": 76.4
@@ -2287,7 +2497,9 @@
       "steepSegment": {
         "verticalDrop": 88,
         "horizDistM": 165,
-        "avgGradientDeg": 28
+        "avgGradientDeg": 28,
+        "startEle": 662,
+        "endEle": 574
       }
     },
     "score": 76.3
@@ -2306,7 +2518,9 @@
       "steepSegment": {
         "verticalDrop": 92,
         "horizDistM": 154,
-        "avgGradientDeg": 30.9
+        "avgGradientDeg": 30.9,
+        "startEle": 801,
+        "endEle": 709
       }
     },
     "score": 76
@@ -2387,7 +2601,9 @@
       "steepSegment": {
         "verticalDrop": 26,
         "horizDistM": 52,
-        "avgGradientDeg": 26.5
+        "avgGradientDeg": 26.5,
+        "startEle": 776,
+        "endEle": 751
       }
     },
     "score": 74.4
@@ -2408,7 +2624,9 @@
       "steepSegment": {
         "verticalDrop": 86,
         "horizDistM": 174,
-        "avgGradientDeg": 26.2
+        "avgGradientDeg": 26.2,
+        "startEle": 360,
+        "endEle": 274
       }
     },
     "score": 74.4
@@ -2429,7 +2647,9 @@
       "steepSegment": {
         "verticalDrop": 127,
         "horizDistM": 262,
-        "avgGradientDeg": 25.8
+        "avgGradientDeg": 25.8,
+        "startEle": 1046,
+        "endEle": 919
       }
     },
     "score": 74
@@ -2448,7 +2668,9 @@
       "steepSegment": {
         "verticalDrop": 54,
         "horizDistM": 108,
-        "avgGradientDeg": 26.4
+        "avgGradientDeg": 26.4,
+        "startEle": 581,
+        "endEle": 527
       }
     },
     "score": 73.2
@@ -2467,7 +2689,9 @@
       "steepSegment": {
         "verticalDrop": 61,
         "horizDistM": 106,
-        "avgGradientDeg": 29.7
+        "avgGradientDeg": 29.7,
+        "startEle": 363,
+        "endEle": 302
       }
     },
     "score": 72.5
@@ -2486,7 +2710,9 @@
       "steepSegment": {
         "verticalDrop": 54,
         "horizDistM": 102,
-        "avgGradientDeg": 27.9
+        "avgGradientDeg": 27.9,
+        "startEle": 622,
+        "endEle": 568
       }
     },
     "score": 72.4
@@ -2522,7 +2748,9 @@
       "steepSegment": {
         "verticalDrop": 84,
         "horizDistM": 163,
-        "avgGradientDeg": 27.3
+        "avgGradientDeg": 27.3,
+        "startEle": 707,
+        "endEle": 623
       }
     },
     "score": 72.2
@@ -2543,7 +2771,9 @@
       "steepSegment": {
         "verticalDrop": 33,
         "horizDistM": 64,
-        "avgGradientDeg": 27.3
+        "avgGradientDeg": 27.3,
+        "startEle": 956,
+        "endEle": 923
       }
     },
     "score": 71.7
@@ -2581,7 +2811,9 @@
       "steepSegment": {
         "verticalDrop": 48,
         "horizDistM": 96,
-        "avgGradientDeg": 26.4
+        "avgGradientDeg": 26.4,
+        "startEle": 311,
+        "endEle": 263
       }
     },
     "score": 71.4
@@ -2602,7 +2834,9 @@
       "steepSegment": {
         "verticalDrop": 37,
         "horizDistM": 67,
-        "avgGradientDeg": 28.9
+        "avgGradientDeg": 28.9,
+        "startEle": 869,
+        "endEle": 832
       }
     },
     "score": 71.2
@@ -2621,7 +2855,9 @@
       "steepSegment": {
         "verticalDrop": 31,
         "horizDistM": 51,
-        "avgGradientDeg": 31.2
+        "avgGradientDeg": 31.2,
+        "startEle": 791,
+        "endEle": 760
       }
     },
     "score": 70.7
@@ -2640,7 +2876,9 @@
       "steepSegment": {
         "verticalDrop": 111,
         "horizDistM": 211,
-        "avgGradientDeg": 27.9
+        "avgGradientDeg": 27.9,
+        "startEle": 379,
+        "endEle": 267
       }
     },
     "score": 70.6
@@ -2678,7 +2916,9 @@
       "steepSegment": {
         "verticalDrop": 42,
         "horizDistM": 84,
-        "avgGradientDeg": 26.5
+        "avgGradientDeg": 26.5,
+        "startEle": 346,
+        "endEle": 304
       }
     },
     "score": 70.5
@@ -2765,7 +3005,9 @@
       "steepSegment": {
         "verticalDrop": 49,
         "horizDistM": 74,
-        "avgGradientDeg": 33.5
+        "avgGradientDeg": 33.5,
+        "startEle": 1070,
+        "endEle": 1021
       }
     },
     "score": 69.3
@@ -2784,7 +3026,9 @@
       "steepSegment": {
         "verticalDrop": 28,
         "horizDistM": 58,
-        "avgGradientDeg": 25.5
+        "avgGradientDeg": 25.5,
+        "startEle": 460,
+        "endEle": 433
       }
     },
     "score": 69.1
@@ -2839,7 +3083,9 @@
       "steepSegment": {
         "verticalDrop": 141,
         "horizDistM": 267,
-        "avgGradientDeg": 27.8
+        "avgGradientDeg": 27.8,
+        "startEle": 563,
+        "endEle": 422
       }
     },
     "score": 67.6
@@ -2860,7 +3106,9 @@
       "steepSegment": {
         "verticalDrop": 40,
         "horizDistM": 71,
-        "avgGradientDeg": 29.5
+        "avgGradientDeg": 29.5,
+        "startEle": 623,
+        "endEle": 583
       }
     },
     "score": 67.4
@@ -2879,7 +3127,9 @@
       "steepSegment": {
         "verticalDrop": 82,
         "horizDistM": 159,
-        "avgGradientDeg": 27.4
+        "avgGradientDeg": 27.4,
+        "startEle": 500,
+        "endEle": 418
       }
     },
     "score": 66.6
@@ -2900,7 +3150,9 @@
       "steepSegment": {
         "verticalDrop": 32,
         "horizDistM": 66,
-        "avgGradientDeg": 25.8
+        "avgGradientDeg": 25.8,
+        "startEle": 507,
+        "endEle": 475
       }
     },
     "score": 66.6
@@ -2921,7 +3173,9 @@
       "steepSegment": {
         "verticalDrop": 80,
         "horizDistM": 162,
-        "avgGradientDeg": 26.3
+        "avgGradientDeg": 26.3,
+        "startEle": 407,
+        "endEle": 327
       }
     },
     "score": 66.3
@@ -2940,7 +3194,9 @@
       "steepSegment": {
         "verticalDrop": 59,
         "horizDistM": 106,
-        "avgGradientDeg": 29.4
+        "avgGradientDeg": 29.4,
+        "startEle": 370,
+        "endEle": 310
       }
     },
     "score": 66.2
@@ -2976,7 +3232,9 @@
       "steepSegment": {
         "verticalDrop": 81,
         "horizDistM": 168,
-        "avgGradientDeg": 25.7
+        "avgGradientDeg": 25.7,
+        "startEle": 299,
+        "endEle": 218
       }
     },
     "score": 65.4
@@ -2995,7 +3253,9 @@
       "steepSegment": {
         "verticalDrop": 52,
         "horizDistM": 103,
-        "avgGradientDeg": 26.9
+        "avgGradientDeg": 26.9,
+        "startEle": 501,
+        "endEle": 448
       }
     },
     "score": 64.5
@@ -3031,7 +3291,9 @@
       "steepSegment": {
         "verticalDrop": 83,
         "horizDistM": 159,
-        "avgGradientDeg": 27.5
+        "avgGradientDeg": 27.5,
+        "startEle": 575,
+        "endEle": 493
       }
     },
     "score": 64.4
@@ -3067,7 +3329,9 @@
       "steepSegment": {
         "verticalDrop": 89,
         "horizDistM": 162,
-        "avgGradientDeg": 28.8
+        "avgGradientDeg": 28.8,
+        "startEle": 380,
+        "endEle": 291
       }
     },
     "score": 63.7
@@ -3088,7 +3352,9 @@
       "steepSegment": {
         "verticalDrop": 36,
         "horizDistM": 62,
-        "avgGradientDeg": 30
+        "avgGradientDeg": 30,
+        "startEle": 687,
+        "endEle": 651
       }
     },
     "score": 63.4
@@ -3109,7 +3375,9 @@
       "steepSegment": {
         "verticalDrop": 46,
         "horizDistM": 83,
-        "avgGradientDeg": 28.9
+        "avgGradientDeg": 28.9,
+        "startEle": 515,
+        "endEle": 469
       }
     },
     "score": 62.9
@@ -3128,7 +3396,9 @@
       "steepSegment": {
         "verticalDrop": 26,
         "horizDistM": 54,
-        "avgGradientDeg": 25.2
+        "avgGradientDeg": 25.2,
+        "startEle": 464,
+        "endEle": 439
       }
     },
     "score": 62.8
@@ -3147,7 +3417,9 @@
       "steepSegment": {
         "verticalDrop": 60,
         "horizDistM": 105,
-        "avgGradientDeg": 29.9
+        "avgGradientDeg": 29.9,
+        "startEle": 494,
+        "endEle": 433
       }
     },
     "score": 61.9
@@ -3168,7 +3440,9 @@
       "steepSegment": {
         "verticalDrop": 55,
         "horizDistM": 115,
-        "avgGradientDeg": 25.6
+        "avgGradientDeg": 25.6,
+        "startEle": 596,
+        "endEle": 541
       }
     },
     "score": 61.9
@@ -3202,7 +3476,9 @@
       "steepSegment": {
         "verticalDrop": 54,
         "horizDistM": 104,
-        "avgGradientDeg": 27.6
+        "avgGradientDeg": 27.6,
+        "startEle": 375,
+        "endEle": 321
       }
     },
     "score": 61.8
@@ -3221,7 +3497,9 @@
       "steepSegment": {
         "verticalDrop": 28,
         "horizDistM": 50,
-        "avgGradientDeg": 29.2
+        "avgGradientDeg": 29.2,
+        "startEle": 637,
+        "endEle": 609
       }
     },
     "score": 61.8
@@ -3240,7 +3518,9 @@
       "steepSegment": {
         "verticalDrop": 26,
         "horizDistM": 53,
-        "avgGradientDeg": 26.3
+        "avgGradientDeg": 26.3,
+        "startEle": 175,
+        "endEle": 149
       }
     },
     "score": 61.6
@@ -3276,7 +3556,9 @@
       "steepSegment": {
         "verticalDrop": 25,
         "horizDistM": 52,
-        "avgGradientDeg": 25.5
+        "avgGradientDeg": 25.5,
+        "startEle": 422,
+        "endEle": 397
       }
     },
     "score": 60.8
@@ -3295,7 +3577,9 @@
       "steepSegment": {
         "verticalDrop": 30,
         "horizDistM": 58,
-        "avgGradientDeg": 27.7
+        "avgGradientDeg": 27.7,
+        "startEle": 522,
+        "endEle": 491
       }
     },
     "score": 60.6
@@ -3316,7 +3600,9 @@
       "steepSegment": {
         "verticalDrop": 64,
         "horizDistM": 124,
-        "avgGradientDeg": 27.3
+        "avgGradientDeg": 27.3,
+        "startEle": 511,
+        "endEle": 447
       }
     },
     "score": 60.3
@@ -3350,7 +3636,9 @@
       "steepSegment": {
         "verticalDrop": 27,
         "horizDistM": 51,
-        "avgGradientDeg": 27.9
+        "avgGradientDeg": 27.9,
+        "startEle": 632,
+        "endEle": 605
       }
     },
     "score": 60.2
@@ -3369,7 +3657,9 @@
       "steepSegment": {
         "verticalDrop": 37,
         "horizDistM": 59,
-        "avgGradientDeg": 31.8
+        "avgGradientDeg": 31.8,
+        "startEle": 609,
+        "endEle": 572
       }
     },
     "score": 60.1
@@ -3388,7 +3678,9 @@
       "steepSegment": {
         "verticalDrop": 27,
         "horizDistM": 53,
-        "avgGradientDeg": 27.4
+        "avgGradientDeg": 27.4,
+        "startEle": 678,
+        "endEle": 650
       }
     },
     "score": 60.1
@@ -3409,7 +3701,9 @@
       "steepSegment": {
         "verticalDrop": 87,
         "horizDistM": 160,
-        "avgGradientDeg": 28.6
+        "avgGradientDeg": 28.6,
+        "startEle": 635,
+        "endEle": 548
       }
     },
     "score": 60
@@ -3460,7 +3754,9 @@
       "steepSegment": {
         "verticalDrop": 78,
         "horizDistM": 155,
-        "avgGradientDeg": 26.8
+        "avgGradientDeg": 26.8,
+        "startEle": 698,
+        "endEle": 620
       }
     },
     "score": 59.4
@@ -3479,7 +3775,9 @@
       "steepSegment": {
         "verticalDrop": 24,
         "horizDistM": 50,
-        "avgGradientDeg": 25.7
+        "avgGradientDeg": 25.7,
+        "startEle": 629,
+        "endEle": 604
       }
     },
     "score": 59.3
@@ -3498,7 +3796,9 @@
       "steepSegment": {
         "verticalDrop": 56,
         "horizDistM": 109,
-        "avgGradientDeg": 27.3
+        "avgGradientDeg": 27.3,
+        "startEle": 639,
+        "endEle": 583
       }
     },
     "score": 59.2
@@ -3517,7 +3817,9 @@
       "steepSegment": {
         "verticalDrop": 26,
         "horizDistM": 54,
-        "avgGradientDeg": 25.7
+        "avgGradientDeg": 25.7,
+        "startEle": 787,
+        "endEle": 760
       }
     },
     "score": 59.1
@@ -3536,7 +3838,9 @@
       "steepSegment": {
         "verticalDrop": 57,
         "horizDistM": 104,
-        "avgGradientDeg": 28.8
+        "avgGradientDeg": 28.8,
+        "startEle": 439,
+        "endEle": 382
       }
     },
     "score": 59
@@ -3574,7 +3878,9 @@
       "steepSegment": {
         "verticalDrop": 138,
         "horizDistM": 257,
-        "avgGradientDeg": 28.2
+        "avgGradientDeg": 28.2,
+        "startEle": 858,
+        "endEle": 720
       }
     },
     "score": 58.8
@@ -3612,7 +3918,9 @@
       "steepSegment": {
         "verticalDrop": 71,
         "horizDistM": 137,
-        "avgGradientDeg": 27.3
+        "avgGradientDeg": 27.3,
+        "startEle": 740,
+        "endEle": 669
       }
     },
     "score": 58.3
@@ -3646,7 +3954,9 @@
       "steepSegment": {
         "verticalDrop": 26,
         "horizDistM": 54,
-        "avgGradientDeg": 25.7
+        "avgGradientDeg": 25.7,
+        "startEle": 479,
+        "endEle": 454
       }
     },
     "score": 57.9
@@ -3667,7 +3977,9 @@
       "steepSegment": {
         "verticalDrop": 118,
         "horizDistM": 186,
-        "avgGradientDeg": 32.3
+        "avgGradientDeg": 32.3,
+        "startEle": 705,
+        "endEle": 587
       }
     },
     "score": 57.7
@@ -3705,7 +4017,9 @@
       "steepSegment": {
         "verticalDrop": 26,
         "horizDistM": 55,
-        "avgGradientDeg": 25.2
+        "avgGradientDeg": 25.2,
+        "startEle": 867,
+        "endEle": 841
       }
     },
     "score": 55.4
@@ -3775,7 +4089,9 @@
       "steepSegment": {
         "verticalDrop": 29,
         "horizDistM": 53,
-        "avgGradientDeg": 28.9
+        "avgGradientDeg": 28.9,
+        "startEle": 836,
+        "endEle": 807
       }
     },
     "score": 54.1
@@ -3794,7 +4110,9 @@
       "steepSegment": {
         "verticalDrop": 25,
         "horizDistM": 52,
-        "avgGradientDeg": 25.8
+        "avgGradientDeg": 25.8,
+        "startEle": 316,
+        "endEle": 290
       }
     },
     "score": 53.3
@@ -3881,7 +4199,9 @@
       "steepSegment": {
         "verticalDrop": 87,
         "horizDistM": 155,
-        "avgGradientDeg": 29.4
+        "avgGradientDeg": 29.4,
+        "startEle": 270,
+        "endEle": 182
       }
     },
     "score": 51.5
@@ -3966,7 +4286,9 @@
       "steepSegment": {
         "verticalDrop": 124,
         "horizDistM": 214,
-        "avgGradientDeg": 30
+        "avgGradientDeg": 30,
+        "startEle": 975,
+        "endEle": 851
       }
     },
     "score": 49
@@ -3985,7 +4307,9 @@
       "steepSegment": {
         "verticalDrop": 59,
         "horizDistM": 106,
-        "avgGradientDeg": 29.1
+        "avgGradientDeg": 29.1,
+        "startEle": 376,
+        "endEle": 317
       }
     },
     "score": 48.7
@@ -4006,7 +4330,9 @@
       "steepSegment": {
         "verticalDrop": 81,
         "horizDistM": 168,
-        "avgGradientDeg": 25.7
+        "avgGradientDeg": 25.7,
+        "startEle": 440,
+        "endEle": 359
       }
     },
     "score": 48.4
@@ -4042,7 +4368,9 @@
       "steepSegment": {
         "verticalDrop": 55,
         "horizDistM": 110,
-        "avgGradientDeg": 26.7
+        "avgGradientDeg": 26.7,
+        "startEle": 240,
+        "endEle": 184
       }
     },
     "score": 48
@@ -4078,7 +4406,9 @@
       "steepSegment": {
         "verticalDrop": 61,
         "horizDistM": 112,
-        "avgGradientDeg": 28.6
+        "avgGradientDeg": 28.6,
+        "startEle": 254,
+        "endEle": 193
       }
     },
     "score": 47.7
@@ -4097,7 +4427,9 @@
       "steepSegment": {
         "verticalDrop": 30,
         "horizDistM": 55,
-        "avgGradientDeg": 28.3
+        "avgGradientDeg": 28.3,
+        "startEle": 203,
+        "endEle": 174
       }
     },
     "score": 47.6
@@ -4116,7 +4448,9 @@
       "steepSegment": {
         "verticalDrop": 25,
         "horizDistM": 51,
-        "avgGradientDeg": 25.7
+        "avgGradientDeg": 25.7,
+        "startEle": 321,
+        "endEle": 297
       }
     },
     "score": 47.3
@@ -4135,7 +4469,9 @@
       "steepSegment": {
         "verticalDrop": 28,
         "horizDistM": 54,
-        "avgGradientDeg": 27.7
+        "avgGradientDeg": 27.7,
+        "startEle": 486,
+        "endEle": 457
       }
     },
     "score": 47.3
@@ -4154,7 +4490,9 @@
       "steepSegment": {
         "verticalDrop": 35,
         "horizDistM": 50,
-        "avgGradientDeg": 34.6
+        "avgGradientDeg": 34.6,
+        "startEle": 349,
+        "endEle": 315
       }
     },
     "score": 47.3
@@ -4190,7 +4528,9 @@
       "steepSegment": {
         "verticalDrop": 26,
         "horizDistM": 51,
-        "avgGradientDeg": 27.1
+        "avgGradientDeg": 27.1,
+        "startEle": 324,
+        "endEle": 297
       }
     },
     "score": 46.3
@@ -4209,7 +4549,9 @@
       "steepSegment": {
         "verticalDrop": 25,
         "horizDistM": 53,
-        "avgGradientDeg": 25.2
+        "avgGradientDeg": 25.2,
+        "startEle": 349,
+        "endEle": 324
       }
     },
     "score": 46.3
@@ -4245,7 +4587,9 @@
       "steepSegment": {
         "verticalDrop": 26,
         "horizDistM": 54,
-        "avgGradientDeg": 26
+        "avgGradientDeg": 26,
+        "startEle": 325,
+        "endEle": 298
       }
     },
     "score": 45.9
@@ -4264,7 +4608,9 @@
       "steepSegment": {
         "verticalDrop": 24,
         "horizDistM": 50,
-        "avgGradientDeg": 25.1
+        "avgGradientDeg": 25.1,
+        "startEle": 300,
+        "endEle": 276
       }
     },
     "score": 45.8
@@ -4283,7 +4629,9 @@
       "steepSegment": {
         "verticalDrop": 28,
         "horizDistM": 53,
-        "avgGradientDeg": 28.2
+        "avgGradientDeg": 28.2,
+        "startEle": 277,
+        "endEle": 249
       }
     },
     "score": 45.6
@@ -4302,7 +4650,9 @@
       "steepSegment": {
         "verticalDrop": 26,
         "horizDistM": 51,
-        "avgGradientDeg": 26.7
+        "avgGradientDeg": 26.7,
+        "startEle": 377,
+        "endEle": 351
       }
     },
     "score": 45.4
@@ -4321,7 +4671,9 @@
       "steepSegment": {
         "verticalDrop": 51,
         "horizDistM": 105,
-        "avgGradientDeg": 25.7
+        "avgGradientDeg": 25.7,
+        "startEle": 287,
+        "endEle": 236
       }
     },
     "score": 45.2
@@ -4402,7 +4754,9 @@
       "steepSegment": {
         "verticalDrop": 26,
         "horizDistM": 53,
-        "avgGradientDeg": 26.5
+        "avgGradientDeg": 26.5,
+        "startEle": 226,
+        "endEle": 200
       }
     },
     "score": 44.3
@@ -4438,7 +4792,9 @@
       "steepSegment": {
         "verticalDrop": 24,
         "horizDistM": 51,
-        "avgGradientDeg": 25.1
+        "avgGradientDeg": 25.1,
+        "startEle": 298,
+        "endEle": 274
       }
     },
     "score": 44
@@ -4457,7 +4813,9 @@
       "steepSegment": {
         "verticalDrop": 33,
         "horizDistM": 53,
-        "avgGradientDeg": 32
+        "avgGradientDeg": 32,
+        "startEle": 324,
+        "endEle": 291
       }
     },
     "score": 44
@@ -4671,7 +5029,9 @@
       "steepSegment": {
         "verticalDrop": 29,
         "horizDistM": 52,
-        "avgGradientDeg": 29.2
+        "avgGradientDeg": 29.2,
+        "startEle": 419,
+        "endEle": 390
       }
     },
     "score": 41.8
@@ -4690,7 +5050,9 @@
       "steepSegment": {
         "verticalDrop": 26,
         "horizDistM": 56,
-        "avgGradientDeg": 25.3
+        "avgGradientDeg": 25.3,
+        "startEle": 191,
+        "endEle": 165
       }
     },
     "score": 41.6
@@ -4711,7 +5073,9 @@
       "steepSegment": {
         "verticalDrop": 76,
         "horizDistM": 133,
-        "avgGradientDeg": 29.7
+        "avgGradientDeg": 29.7,
+        "startEle": 890,
+        "endEle": 814
       }
     },
     "score": 41.5
@@ -4760,7 +5124,9 @@
       "steepSegment": {
         "verticalDrop": 26,
         "horizDistM": 54,
-        "avgGradientDeg": 25.4
+        "avgGradientDeg": 25.4,
+        "startEle": 540,
+        "endEle": 515
       }
     },
     "score": 40.9
@@ -4794,7 +5160,9 @@
       "steepSegment": {
         "verticalDrop": 31,
         "horizDistM": 50,
-        "avgGradientDeg": 32.1
+        "avgGradientDeg": 32.1,
+        "startEle": 516,
+        "endEle": 485
       }
     },
     "score": 40.6
@@ -4813,7 +5181,9 @@
       "steepSegment": {
         "verticalDrop": 30,
         "horizDistM": 52,
-        "avgGradientDeg": 29.8
+        "avgGradientDeg": 29.8,
+        "startEle": 506,
+        "endEle": 476
       }
     },
     "score": 40.4
@@ -4832,7 +5202,9 @@
       "steepSegment": {
         "verticalDrop": 26,
         "horizDistM": 54,
-        "avgGradientDeg": 25.6
+        "avgGradientDeg": 25.6,
+        "startEle": 514,
+        "endEle": 488
       }
     },
     "score": 40.2
@@ -4990,7 +5362,9 @@
       "steepSegment": {
         "verticalDrop": 26,
         "horizDistM": 50,
-        "avgGradientDeg": 27
+        "avgGradientDeg": 27,
+        "startEle": 360,
+        "endEle": 334
       }
     },
     "score": 38.4
@@ -5009,7 +5383,9 @@
       "steepSegment": {
         "verticalDrop": 30,
         "horizDistM": 52,
-        "avgGradientDeg": 29.8
+        "avgGradientDeg": 29.8,
+        "startEle": 516,
+        "endEle": 486
       }
     },
     "score": 38.3
@@ -5030,7 +5406,9 @@
       "steepSegment": {
         "verticalDrop": 142,
         "horizDistM": 270,
-        "avgGradientDeg": 27.7
+        "avgGradientDeg": 27.7,
+        "startEle": 626,
+        "endEle": 484
       }
     },
     "score": 38.2
@@ -5113,7 +5491,9 @@
       "steepSegment": {
         "verticalDrop": 54,
         "horizDistM": 78,
-        "avgGradientDeg": 34.8
+        "avgGradientDeg": 34.8,
+        "startEle": 1113,
+        "endEle": 1059
       }
     },
     "score": 37.3
@@ -5149,7 +5529,9 @@
       "steepSegment": {
         "verticalDrop": 58,
         "horizDistM": 117,
-        "avgGradientDeg": 26.3
+        "avgGradientDeg": 26.3,
+        "startEle": 278,
+        "endEle": 220
       }
     },
     "score": 36.8
@@ -5170,7 +5552,9 @@
       "steepSegment": {
         "verticalDrop": 29,
         "horizDistM": 57,
-        "avgGradientDeg": 27.1
+        "avgGradientDeg": 27.1,
+        "startEle": 407,
+        "endEle": 378
       }
     },
     "score": 36.8
@@ -5270,7 +5654,9 @@
       "steepSegment": {
         "verticalDrop": 40,
         "horizDistM": 73,
-        "avgGradientDeg": 28.8
+        "avgGradientDeg": 28.8,
+        "startEle": 769,
+        "endEle": 729
       }
     },
     "score": 35.9
@@ -5306,7 +5692,9 @@
       "steepSegment": {
         "verticalDrop": 86,
         "horizDistM": 127,
-        "avgGradientDeg": 34.1
+        "avgGradientDeg": 34.1,
+        "startEle": 766,
+        "endEle": 680
       }
     },
     "score": 35.2
@@ -5359,7 +5747,9 @@
       "steepSegment": {
         "verticalDrop": 36,
         "horizDistM": 57,
-        "avgGradientDeg": 32.2
+        "avgGradientDeg": 32.2,
+        "startEle": 758,
+        "endEle": 722
       }
     },
     "score": 33.4
@@ -5429,7 +5819,9 @@
       "steepSegment": {
         "verticalDrop": 25,
         "horizDistM": 50,
-        "avgGradientDeg": 26.4
+        "avgGradientDeg": 26.4,
+        "startEle": 871,
+        "endEle": 846
       }
     },
     "score": 29

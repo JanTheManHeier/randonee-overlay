@@ -205,6 +205,8 @@ function findLongestSteepSegment(points, smoothEle, peakI, troughI) {
     verticalDrop: Math.round(totalDrop),
     horizDistM: Math.round(totalDist),
     avgGradientDeg: Math.round(avgGrad * 10) / 10,
+    startEle: Math.round(smoothEle[steepChunks[0].startI]),
+    endEle: Math.round(smoothEle[steepChunks[steepChunks.length - 1].endI]),
   };
 }
 
@@ -364,31 +366,37 @@ function printTable(results, topN) {
 
   const header = [
     'Rank'.padStart(4),
-    'Name'.padEnd(40),
+    'Name'.padEnd(38),
     'Source'.padEnd(8),
     'Drop'.padStart(6),
     'Run'.padStart(8),
-    'Gradient'.padStart(9),
-    'Steep Section'.padEnd(20),
+    'Grad'.padStart(6),
+    'Steep Section'.padEnd(18),
+    'From-To'.padEnd(16),
     'Score'.padStart(6),
   ].join('  ');
   console.log(header);
-  console.log('-'.repeat(110));
+  console.log('-'.repeat(120));
 
   results.slice(0, topN).forEach((r, i) => {
     const d = r.descent;
-    const steepStr = d.steepSegment
-      ? `${d.steepSegment.verticalDrop}m @ ${d.steepSegment.avgGradientDeg}°`
+    const ss = d.steepSegment;
+    const steepStr = ss
+      ? `${ss.verticalDrop}m @ ${ss.avgGradientDeg}°`
       : '—';
+    const rangeStr = ss
+      ? `${ss.startEle}m → ${ss.endEle}m`
+      : '';
 
     const row = [
       `${i + 1}.`.padStart(4),
-      r.name.slice(0, 40).padEnd(40),
+      r.name.slice(0, 38).padEnd(38),
       r.source.padEnd(8),
       `${d.verticalDrop}m`.padStart(6),
       `${(d.horizDistM / 1000).toFixed(1)}km`.padStart(8),
-      `${d.avgGradientDeg}°`.padStart(9),
-      steepStr.padEnd(20),
+      `${d.avgGradientDeg}°`.padStart(6),
+      steepStr.padEnd(18),
+      rangeStr.padEnd(16),
       `${r.score}`.padStart(6),
     ].join('  ');
     console.log(row);
