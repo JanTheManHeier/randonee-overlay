@@ -1,0 +1,5567 @@
+[
+  {
+    "source": "topptur",
+    "name": "Lavangstinden",
+    "id": 1079,
+    "place": "Sjursnes",
+    "ates": 3,
+    "distFromTromso": 29.7,
+    "descent": {
+      "verticalDrop": 1204,
+      "horizDistM": 4065,
+      "avgGradientDeg": 16.5,
+      "peakEle": 1213,
+      "troughEle": 9,
+      "steepSegment": {
+        "verticalDrop": 334,
+        "horizDistM": 579,
+        "avgGradientDeg": 30
+      }
+    },
+    "score": 133.4
+  },
+  {
+    "source": "topptur",
+    "name": "Langdalstindane (Guhkkesgaisi)",
+    "id": 1128,
+    "place": "Laksvatn",
+    "ates": 3,
+    "distFromTromso": 39.9,
+    "descent": {
+      "verticalDrop": 1538,
+      "horizDistM": 8103,
+      "avgGradientDeg": 10.7,
+      "peakEle": 1568,
+      "troughEle": 30,
+      "steepSegment": {
+        "verticalDrop": 214,
+        "horizDistM": 363,
+        "avgGradientDeg": 30.5
+      }
+    },
+    "score": 121.4
+  },
+  {
+    "source": "topptur",
+    "name": "Lavangstinden",
+    "id": 1077,
+    "place": "Sjursnes",
+    "ates": 3,
+    "distFromTromso": 24.9,
+    "descent": {
+      "verticalDrop": 928,
+      "horizDistM": 2256,
+      "avgGradientDeg": 22.4,
+      "peakEle": 1126,
+      "troughEle": 198,
+      "steepSegment": {
+        "verticalDrop": 275,
+        "horizDistM": 458,
+        "avgGradientDeg": 31
+      }
+    },
+    "score": 116.8
+  },
+  {
+    "source": "topptur",
+    "name": "Holmbukttinden",
+    "id": 1178,
+    "place": "Hundberg",
+    "ates": 3,
+    "distFromTromso": 35.2,
+    "descent": {
+      "verticalDrop": 1626,
+      "horizDistM": 5334,
+      "avgGradientDeg": 17,
+      "peakEle": 1669,
+      "troughEle": 43,
+      "steepSegment": {
+        "verticalDrop": 152,
+        "horizDistM": 291,
+        "avgGradientDeg": 27.6
+      }
+    },
+    "score": 115.2
+  },
+  {
+    "source": "topptur",
+    "name": "Storfjellet",
+    "id": 1093,
+    "place": "Ramfjordbotn",
+    "ates": 3,
+    "distFromTromso": 18.8,
+    "descent": {
+      "verticalDrop": 1066,
+      "horizDistM": 2783,
+      "avgGradientDeg": 21,
+      "peakEle": 1084,
+      "troughEle": 18,
+      "steepSegment": {
+        "verticalDrop": 209,
+        "horizDistM": 329,
+        "avgGradientDeg": 32.4
+      }
+    },
+    "score": 114.7
+  },
+  {
+    "source": "topptur",
+    "name": "Skamtinden",
+    "id": 1704,
+    "place": "Tromvik",
+    "ates": 3,
+    "distFromTromso": 26,
+    "descent": {
+      "verticalDrop": 827,
+      "horizDistM": 1692,
+      "avgGradientDeg": 26,
+      "peakEle": 849,
+      "troughEle": 22,
+      "steepSegment": {
+        "verticalDrop": 154,
+        "horizDistM": 261,
+        "avgGradientDeg": 30.5
+      }
+    },
+    "score": 114.3
+  },
+  {
+    "source": "gpx",
+    "name": "Balsfjord Klatring",
+    "filename": "activity_5353971179.gpx",
+    "date": "2020-08-08T08:20:02.000Z",
+    "descent": {
+      "verticalDrop": 1181,
+      "horizDistM": 5085,
+      "avgGradientDeg": 13.1,
+      "peakEle": 1211,
+      "troughEle": 30,
+      "steepSegment": {
+        "verticalDrop": 155,
+        "horizDistM": 303,
+        "avgGradientDeg": 27.1
+      }
+    },
+    "score": 113.9
+  },
+  {
+    "source": "topptur",
+    "name": "Bálggesvárri",
+    "id": 1183,
+    "place": "Hundberg",
+    "ates": 3,
+    "distFromTromso": 38.6,
+    "descent": {
+      "verticalDrop": 1426,
+      "horizDistM": 5505,
+      "avgGradientDeg": 14.5,
+      "peakEle": 1619,
+      "troughEle": 193,
+      "steepSegment": {
+        "verticalDrop": 136,
+        "horizDistM": 258,
+        "avgGradientDeg": 27.8
+      }
+    },
+    "score": 113.6
+  },
+  {
+    "source": "topptur",
+    "name": "Lakselvtindan",
+    "id": 1133,
+    "place": "Laksvatn",
+    "ates": 3,
+    "distFromTromso": 37.8,
+    "descent": {
+      "verticalDrop": 1344,
+      "horizDistM": 3844,
+      "avgGradientDeg": 19.3,
+      "peakEle": 1355,
+      "troughEle": 11,
+      "steepSegment": {
+        "verticalDrop": 125,
+        "horizDistM": 207,
+        "avgGradientDeg": 31.2
+      }
+    },
+    "score": 112.5
+  },
+  {
+    "source": "topptur",
+    "name": "Svartnestinden",
+    "id": 1101,
+    "place": "Laksvatn",
+    "ates": 3,
+    "distFromTromso": 31.5,
+    "descent": {
+      "verticalDrop": 1189,
+      "horizDistM": 3656,
+      "avgGradientDeg": 18,
+      "peakEle": 1197,
+      "troughEle": 8,
+      "steepSegment": {
+        "verticalDrop": 132,
+        "horizDistM": 204,
+        "avgGradientDeg": 32.9
+      }
+    },
+    "score": 112.3
+  },
+  {
+    "source": "topptur",
+    "name": "Daltinden",
+    "id": 1449,
+    "place": "Furuflaten",
+    "ates": 2,
+    "distFromTromso": 51.9,
+    "descent": {
+      "verticalDrop": 1524,
+      "horizDistM": 8541,
+      "avgGradientDeg": 10.1,
+      "peakEle": 1529,
+      "troughEle": 5,
+      "steepSegment": {
+        "verticalDrop": 107,
+        "horizDistM": 215,
+        "avgGradientDeg": 26.5
+      }
+    },
+    "score": 110.7
+  },
+  {
+    "source": "topptur",
+    "name": "Sofiatinden",
+    "id": 1163,
+    "place": "Svensby",
+    "ates": 3,
+    "distFromTromso": 37.9,
+    "descent": {
+      "verticalDrop": 1201,
+      "horizDistM": 3458,
+      "avgGradientDeg": 19.2,
+      "peakEle": 1210,
+      "troughEle": 9,
+      "steepSegment": {
+        "verticalDrop": 106,
+        "horizDistM": 170,
+        "avgGradientDeg": 31.9
+      }
+    },
+    "score": 110.6
+  },
+  {
+    "source": "topptur",
+    "name": "Daltinden",
+    "id": 1115,
+    "place": "Furuflaten",
+    "ates": 3,
+    "distFromTromso": 52,
+    "descent": {
+      "verticalDrop": 1452,
+      "horizDistM": 6977,
+      "avgGradientDeg": 11.8,
+      "peakEle": 1530,
+      "troughEle": 78,
+      "steepSegment": {
+        "verticalDrop": 94,
+        "horizDistM": 148,
+        "avgGradientDeg": 32.4
+      }
+    },
+    "score": 109.4
+  },
+  {
+    "source": "topptur",
+    "name": "Rundfjellet",
+    "id": 1160,
+    "place": "Lyngseidet",
+    "ates": 2,
+    "distFromTromso": 50.4,
+    "descent": {
+      "verticalDrop": 1388,
+      "horizDistM": 9217,
+      "avgGradientDeg": 8.6,
+      "peakEle": 1411,
+      "troughEle": 23,
+      "steepSegment": {
+        "verticalDrop": 82,
+        "horizDistM": 167,
+        "avgGradientDeg": 26.2
+      }
+    },
+    "score": 108.2
+  },
+  {
+    "source": "gpx",
+    "name": "Sovende soldat med Jonna, Marius, Tommaso, Ylvi, Lars Erik, Edvart og Geir",
+    "filename": "activity_14991005110.gpx",
+    "date": "2024-04-20T08:33:26.000Z",
+    "descent": {
+      "verticalDrop": 1253,
+      "horizDistM": 5572,
+      "avgGradientDeg": 12.7,
+      "peakEle": 1215,
+      "troughEle": -38,
+      "steepSegment": {
+        "verticalDrop": 79,
+        "horizDistM": 157,
+        "avgGradientDeg": 26.7
+      }
+    },
+    "score": 107.9
+  },
+  {
+    "source": "topptur",
+    "name": "Store Jægervasstinden",
+    "id": 1167,
+    "place": "Svensby",
+    "ates": 4,
+    "distFromTromso": 38.3,
+    "descent": {
+      "verticalDrop": 1529,
+      "horizDistM": 6913,
+      "avgGradientDeg": 12.5,
+      "peakEle": 1534,
+      "troughEle": 5,
+      "steepSegment": {
+        "verticalDrop": 74,
+        "horizDistM": 116,
+        "avgGradientDeg": 32.5
+      }
+    },
+    "score": 107.4
+  },
+  {
+    "source": "topptur",
+    "name": "Gabrielfjellet",
+    "id": 1074,
+    "place": "Ramfjordbotn",
+    "ates": 2,
+    "distFromTromso": 15.2,
+    "descent": {
+      "verticalDrop": 1133,
+      "horizDistM": 3556,
+      "avgGradientDeg": 17.7,
+      "peakEle": 1211,
+      "troughEle": 78,
+      "steepSegment": {
+        "verticalDrop": 123,
+        "horizDistM": 223,
+        "avgGradientDeg": 28.8
+      }
+    },
+    "score": 106.7
+  },
+  {
+    "source": "topptur",
+    "name": "Storgalten",
+    "id": 1168,
+    "place": "Nord-lenangen",
+    "ates": 2,
+    "distFromTromso": 54.9,
+    "descent": {
+      "verticalDrop": 1201,
+      "horizDistM": 3872,
+      "avgGradientDeg": 17.2,
+      "peakEle": 1215,
+      "troughEle": 14,
+      "steepSegment": {
+        "verticalDrop": 64,
+        "horizDistM": 124,
+        "avgGradientDeg": 27.3
+      }
+    },
+    "score": 106.4
+  },
+  {
+    "source": "gpx",
+    "name": "Rissavarri med Marius og Lyngen Lodge",
+    "filename": "activity_5018177258.gpx",
+    "date": "2020-05-31T07:37:41.000Z",
+    "descent": {
+      "verticalDrop": 1238,
+      "horizDistM": 4310,
+      "avgGradientDeg": 16,
+      "peakEle": 1257,
+      "troughEle": 19,
+      "steepSegment": {
+        "verticalDrop": 63,
+        "horizDistM": 108,
+        "avgGradientDeg": 30.3
+      }
+    },
+    "score": 106.3
+  },
+  {
+    "source": "gpx",
+    "name": "Chamonix-Mont-Blanc Topptur Ski",
+    "filename": "activity_4501090306.gpx",
+    "date": "2020-02-01T09:23:39.000Z",
+    "descent": {
+      "verticalDrop": 1481,
+      "horizDistM": 11101,
+      "avgGradientDeg": 7.6,
+      "peakEle": 3155,
+      "troughEle": 1674,
+      "steepSegment": {
+        "verticalDrop": 60,
+        "horizDistM": 110,
+        "avgGradientDeg": 28.7
+      }
+    },
+    "score": 106
+  },
+  {
+    "source": "topptur",
+    "name": "Saltdalstinden",
+    "id": 1082,
+    "place": "Ramfjordbotn",
+    "ates": 3,
+    "distFromTromso": 18.7,
+    "descent": {
+      "verticalDrop": 1231,
+      "horizDistM": 5858,
+      "avgGradientDeg": 11.9,
+      "peakEle": 1239,
+      "troughEle": 8,
+      "steepSegment": {
+        "verticalDrop": 58,
+        "horizDistM": 104,
+        "avgGradientDeg": 29.2
+      }
+    },
+    "score": 105.8
+  },
+  {
+    "source": "gpx",
+    "name": "Balsfjord Topptur Ski",
+    "filename": "activity_10908735503.gpx",
+    "date": "2023-04-15T08:36:22.000Z",
+    "descent": {
+      "verticalDrop": 1208,
+      "horizDistM": 5359,
+      "avgGradientDeg": 12.7,
+      "peakEle": 1210,
+      "troughEle": 1,
+      "steepSegment": {
+        "verticalDrop": 52,
+        "horizDistM": 100,
+        "avgGradientDeg": 27.4
+      }
+    },
+    "score": 105.2
+  },
+  {
+    "source": "topptur",
+    "name": "Tafeltinden",
+    "id": 1173,
+    "place": "Lyngseidet",
+    "ates": 3,
+    "distFromTromso": 50.4,
+    "descent": {
+      "verticalDrop": 1381,
+      "horizDistM": 8211,
+      "avgGradientDeg": 9.5,
+      "peakEle": 1384,
+      "troughEle": 3,
+      "steepSegment": {
+        "verticalDrop": 51,
+        "horizDistM": 106,
+        "avgGradientDeg": 25.8
+      }
+    },
+    "score": 105.1
+  },
+  {
+    "source": "gpx",
+    "name": "Steinfjellet med Jonna og Marius ",
+    "filename": "activity_18891745682.gpx",
+    "date": "2025-04-21T09:02:41.000Z",
+    "descent": {
+      "verticalDrop": 1198,
+      "horizDistM": 4959,
+      "avgGradientDeg": 13.6,
+      "peakEle": 1161,
+      "troughEle": -36,
+      "steepSegment": {
+        "verticalDrop": 52,
+        "horizDistM": 104,
+        "avgGradientDeg": 26.4
+      }
+    },
+    "score": 105
+  },
+  {
+    "source": "topptur",
+    "name": "Svartnestinden",
+    "id": 1100,
+    "place": "Laksvatn",
+    "ates": 2,
+    "distFromTromso": 28.7,
+    "descent": {
+      "verticalDrop": 1210,
+      "horizDistM": 4887,
+      "avgGradientDeg": 13.9,
+      "peakEle": 1213,
+      "troughEle": 3,
+      "steepSegment": {
+        "verticalDrop": 43,
+        "horizDistM": 90,
+        "avgGradientDeg": 25.6
+      }
+    },
+    "score": 104.3
+  },
+  {
+    "source": "topptur",
+    "name": "Gabrielfjellet",
+    "id": 1073,
+    "place": "Ramfjordbotn",
+    "ates": 2,
+    "distFromTromso": 15.2,
+    "descent": {
+      "verticalDrop": 1133,
+      "horizDistM": 4247,
+      "avgGradientDeg": 14.9,
+      "peakEle": 1211,
+      "troughEle": 78,
+      "steepSegment": {
+        "verticalDrop": 98,
+        "horizDistM": 186,
+        "avgGradientDeg": 27.8
+      }
+    },
+    "score": 104.2
+  },
+  {
+    "source": "topptur",
+    "name": "Ellendaltinden",
+    "id": 1119,
+    "place": "Laksvatn",
+    "ates": 2,
+    "distFromTromso": 39.9,
+    "descent": {
+      "verticalDrop": 1309,
+      "horizDistM": 8575,
+      "avgGradientDeg": 8.7,
+      "peakEle": 1338,
+      "troughEle": 29,
+      "steepSegment": {
+        "verticalDrop": 42,
+        "horizDistM": 81,
+        "avgGradientDeg": 27.5
+      }
+    },
+    "score": 104.2
+  },
+  {
+    "source": "topptur",
+    "name": "Stormheimtinden",
+    "id": 1096,
+    "place": "Sjursnes",
+    "ates": 2,
+    "distFromTromso": 24.7,
+    "descent": {
+      "verticalDrop": 1045,
+      "horizDistM": 3706,
+      "avgGradientDeg": 15.7,
+      "peakEle": 1211,
+      "troughEle": 166,
+      "steepSegment": {
+        "verticalDrop": 168,
+        "horizDistM": 289,
+        "avgGradientDeg": 30.2
+      }
+    },
+    "score": 103.9
+  },
+  {
+    "source": "topptur",
+    "name": "Hamperokken",
+    "id": 1742,
+    "place": "Nordbotn",
+    "ates": 3,
+    "distFromTromso": 14.5,
+    "descent": {
+      "verticalDrop": 1238,
+      "horizDistM": 4592,
+      "avgGradientDeg": 15.1,
+      "peakEle": 1387,
+      "troughEle": 149,
+      "steepSegment": {
+        "verticalDrop": 38,
+        "horizDistM": 60,
+        "avgGradientDeg": 32.5
+      }
+    },
+    "score": 103.8
+  },
+  {
+    "source": "topptur",
+    "name": "Blåtinden - Sovende Soldat",
+    "id": 1060,
+    "place": "Laksvatn",
+    "ates": 2,
+    "distFromTromso": 32.4,
+    "descent": {
+      "verticalDrop": 1144,
+      "horizDistM": 4168,
+      "avgGradientDeg": 15.3,
+      "peakEle": 1179,
+      "troughEle": 35,
+      "steepSegment": {
+        "verticalDrop": 80,
+        "horizDistM": 163,
+        "avgGradientDeg": 26.1
+      }
+    },
+    "score": 103.3
+  },
+  {
+    "source": "gpx",
+    "name": "Sovende Soldat med Kristina",
+    "filename": "activity_4966353946.gpx",
+    "date": "2020-05-21T09:00:13.000Z",
+    "descent": {
+      "verticalDrop": 1202,
+      "horizDistM": 5174,
+      "avgGradientDeg": 13.1,
+      "peakEle": 1188,
+      "troughEle": -14,
+      "steepSegment": {
+        "verticalDrop": 30,
+        "horizDistM": 52,
+        "avgGradientDeg": 29.9
+      }
+    },
+    "score": 103
+  },
+  {
+    "source": "gpx",
+    "name": "Storhaugen med Jonna og Marius",
+    "filename": "activity_11057475788.gpx",
+    "date": "2023-05-06T08:42:52.000Z",
+    "descent": {
+      "verticalDrop": 1170,
+      "horizDistM": 4404,
+      "avgGradientDeg": 14.9,
+      "peakEle": 1168,
+      "troughEle": -2,
+      "steepSegment": {
+        "verticalDrop": 53,
+        "horizDistM": 109,
+        "avgGradientDeg": 25.7
+      }
+    },
+    "score": 102.8
+  },
+  {
+    "source": "gpx",
+    "name": "Chamonix-Mont-Blanc Topptur Ski",
+    "filename": "activity_4498085828.gpx",
+    "date": "2020-01-31T10:12:17.000Z",
+    "descent": {
+      "verticalDrop": 1625,
+      "horizDistM": 7757,
+      "avgGradientDeg": 11.8,
+      "peakEle": 3467,
+      "troughEle": 1842,
+      "steepSegment": {
+        "verticalDrop": 28,
+        "horizDistM": 51,
+        "avgGradientDeg": 28.6
+      }
+    },
+    "score": 102.8
+  },
+  {
+    "source": "gpx",
+    "name": "Rassevarri med Thomas og Jonna",
+    "filename": "activity_6621238803.gpx",
+    "date": "2021-04-17T07:35:54.000Z",
+    "descent": {
+      "verticalDrop": 1201,
+      "horizDistM": 6646,
+      "avgGradientDeg": 10.2,
+      "peakEle": 1165,
+      "troughEle": -36,
+      "steepSegment": {
+        "verticalDrop": 27,
+        "horizDistM": 51,
+        "avgGradientDeg": 27.7
+      }
+    },
+    "score": 102.7
+  },
+  {
+    "source": "topptur",
+    "name": "Andersdaltinden",
+    "id": 1059,
+    "place": "Laksvatn",
+    "ates": 3,
+    "distFromTromso": 26.2,
+    "descent": {
+      "verticalDrop": 759,
+      "horizDistM": 1697,
+      "avgGradientDeg": 24.1,
+      "peakEle": 1138,
+      "troughEle": 379,
+      "steepSegment": {
+        "verticalDrop": 187,
+        "horizDistM": 359,
+        "avgGradientDeg": 27.5
+      }
+    },
+    "score": 102.5
+  },
+  {
+    "source": "topptur",
+    "name": "Andersdaltinden",
+    "id": 1058,
+    "place": "Laksvatn",
+    "ates": 3,
+    "distFromTromso": 25.8,
+    "descent": {
+      "verticalDrop": 1141,
+      "horizDistM": 3340,
+      "avgGradientDeg": 18.9,
+      "peakEle": 1217,
+      "troughEle": 76,
+      "steepSegment": {
+        "verticalDrop": 71,
+        "horizDistM": 126,
+        "avgGradientDeg": 29.5
+      }
+    },
+    "score": 102.2
+  },
+  {
+    "source": "gpx",
+    "name": "Giilavarri med Marius",
+    "filename": "activity_15337614911.gpx",
+    "date": "2024-05-11T08:08:34.000Z",
+    "descent": {
+      "verticalDrop": 1184,
+      "horizDistM": 4909,
+      "avgGradientDeg": 13.6,
+      "peakEle": 1156,
+      "troughEle": -28,
+      "steepSegment": {
+        "verticalDrop": 26,
+        "horizDistM": 50,
+        "avgGradientDeg": 27.3
+      }
+    },
+    "score": 101.3
+  },
+  {
+    "source": "topptur",
+    "name": "Vasstinden",
+    "id": 1041,
+    "place": "Kvaløysletta",
+    "ates": 2,
+    "distFromTromso": 25.5,
+    "descent": {
+      "verticalDrop": 887,
+      "horizDistM": 2652,
+      "avgGradientDeg": 18.5,
+      "peakEle": 896,
+      "troughEle": 9,
+      "steepSegment": {
+        "verticalDrop": 272,
+        "horizDistM": 506,
+        "avgGradientDeg": 28.3
+      }
+    },
+    "score": 101.1
+  },
+  {
+    "source": "gpx",
+    "name": "Uløytraversen med Marius og Lyngen Lodge",
+    "filename": "activity_19211964833.gpx",
+    "date": "2025-05-23T08:40:48.000Z",
+    "descent": {
+      "verticalDrop": 1161,
+      "horizDistM": 5033,
+      "avgGradientDeg": 13,
+      "peakEle": 1156,
+      "troughEle": -5,
+      "steepSegment": {
+        "verticalDrop": 32,
+        "horizDistM": 53,
+        "avgGradientDeg": 31.5
+      }
+    },
+    "score": 100
+  },
+  {
+    "source": "topptur",
+    "name": "Stáluvárri",
+    "id": 1215,
+    "place": "Olderdalen",
+    "ates": 1,
+    "distFromTromso": 59.7,
+    "descent": {
+      "verticalDrop": 1248,
+      "horizDistM": 4936,
+      "avgGradientDeg": 14.2,
+      "peakEle": 1254,
+      "troughEle": 6,
+      "steepSegment": null
+    },
+    "score": 100
+  },
+  {
+    "source": "gpx",
+    "name": "Store Hollendaren med Andreas, Dag og Jonna",
+    "filename": "activity_4863276615.gpx",
+    "date": "2020-05-01T07:52:37.000Z",
+    "descent": {
+      "verticalDrop": 1059,
+      "horizDistM": 4653,
+      "avgGradientDeg": 12.8,
+      "peakEle": 1055,
+      "troughEle": -4,
+      "steepSegment": {
+        "verticalDrop": 116,
+        "horizDistM": 209,
+        "avgGradientDeg": 28.9
+      }
+    },
+    "score": 99.9
+  },
+  {
+    "source": "topptur",
+    "name": "Fastdalstinden",
+    "id": 1123,
+    "place": "Rottenvik",
+    "ates": 2,
+    "distFromTromso": 50.7,
+    "descent": {
+      "verticalDrop": 1147,
+      "horizDistM": 5308,
+      "avgGradientDeg": 12.2,
+      "peakEle": 1270,
+      "troughEle": 123,
+      "steepSegment": {
+        "verticalDrop": 42,
+        "horizDistM": 88,
+        "avgGradientDeg": 25.6
+      }
+    },
+    "score": 99.8
+  },
+  {
+    "source": "topptur",
+    "name": "Søndre Bentsjordtinden",
+    "id": 997,
+    "place": "Vikran",
+    "ates": 2,
+    "distFromTromso": 18.2,
+    "descent": {
+      "verticalDrop": 1156,
+      "horizDistM": 5214,
+      "avgGradientDeg": 12.5,
+      "peakEle": 1162,
+      "troughEle": 6,
+      "steepSegment": {
+        "verticalDrop": 27,
+        "horizDistM": 58,
+        "avgGradientDeg": 25.1
+      }
+    },
+    "score": 99
+  },
+  {
+    "source": "topptur",
+    "name": "Nordre Bentsjordtinden",
+    "id": 998,
+    "place": "Vikran",
+    "ates": 3,
+    "distFromTromso": 17.7,
+    "descent": {
+      "verticalDrop": 1083,
+      "horizDistM": 3550,
+      "avgGradientDeg": 17,
+      "peakEle": 1092,
+      "troughEle": 9,
+      "steepSegment": {
+        "verticalDrop": 76,
+        "horizDistM": 130,
+        "avgGradientDeg": 30.3
+      }
+    },
+    "score": 97.9
+  },
+  {
+    "source": "gpx",
+    "name": "Storhaugen 1142 Lyngen Lodge ",
+    "filename": "activity_8809107581.gpx",
+    "date": "2022-05-12T08:40:25.000Z",
+    "descent": {
+      "verticalDrop": 1137,
+      "horizDistM": 4980,
+      "avgGradientDeg": 12.9,
+      "peakEle": 1111,
+      "troughEle": -26,
+      "steepSegment": {
+        "verticalDrop": 27,
+        "horizDistM": 52,
+        "avgGradientDeg": 26.9
+      }
+    },
+    "score": 97.5
+  },
+  {
+    "source": "topptur",
+    "name": "Karltinden",
+    "id": 1075,
+    "place": "Breivikeidet",
+    "ates": 3,
+    "distFromTromso": 25.1,
+    "descent": {
+      "verticalDrop": 1035,
+      "horizDistM": 3301,
+      "avgGradientDeg": 17.4,
+      "peakEle": 1200,
+      "troughEle": 165,
+      "steepSegment": {
+        "verticalDrop": 109,
+        "horizDistM": 222,
+        "avgGradientDeg": 26.2
+      }
+    },
+    "score": 97.2
+  },
+  {
+    "source": "topptur",
+    "name": "Storfjellet",
+    "id": 1409,
+    "place": "Ramfjordbotn",
+    "ates": 2,
+    "distFromTromso": 17.9,
+    "descent": {
+      "verticalDrop": 1060,
+      "horizDistM": 4213,
+      "avgGradientDeg": 14.1,
+      "peakEle": 1088,
+      "troughEle": 28,
+      "steepSegment": {
+        "verticalDrop": 88,
+        "horizDistM": 142,
+        "avgGradientDeg": 31.9
+      }
+    },
+    "score": 97.1
+  },
+  {
+    "source": "gpx",
+    "name": "Rema 1000 med Yvli, Thomas, Heikki, Tomasso og Lotta",
+    "filename": "activity_15118820824.gpx",
+    "date": "2024-04-28T09:22:15.000Z",
+    "descent": {
+      "verticalDrop": 1061,
+      "horizDistM": 4589,
+      "avgGradientDeg": 13,
+      "peakEle": 1025,
+      "troughEle": -36,
+      "steepSegment": {
+        "verticalDrop": 85,
+        "horizDistM": 154,
+        "avgGradientDeg": 28.8
+      }
+    },
+    "score": 96.9
+  },
+  {
+    "source": "topptur",
+    "name": "Karltinden",
+    "id": 1076,
+    "place": "Sjursnes",
+    "ates": 3,
+    "distFromTromso": 25,
+    "descent": {
+      "verticalDrop": 1038,
+      "horizDistM": 4275,
+      "avgGradientDeg": 13.6,
+      "peakEle": 1205,
+      "troughEle": 167,
+      "steepSegment": {
+        "verticalDrop": 94,
+        "horizDistM": 162,
+        "avgGradientDeg": 30.1
+      }
+    },
+    "score": 95.9
+  },
+  {
+    "source": "topptur",
+    "name": "Steinfjellet",
+    "id": 1164,
+    "place": "Svensby",
+    "ates": 2,
+    "distFromTromso": 41.9,
+    "descent": {
+      "verticalDrop": 1108,
+      "horizDistM": 4380,
+      "avgGradientDeg": 14.2,
+      "peakEle": 1112,
+      "troughEle": 4,
+      "steepSegment": {
+        "verticalDrop": 35,
+        "horizDistM": 69,
+        "avgGradientDeg": 27
+      }
+    },
+    "score": 95.8
+  },
+  {
+    "source": "topptur",
+    "name": "Orvasstinden",
+    "id": 1700,
+    "place": "Kvaløysletta",
+    "ates": 3,
+    "distFromTromso": 18,
+    "descent": {
+      "verticalDrop": 894,
+      "horizDistM": 2678,
+      "avgGradientDeg": 18.5,
+      "peakEle": 906,
+      "troughEle": 12,
+      "steepSegment": {
+        "verticalDrop": 210,
+        "horizDistM": 377,
+        "avgGradientDeg": 29.1
+      }
+    },
+    "score": 95.5
+  },
+  {
+    "source": "topptur",
+    "name": "Slettinden",
+    "id": 1006,
+    "place": "Meistervik",
+    "ates": 1,
+    "distFromTromso": 21.3,
+    "descent": {
+      "verticalDrop": 1099,
+      "horizDistM": 7387,
+      "avgGradientDeg": 8.5,
+      "peakEle": 1105,
+      "troughEle": 6,
+      "steepSegment": {
+        "verticalDrop": 34,
+        "horizDistM": 64,
+        "avgGradientDeg": 27.9
+      }
+    },
+    "score": 95
+  },
+  {
+    "source": "topptur",
+    "name": "Middagstinden",
+    "id": 1118,
+    "place": "Seljelvnes",
+    "ates": 2,
+    "distFromTromso": 44.2,
+    "descent": {
+      "verticalDrop": 959,
+      "horizDistM": 4646,
+      "avgGradientDeg": 11.7,
+      "peakEle": 1068,
+      "troughEle": 109,
+      "steepSegment": {
+        "verticalDrop": 145,
+        "horizDistM": 274,
+        "avgGradientDeg": 27.9
+      }
+    },
+    "score": 94.4
+  },
+  {
+    "source": "topptur",
+    "name": "Vardtinden",
+    "id": 1117,
+    "place": "Nordkjosbotn",
+    "ates": 2,
+    "distFromTromso": 42.2,
+    "descent": {
+      "verticalDrop": 1097,
+      "horizDistM": 4412,
+      "avgGradientDeg": 14,
+      "peakEle": 1147,
+      "troughEle": 50,
+      "steepSegment": {
+        "verticalDrop": 28,
+        "horizDistM": 58,
+        "avgGradientDeg": 25.7
+      }
+    },
+    "score": 94.2
+  },
+  {
+    "source": "topptur",
+    "name": "Litletinden",
+    "id": 1132,
+    "place": "Laksvatn",
+    "ates": 2,
+    "distFromTromso": 38.1,
+    "descent": {
+      "verticalDrop": 1009,
+      "horizDistM": 4411,
+      "avgGradientDeg": 12.9,
+      "peakEle": 1015,
+      "troughEle": 6,
+      "steepSegment": {
+        "verticalDrop": 89,
+        "horizDistM": 173,
+        "avgGradientDeg": 27.3
+      }
+    },
+    "score": 93
+  },
+  {
+    "source": "topptur",
+    "name": "Nakkefjellet",
+    "id": 1743,
+    "place": "Ramfjordbotn",
+    "ates": 2,
+    "distFromTromso": 27.8,
+    "descent": {
+      "verticalDrop": 1066,
+      "horizDistM": 5630,
+      "avgGradientDeg": 10.7,
+      "peakEle": 1107,
+      "troughEle": 41,
+      "steepSegment": {
+        "verticalDrop": 41,
+        "horizDistM": 77,
+        "avgGradientDeg": 27.9
+      }
+    },
+    "score": 92.9
+  },
+  {
+    "source": "topptur",
+    "name": "Skarlitinden",
+    "id": 1084,
+    "place": "Ramfjordbotn",
+    "ates": 2,
+    "distFromTromso": 14.9,
+    "descent": {
+      "verticalDrop": 733,
+      "horizDistM": 2141,
+      "avgGradientDeg": 18.9,
+      "peakEle": 851,
+      "troughEle": 118,
+      "steepSegment": {
+        "verticalDrop": 315,
+        "horizDistM": 554,
+        "avgGradientDeg": 29.6
+      }
+    },
+    "score": 92.6
+  },
+  {
+    "source": "gpx",
+    "name": "Uløytraversen med Marius og Lyngen Lodge",
+    "filename": "activity_5013298037.gpx",
+    "date": "2020-05-30T07:51:19.000Z",
+    "descent": {
+      "verticalDrop": 1110,
+      "horizDistM": 6440,
+      "avgGradientDeg": 9.8,
+      "peakEle": 1140,
+      "troughEle": 29,
+      "steepSegment": null
+    },
+    "score": 92.5
+  },
+  {
+    "source": "gpx",
+    "name": "Gamvikbreen med Marius Lyngen Lodge ",
+    "filename": "activity_15604034545.gpx",
+    "date": "2024-05-27T07:54:07.000Z",
+    "descent": {
+      "verticalDrop": 1038,
+      "horizDistM": 5932,
+      "avgGradientDeg": 9.9,
+      "peakEle": 1010,
+      "troughEle": -27,
+      "steepSegment": {
+        "verticalDrop": 58,
+        "horizDistM": 105,
+        "avgGradientDeg": 28.7
+      }
+    },
+    "score": 92.3
+  },
+  {
+    "source": "topptur",
+    "name": "Vardtinden",
+    "id": 1070,
+    "place": "Breivikeidet",
+    "ates": 3,
+    "distFromTromso": 23.7,
+    "descent": {
+      "verticalDrop": 1016,
+      "horizDistM": 4105,
+      "avgGradientDeg": 13.9,
+      "peakEle": 1037,
+      "troughEle": 21,
+      "steepSegment": {
+        "verticalDrop": 70,
+        "horizDistM": 132,
+        "avgGradientDeg": 27.9
+      }
+    },
+    "score": 91.7
+  },
+  {
+    "source": "topptur",
+    "name": "Rørnestinden",
+    "id": 1150,
+    "place": "Kjosen",
+    "ates": 3,
+    "distFromTromso": 46.1,
+    "descent": {
+      "verticalDrop": 829,
+      "horizDistM": 2108,
+      "avgGradientDeg": 21.5,
+      "peakEle": 831,
+      "troughEle": 2,
+      "steepSegment": {
+        "verticalDrop": 147,
+        "horizDistM": 265,
+        "avgGradientDeg": 29.1
+      }
+    },
+    "score": 91.3
+  },
+  {
+    "source": "topptur",
+    "name": "Styrmannstinden",
+    "id": 1019,
+    "place": "Tromvik",
+    "ates": 3,
+    "distFromTromso": 20.4,
+    "descent": {
+      "verticalDrop": 904,
+      "horizDistM": 2688,
+      "avgGradientDeg": 18.6,
+      "peakEle": 935,
+      "troughEle": 31,
+      "steepSegment": {
+        "verticalDrop": 157,
+        "horizDistM": 276,
+        "avgGradientDeg": 29.6
+      }
+    },
+    "score": 91
+  },
+  {
+    "source": "gpx",
+    "name": "Tromsø Topptur Ski",
+    "filename": "activity_19022733767.gpx",
+    "date": "2025-05-04T09:00:13.000Z",
+    "descent": {
+      "verticalDrop": 982,
+      "horizDistM": 6905,
+      "avgGradientDeg": 8.1,
+      "peakEle": 941,
+      "troughEle": -41,
+      "steepSegment": {
+        "verticalDrop": 82,
+        "horizDistM": 157,
+        "avgGradientDeg": 27.5
+      }
+    },
+    "score": 90
+  },
+  {
+    "source": "topptur",
+    "name": "Søndre Bentsjordtinden",
+    "id": 999,
+    "place": "Brokskar",
+    "ates": 3,
+    "distFromTromso": 20.5,
+    "descent": {
+      "verticalDrop": 554,
+      "horizDistM": 1121,
+      "avgGradientDeg": 26.3,
+      "peakEle": 912,
+      "troughEle": 358,
+      "steepSegment": {
+        "verticalDrop": 123,
+        "horizDistM": 230,
+        "avgGradientDeg": 28.1
+      }
+    },
+    "score": 90
+  },
+  {
+    "source": "gpx",
+    "name": "Skittentind med Kristina og Jonna",
+    "filename": "activity_4912923208.gpx",
+    "date": "2020-05-10T10:18:00.000Z",
+    "descent": {
+      "verticalDrop": 975,
+      "horizDistM": 5677,
+      "avgGradientDeg": 9.7,
+      "peakEle": 1038,
+      "troughEle": 63,
+      "steepSegment": {
+        "verticalDrop": 82,
+        "horizDistM": 154,
+        "avgGradientDeg": 28.2
+      }
+    },
+    "score": 89.5
+  },
+  {
+    "source": "topptur",
+    "name": "Store Hollendaren",
+    "id": 1018,
+    "place": "Tromvik",
+    "ates": 3,
+    "distFromTromso": 20.6,
+    "descent": {
+      "verticalDrop": 993,
+      "horizDistM": 3642,
+      "avgGradientDeg": 15.3,
+      "peakEle": 1013,
+      "troughEle": 20,
+      "steepSegment": {
+        "verticalDrop": 63,
+        "horizDistM": 125,
+        "avgGradientDeg": 26.8
+      }
+    },
+    "score": 89.1
+  },
+  {
+    "source": "topptur",
+    "name": "Storsteinnestind fra Ersfjorden",
+    "id": 1035,
+    "place": "Ersfjordbotn",
+    "ates": 3,
+    "distFromTromso": 17.6,
+    "descent": {
+      "verticalDrop": 1011,
+      "horizDistM": 4008,
+      "avgGradientDeg": 14.2,
+      "peakEle": 1015,
+      "troughEle": 4,
+      "steepSegment": {
+        "verticalDrop": 47,
+        "horizDistM": 90,
+        "avgGradientDeg": 27.6
+      }
+    },
+    "score": 89
+  },
+  {
+    "source": "topptur",
+    "name": "Gårdselvtinden",
+    "id": 1227,
+    "place": "Ramfjordbotn",
+    "ates": 2,
+    "distFromTromso": 18.7,
+    "descent": {
+      "verticalDrop": 1031,
+      "horizDistM": 3317,
+      "avgGradientDeg": 17.3,
+      "peakEle": 1071,
+      "troughEle": 40,
+      "steepSegment": {
+        "verticalDrop": 30,
+        "horizDistM": 64,
+        "avgGradientDeg": 25.2
+      }
+    },
+    "score": 88.9
+  },
+  {
+    "source": "topptur",
+    "name": "Finnheimfjellet",
+    "id": 1067,
+    "place": "Breivikeidet",
+    "ates": 3,
+    "distFromTromso": 22.2,
+    "descent": {
+      "verticalDrop": 943,
+      "horizDistM": 3151,
+      "avgGradientDeg": 16.7,
+      "peakEle": 1147,
+      "troughEle": 204,
+      "steepSegment": {
+        "verticalDrop": 101,
+        "horizDistM": 186,
+        "avgGradientDeg": 28.6
+      }
+    },
+    "score": 88.7
+  },
+  {
+    "source": "topptur",
+    "name": "Middagsaksla",
+    "id": 1741,
+    "place": "Ramfjordbotn",
+    "ates": 2,
+    "distFromTromso": 14.1,
+    "descent": {
+      "verticalDrop": 943,
+      "horizDistM": 3219,
+      "avgGradientDeg": 16.3,
+      "peakEle": 1007,
+      "troughEle": 64,
+      "steepSegment": {
+        "verticalDrop": 97,
+        "horizDistM": 180,
+        "avgGradientDeg": 28.4
+      }
+    },
+    "score": 88.3
+  },
+  {
+    "source": "gpx",
+    "name": "Durmålfjellet 1019 med Kristina og Marius",
+    "filename": "activity_4985775295.gpx",
+    "date": "2020-05-24T09:58:35.000Z",
+    "descent": {
+      "verticalDrop": 1021,
+      "horizDistM": 5024,
+      "avgGradientDeg": 11.5,
+      "peakEle": 1045,
+      "troughEle": 24,
+      "steepSegment": {
+        "verticalDrop": 28,
+        "horizDistM": 51,
+        "avgGradientDeg": 28.8
+      }
+    },
+    "score": 87.9
+  },
+  {
+    "source": "topptur",
+    "name": "Bakaromntinden",
+    "id": 1730,
+    "place": "Vikran",
+    "ates": 2,
+    "distFromTromso": 17,
+    "descent": {
+      "verticalDrop": 951,
+      "horizDistM": 4776,
+      "avgGradientDeg": 11.3,
+      "peakEle": 962,
+      "troughEle": 11,
+      "steepSegment": {
+        "verticalDrop": 82,
+        "horizDistM": 168,
+        "avgGradientDeg": 26
+      }
+    },
+    "score": 87.5
+  },
+  {
+    "source": "gpx",
+    "name": "Storsteinnesstinden med Jonna, Tommasso og Ylvi",
+    "filename": "activity_14649063155.gpx",
+    "date": "2024-03-30T08:33:50.000Z",
+    "descent": {
+      "verticalDrop": 943,
+      "horizDistM": 3596,
+      "avgGradientDeg": 14.7,
+      "peakEle": 1058,
+      "troughEle": 115,
+      "steepSegment": {
+        "verticalDrop": 88,
+        "horizDistM": 155,
+        "avgGradientDeg": 29.4
+      }
+    },
+    "score": 87.4
+  },
+  {
+    "source": "topptur",
+    "name": "Tromsdalstinden",
+    "id": 1104,
+    "place": "Tromsø",
+    "ates": 3,
+    "distFromTromso": 6.9,
+    "descent": {
+      "verticalDrop": 939,
+      "horizDistM": 3770,
+      "avgGradientDeg": 14,
+      "peakEle": 1232,
+      "troughEle": 293,
+      "steepSegment": {
+        "verticalDrop": 91,
+        "horizDistM": 161,
+        "avgGradientDeg": 29.5
+      }
+    },
+    "score": 87.4
+  },
+  {
+    "source": "gpx",
+    "name": "Tromsø Topptur Ski",
+    "filename": "activity_2623082308.gpx",
+    "date": "2018-04-14T08:41:46.000Z",
+    "descent": {
+      "verticalDrop": 1048,
+      "horizDistM": 6206,
+      "avgGradientDeg": 9.6,
+      "peakEle": 990,
+      "troughEle": -58,
+      "steepSegment": null
+    },
+    "score": 87.3
+  },
+  {
+    "source": "gpx",
+    "name": "Styrmannstinden Ylvi, Marius, Jonna og Thomas",
+    "filename": "activity_11026419264.gpx",
+    "date": "2023-05-01T09:37:58.000Z",
+    "descent": {
+      "verticalDrop": 969,
+      "horizDistM": 3488,
+      "avgGradientDeg": 15.5,
+      "peakEle": 969,
+      "troughEle": -1,
+      "steepSegment": {
+        "verticalDrop": 61,
+        "horizDistM": 110,
+        "avgGradientDeg": 28.8
+      }
+    },
+    "score": 86.9
+  },
+  {
+    "source": "topptur",
+    "name": "Finnheimfjellet",
+    "id": 1068,
+    "place": "Breivikeidet",
+    "ates": 3,
+    "distFromTromso": 20.9,
+    "descent": {
+      "verticalDrop": 889,
+      "horizDistM": 2510,
+      "avgGradientDeg": 19.5,
+      "peakEle": 1147,
+      "troughEle": 258,
+      "steepSegment": {
+        "verticalDrop": 124,
+        "horizDistM": 201,
+        "avgGradientDeg": 31.7
+      }
+    },
+    "score": 86.5
+  },
+  {
+    "source": "topptur",
+    "name": "Trollholttinden",
+    "id": 1733,
+    "place": "Vikran",
+    "ates": 2,
+    "distFromTromso": 22.4,
+    "descent": {
+      "verticalDrop": 968,
+      "horizDistM": 3972,
+      "avgGradientDeg": 13.7,
+      "peakEle": 976,
+      "troughEle": 8,
+      "steepSegment": {
+        "verticalDrop": 57,
+        "horizDistM": 119,
+        "avgGradientDeg": 25.5
+      }
+    },
+    "score": 86.4
+  },
+  {
+    "source": "gpx",
+    "name": "Buren med Marius, Jonna og Geir",
+    "filename": "activity_4633386679.gpx",
+    "date": "2020-03-08T08:47:34.000Z",
+    "descent": {
+      "verticalDrop": 844,
+      "horizDistM": 3227,
+      "avgGradientDeg": 14.7,
+      "peakEle": 868,
+      "troughEle": 24,
+      "steepSegment": {
+        "verticalDrop": 160,
+        "horizDistM": 266,
+        "avgGradientDeg": 31
+      }
+    },
+    "score": 86.3
+  },
+  {
+    "source": "gpx",
+    "name": "Ullstind med Ylvi, Jonna, Marius",
+    "filename": "activity_8740714246.gpx",
+    "date": "2022-05-01T07:39:02.000Z",
+    "descent": {
+      "verticalDrop": 1007,
+      "horizDistM": 4922,
+      "avgGradientDeg": 11.6,
+      "peakEle": 1098,
+      "troughEle": 91,
+      "steepSegment": {
+        "verticalDrop": 24,
+        "horizDistM": 50,
+        "avgGradientDeg": 25.2
+      }
+    },
+    "score": 86.3
+  },
+  {
+    "source": "topptur",
+    "name": "Storsteinnestinden",
+    "id": 1034,
+    "place": "Nordfjordbotn",
+    "ates": 3,
+    "distFromTromso": 17.1,
+    "descent": {
+      "verticalDrop": 866,
+      "horizDistM": 3528,
+      "avgGradientDeg": 13.8,
+      "peakEle": 1015,
+      "troughEle": 149,
+      "steepSegment": {
+        "verticalDrop": 137,
+        "horizDistM": 250,
+        "avgGradientDeg": 28.7
+      }
+    },
+    "score": 85.9
+  },
+  {
+    "source": "gpx",
+    "name": "Middagsfjellet med Jonna, Marius og Daniel",
+    "filename": "activity_3543733508.gpx",
+    "date": "2019-04-07T08:29:48.000Z",
+    "descent": {
+      "verticalDrop": 988,
+      "horizDistM": 3200,
+      "avgGradientDeg": 17.2,
+      "peakEle": 993,
+      "troughEle": 6,
+      "steepSegment": {
+        "verticalDrop": 31,
+        "horizDistM": 53,
+        "avgGradientDeg": 29.9
+      }
+    },
+    "score": 85.4
+  },
+  {
+    "source": "topptur",
+    "name": "Ramborenna",
+    "id": 1590,
+    "place": "Ersfjordbotn",
+    "ates": 3,
+    "distFromTromso": 17.1,
+    "descent": {
+      "verticalDrop": 453,
+      "horizDistM": 925,
+      "avgGradientDeg": 26.1,
+      "peakEle": 837,
+      "troughEle": 384,
+      "steepSegment": {
+        "verticalDrop": 169,
+        "horizDistM": 268,
+        "avgGradientDeg": 32.3
+      }
+    },
+    "score": 85.2
+  },
+  {
+    "source": "topptur",
+    "name": "Skittentinden",
+    "id": 1030,
+    "place": "Nordfjordbotn",
+    "ates": 3,
+    "distFromTromso": 20,
+    "descent": {
+      "verticalDrop": 889,
+      "horizDistM": 3312,
+      "avgGradientDeg": 15,
+      "peakEle": 1021,
+      "troughEle": 132,
+      "steepSegment": {
+        "verticalDrop": 106,
+        "horizDistM": 174,
+        "avgGradientDeg": 31.4
+      }
+    },
+    "score": 84.7
+  },
+  {
+    "source": "gpx",
+    "name": "Sjufjellet med Marius, Jonna, Thomas og Ylvi",
+    "filename": "activity_14758786843.gpx",
+    "date": "2024-04-06T07:36:34.000Z",
+    "descent": {
+      "verticalDrop": 941,
+      "horizDistM": 3592,
+      "avgGradientDeg": 14.7,
+      "peakEle": 1113,
+      "troughEle": 172,
+      "steepSegment": {
+        "verticalDrop": 61,
+        "horizDistM": 104,
+        "avgGradientDeg": 30.6
+      }
+    },
+    "score": 84.5
+  },
+  {
+    "source": "gpx",
+    "name": "Styrmannstinden med Maja og Thomas",
+    "filename": "activity_4856867182.gpx",
+    "date": "2020-04-29T15:53:25.000Z",
+    "descent": {
+      "verticalDrop": 980,
+      "horizDistM": 4119,
+      "avgGradientDeg": 13.4,
+      "peakEle": 976,
+      "troughEle": -3,
+      "steepSegment": {
+        "verticalDrop": 28,
+        "horizDistM": 57,
+        "avgGradientDeg": 26.2
+      }
+    },
+    "score": 84.5
+  },
+  {
+    "source": "topptur",
+    "name": "Stormheimfjellet",
+    "id": 1094,
+    "place": "Ramfjordbotn",
+    "ates": 1,
+    "distFromTromso": 24.9,
+    "descent": {
+      "verticalDrop": 1013,
+      "horizDistM": 5485,
+      "avgGradientDeg": 10.5,
+      "peakEle": 1151,
+      "troughEle": 138,
+      "steepSegment": null
+    },
+    "score": 84.4
+  },
+  {
+    "source": "topptur",
+    "name": "Raggrenna (Y)",
+    "id": 1591,
+    "place": "Ersfjordbotn",
+    "ates": 4,
+    "distFromTromso": 17.2,
+    "descent": {
+      "verticalDrop": 432,
+      "horizDistM": 780,
+      "avgGradientDeg": 29,
+      "peakEle": 822,
+      "troughEle": 390,
+      "steepSegment": {
+        "verticalDrop": 31,
+        "horizDistM": 51,
+        "avgGradientDeg": 31.4
+      }
+    },
+    "score": 84.1
+  },
+  {
+    "source": "gpx",
+    "name": "Ullstinden med Kristina",
+    "filename": "activity_3260898389.gpx",
+    "date": "2018-12-31T09:46:54.000Z",
+    "descent": {
+      "verticalDrop": 990,
+      "horizDistM": 5174,
+      "avgGradientDeg": 10.8,
+      "peakEle": 1109,
+      "troughEle": 119,
+      "steepSegment": null
+    },
+    "score": 82.5
+  },
+  {
+    "source": "gpx",
+    "name": "Storsteinnestindan med Jonna",
+    "filename": "activity_4940907500.gpx",
+    "date": "2020-05-16T07:24:17.000Z",
+    "descent": {
+      "verticalDrop": 924,
+      "horizDistM": 3960,
+      "avgGradientDeg": 13.1,
+      "peakEle": 1029,
+      "troughEle": 105,
+      "steepSegment": {
+        "verticalDrop": 52,
+        "horizDistM": 103,
+        "avgGradientDeg": 26.9
+      }
+    },
+    "score": 82.2
+  },
+  {
+    "source": "topptur",
+    "name": "Tverrelvdalstinan",
+    "id": 1155,
+    "place": "Storsteinnes",
+    "ates": 2,
+    "distFromTromso": 39.6,
+    "descent": {
+      "verticalDrop": 876,
+      "horizDistM": 4232,
+      "avgGradientDeg": 11.7,
+      "peakEle": 883,
+      "troughEle": 7,
+      "steepSegment": {
+        "verticalDrop": 92,
+        "horizDistM": 182,
+        "avgGradientDeg": 26.9
+      }
+    },
+    "score": 82.2
+  },
+  {
+    "source": "topptur",
+    "name": "Breitinden",
+    "id": 1705,
+    "place": "Tromvik",
+    "ates": 2,
+    "distFromTromso": 21.2,
+    "descent": {
+      "verticalDrop": 942,
+      "horizDistM": 4100,
+      "avgGradientDeg": 12.9,
+      "peakEle": 947,
+      "troughEle": 5,
+      "steepSegment": {
+        "verticalDrop": 37,
+        "horizDistM": 61,
+        "avgGradientDeg": 31.2
+      }
+    },
+    "score": 82.2
+  },
+  {
+    "source": "topptur",
+    "name": "Klemmartindan",
+    "id": 1734,
+    "place": "Mortenhals",
+    "ates": 2,
+    "distFromTromso": 28.3,
+    "descent": {
+      "verticalDrop": 949,
+      "horizDistM": 4257,
+      "avgGradientDeg": 12.6,
+      "peakEle": 977,
+      "troughEle": 28,
+      "steepSegment": {
+        "verticalDrop": 27,
+        "horizDistM": 52,
+        "avgGradientDeg": 27.6
+      }
+    },
+    "score": 81.8
+  },
+  {
+    "source": "gpx",
+    "name": "Perstinden med Jonna, Marius og TB",
+    "filename": "activity_10846971487.gpx",
+    "date": "2023-04-06T09:20:28.000Z",
+    "descent": {
+      "verticalDrop": 948,
+      "horizDistM": 4737,
+      "avgGradientDeg": 11.3,
+      "peakEle": 944,
+      "troughEle": -3,
+      "steepSegment": {
+        "verticalDrop": 25,
+        "horizDistM": 53,
+        "avgGradientDeg": 25.6
+      }
+    },
+    "score": 81.5
+  },
+  {
+    "source": "topptur",
+    "name": "Langdaltinden",
+    "id": 1066,
+    "place": "Ramfjordbotn",
+    "ates": 3,
+    "distFromTromso": 22.5,
+    "descent": {
+      "verticalDrop": 907,
+      "horizDistM": 2841,
+      "avgGradientDeg": 17.7,
+      "peakEle": 923,
+      "troughEle": 16,
+      "steepSegment": {
+        "verticalDrop": 48,
+        "horizDistM": 102,
+        "avgGradientDeg": 25.1
+      }
+    },
+    "score": 80.4
+  },
+  {
+    "source": "gpx",
+    "name": "Tromsø Topptur Ski",
+    "filename": "activity_18752620088.gpx",
+    "date": "2025-04-06T14:27:23.000Z",
+    "descent": {
+      "verticalDrop": 898,
+      "horizDistM": 3175,
+      "avgGradientDeg": 15.8,
+      "peakEle": 953,
+      "troughEle": 54,
+      "steepSegment": {
+        "verticalDrop": 49,
+        "horizDistM": 105,
+        "avgGradientDeg": 25.1
+      }
+    },
+    "score": 79.7
+  },
+  {
+    "source": "topptur",
+    "name": "Kavringtinden",
+    "id": 1145,
+    "place": "Lyngseidet",
+    "ates": 2,
+    "distFromTromso": 48,
+    "descent": {
+      "verticalDrop": 782,
+      "horizDistM": 2512,
+      "avgGradientDeg": 17.3,
+      "peakEle": 1286,
+      "troughEle": 504,
+      "steepSegment": {
+        "verticalDrop": 143,
+        "horizDistM": 254,
+        "avgGradientDeg": 29.4
+      }
+    },
+    "score": 79.5
+  },
+  {
+    "source": "topptur",
+    "name": "Fugltinden",
+    "id": 1000,
+    "place": "Tennes",
+    "ates": 1,
+    "distFromTromso": 39.7,
+    "descent": {
+      "verticalDrop": 953,
+      "horizDistM": 6192,
+      "avgGradientDeg": 8.7,
+      "peakEle": 1029,
+      "troughEle": 76,
+      "steepSegment": null
+    },
+    "score": 79.4
+  },
+  {
+    "source": "topptur",
+    "name": "Svartnestinden",
+    "id": 1102,
+    "place": "Svartnes",
+    "ates": 3,
+    "distFromTromso": 28.4,
+    "descent": {
+      "verticalDrop": 747,
+      "horizDistM": 1868,
+      "avgGradientDeg": 21.8,
+      "peakEle": 1148,
+      "troughEle": 401,
+      "steepSegment": {
+        "verticalDrop": 81,
+        "horizDistM": 139,
+        "avgGradientDeg": 30.2
+      }
+    },
+    "score": 79.4
+  },
+  {
+    "source": "topptur",
+    "name": "Storsteinnestinden",
+    "id": 1033,
+    "place": "Ersfjordbotn",
+    "ates": 3,
+    "distFromTromso": 15.4,
+    "descent": {
+      "verticalDrop": 871,
+      "horizDistM": 3195,
+      "avgGradientDeg": 15.2,
+      "peakEle": 1015,
+      "troughEle": 144,
+      "steepSegment": {
+        "verticalDrop": 67,
+        "horizDistM": 125,
+        "avgGradientDeg": 28.1
+      }
+    },
+    "score": 79.3
+  },
+  {
+    "source": "gpx",
+    "name": "Lille Blå med Jonna, Marius og Kristina",
+    "filename": "activity_4450548572.gpx",
+    "date": "2020-01-18T08:51:27.000Z",
+    "descent": {
+      "verticalDrop": 917,
+      "horizDistM": 5706,
+      "avgGradientDeg": 9.1,
+      "peakEle": 883,
+      "troughEle": -34,
+      "steepSegment": {
+        "verticalDrop": 27,
+        "horizDistM": 50,
+        "avgGradientDeg": 27.9
+      }
+    },
+    "score": 79.1
+  },
+  {
+    "source": "topptur",
+    "name": "Henrikskaret",
+    "id": 1072,
+    "place": "Ramfjordbotn",
+    "ates": 2,
+    "distFromTromso": 15.6,
+    "descent": {
+      "verticalDrop": 873,
+      "horizDistM": 3104,
+      "avgGradientDeg": 15.7,
+      "peakEle": 899,
+      "troughEle": 26,
+      "steepSegment": {
+        "verticalDrop": 62,
+        "horizDistM": 121,
+        "avgGradientDeg": 27.1
+      }
+    },
+    "score": 79
+  },
+  {
+    "source": "gpx",
+    "name": "Skarlitind med Heikki, Jonna, Marius, Kristina og Tord",
+    "filename": "activity_3620294310.gpx",
+    "date": "2019-05-05T08:41:26.000Z",
+    "descent": {
+      "verticalDrop": 884,
+      "horizDistM": 5047,
+      "avgGradientDeg": 9.9,
+      "peakEle": 870,
+      "troughEle": -14,
+      "steepSegment": {
+        "verticalDrop": 52,
+        "horizDistM": 104,
+        "avgGradientDeg": 26.6
+      }
+    },
+    "score": 78.9
+  },
+  {
+    "source": "gpx",
+    "name": "Buren",
+    "filename": "activity_3312409738.gpx",
+    "date": "2019-01-19T09:18:17.000Z",
+    "descent": {
+      "verticalDrop": 859,
+      "horizDistM": 3436,
+      "avgGradientDeg": 14,
+      "peakEle": 809,
+      "troughEle": -50,
+      "steepSegment": {
+        "verticalDrop": 71,
+        "horizDistM": 105,
+        "avgGradientDeg": 34
+      }
+    },
+    "score": 78.7
+  },
+  {
+    "source": "topptur",
+    "name": "Stortinden",
+    "id": 1109,
+    "place": "Oldervik",
+    "ates": 1,
+    "distFromTromso": 26.7,
+    "descent": {
+      "verticalDrop": 939,
+      "horizDistM": 4376,
+      "avgGradientDeg": 12.1,
+      "peakEle": 1072,
+      "troughEle": 133,
+      "steepSegment": null
+    },
+    "score": 78.3
+  },
+  {
+    "source": "gpx",
+    "name": "Bjørnskartind Jonna, Marius og Ylvi",
+    "filename": "activity_18715830675.gpx",
+    "date": "2025-03-30T08:05:06.000Z",
+    "descent": {
+      "verticalDrop": 800,
+      "horizDistM": 2969,
+      "avgGradientDeg": 15.1,
+      "peakEle": 794,
+      "troughEle": -6,
+      "steepSegment": {
+        "verticalDrop": 110,
+        "horizDistM": 214,
+        "avgGradientDeg": 27.1
+      }
+    },
+    "score": 77.7
+  },
+  {
+    "source": "topptur",
+    "name": "Blåtinden - Sovende Soldat",
+    "id": 1587,
+    "place": "Laksvatn",
+    "ates": 3,
+    "distFromTromso": 32.4,
+    "descent": {
+      "verticalDrop": 602,
+      "horizDistM": 1638,
+      "avgGradientDeg": 20.2,
+      "peakEle": 637,
+      "troughEle": 35,
+      "steepSegment": {
+        "verticalDrop": 263,
+        "horizDistM": 439,
+        "avgGradientDeg": 30.9
+      }
+    },
+    "score": 77.5
+  },
+  {
+    "source": "gpx",
+    "name": "Gråtinden med Kristina, Marius, Jonna og Ylvi",
+    "filename": "activity_14545098216.gpx",
+    "date": "2024-03-23T11:09:33.000Z",
+    "descent": {
+      "verticalDrop": 929,
+      "horizDistM": 4574,
+      "avgGradientDeg": 11.5,
+      "peakEle": 926,
+      "troughEle": -4,
+      "steepSegment": null
+    },
+    "score": 77.4
+  },
+  {
+    "source": "gpx",
+    "name": "Fagerfjellet med Marius og Jonna",
+    "filename": "activity_4745470495.gpx",
+    "date": "2020-04-06T10:44:40.000Z",
+    "descent": {
+      "verticalDrop": 895,
+      "horizDistM": 3234,
+      "avgGradientDeg": 15.5,
+      "peakEle": 895,
+      "troughEle": 0,
+      "steepSegment": {
+        "verticalDrop": 25,
+        "horizDistM": 50,
+        "avgGradientDeg": 26.3
+      }
+    },
+    "score": 77.1
+  },
+  {
+    "source": "gpx",
+    "name": "Lille Blå med Rune og Ståle",
+    "filename": "activity_4773151194.gpx",
+    "date": "2020-04-12T08:47:19.000Z",
+    "descent": {
+      "verticalDrop": 889,
+      "horizDistM": 4778,
+      "avgGradientDeg": 10.5,
+      "peakEle": 862,
+      "troughEle": -27,
+      "steepSegment": {
+        "verticalDrop": 29,
+        "horizDistM": 52,
+        "avgGradientDeg": 28.5
+      }
+    },
+    "score": 77
+  },
+  {
+    "source": "gpx",
+    "name": "884 med Dag og Marius",
+    "filename": "activity_4817712618.gpx",
+    "date": "2020-04-21T15:25:25.000Z",
+    "descent": {
+      "verticalDrop": 779,
+      "horizDistM": 2648,
+      "avgGradientDeg": 16.4,
+      "peakEle": 923,
+      "troughEle": 144,
+      "steepSegment": {
+        "verticalDrop": 121,
+        "horizDistM": 211,
+        "avgGradientDeg": 29.7
+      }
+    },
+    "score": 77
+  },
+  {
+    "source": "gpx",
+    "name": "Tromsø Topptur Ski",
+    "filename": "activity_2609487468.gpx",
+    "date": "2018-04-08T09:52:22.000Z",
+    "descent": {
+      "verticalDrop": 921,
+      "horizDistM": 4292,
+      "avgGradientDeg": 12.1,
+      "peakEle": 881,
+      "troughEle": -40,
+      "steepSegment": null
+    },
+    "score": 76.8
+  },
+  {
+    "source": "topptur",
+    "name": "Styrmannen",
+    "id": 1240,
+    "place": "Kvaløysletta",
+    "ates": 3,
+    "distFromTromso": 27.9,
+    "descent": {
+      "verticalDrop": 799,
+      "horizDistM": 4600,
+      "avgGradientDeg": 9.9,
+      "peakEle": 809,
+      "troughEle": 10,
+      "steepSegment": {
+        "verticalDrop": 101,
+        "horizDistM": 203,
+        "avgGradientDeg": 26.5
+      }
+    },
+    "score": 76.7
+  },
+  {
+    "source": "gpx",
+    "name": "Skittentinden med Jonna",
+    "filename": "activity_8873041727.gpx",
+    "date": "2022-05-22T08:44:05.000Z",
+    "descent": {
+      "verticalDrop": 878,
+      "horizDistM": 4096,
+      "avgGradientDeg": 12.1,
+      "peakEle": 1003,
+      "troughEle": 125,
+      "steepSegment": {
+        "verticalDrop": 32,
+        "horizDistM": 53,
+        "avgGradientDeg": 31.1
+      }
+    },
+    "score": 76.4
+  },
+  {
+    "source": "gpx",
+    "name": "Storkågen med Marius og Thomas Lyngen Lodge",
+    "filename": "activity_19223243924.gpx",
+    "date": "2025-05-24T08:44:54.000Z",
+    "descent": {
+      "verticalDrop": 810,
+      "horizDistM": 2769,
+      "avgGradientDeg": 16.3,
+      "peakEle": 799,
+      "troughEle": -11,
+      "steepSegment": {
+        "verticalDrop": 88,
+        "horizDistM": 165,
+        "avgGradientDeg": 28
+      }
+    },
+    "score": 76.3
+  },
+  {
+    "source": "gpx",
+    "name": "884 med Marius, Jonna, Lars Ottar og Merethe ",
+    "filename": "activity_21793775602.gpx",
+    "date": "2026-02-07T08:23:01.000Z",
+    "descent": {
+      "verticalDrop": 801,
+      "horizDistM": 2517,
+      "avgGradientDeg": 17.7,
+      "peakEle": 906,
+      "troughEle": 105,
+      "steepSegment": {
+        "verticalDrop": 92,
+        "horizDistM": 154,
+        "avgGradientDeg": 30.9
+      }
+    },
+    "score": 76
+  },
+  {
+    "source": "gpx",
+    "name": "Tromsø Topptur Ski",
+    "filename": "activity_2596751817.gpx",
+    "date": "2018-04-02T15:39:49.000Z",
+    "descent": {
+      "verticalDrop": 912,
+      "horizDistM": 4521,
+      "avgGradientDeg": 11.4,
+      "peakEle": 926,
+      "troughEle": 14,
+      "steepSegment": null
+    },
+    "score": 76
+  },
+  {
+    "source": "gpx",
+    "name": "Gråtind med Jonna",
+    "filename": "activity_3563881477.gpx",
+    "date": "2019-04-17T09:26:45.000Z",
+    "descent": {
+      "verticalDrop": 912,
+      "horizDistM": 4500,
+      "avgGradientDeg": 11.4,
+      "peakEle": 886,
+      "troughEle": -26,
+      "steepSegment": null
+    },
+    "score": 76
+  },
+  {
+    "source": "topptur",
+    "name": "Kvitfjellet rute 1",
+    "id": 1003,
+    "place": "Vikran",
+    "ates": 1,
+    "distFromTromso": 18,
+    "descent": {
+      "verticalDrop": 903,
+      "horizDistM": 6423,
+      "avgGradientDeg": 8,
+      "peakEle": 914,
+      "troughEle": 11,
+      "steepSegment": null
+    },
+    "score": 75.3
+  },
+  {
+    "source": "gpx",
+    "name": "Kåfjord Topptur Ski",
+    "filename": "activity_8821372591.gpx",
+    "date": "2022-05-14T07:23:52.000Z",
+    "descent": {
+      "verticalDrop": 894,
+      "horizDistM": 7349,
+      "avgGradientDeg": 6.9,
+      "peakEle": 886,
+      "troughEle": -8,
+      "steepSegment": null
+    },
+    "score": 74.5
+  },
+  {
+    "source": "gpx",
+    "name": "Fagerfjell med Ylvi og Jonna",
+    "filename": "activity_8733417669.gpx",
+    "date": "2022-04-30T08:15:21.000Z",
+    "descent": {
+      "verticalDrop": 862,
+      "horizDistM": 3339,
+      "avgGradientDeg": 14.5,
+      "peakEle": 860,
+      "troughEle": -2,
+      "steepSegment": {
+        "verticalDrop": 26,
+        "horizDistM": 52,
+        "avgGradientDeg": 26.5
+      }
+    },
+    "score": 74.4
+  },
+  {
+    "source": "topptur",
+    "name": "Buren",
+    "id": 1008,
+    "place": "Kvaløysletta",
+    "ates": 2,
+    "distFromTromso": 13.4,
+    "descent": {
+      "verticalDrop": 789,
+      "horizDistM": 3176,
+      "avgGradientDeg": 14,
+      "peakEle": 798,
+      "troughEle": 9,
+      "steepSegment": {
+        "verticalDrop": 86,
+        "horizDistM": 174,
+        "avgGradientDeg": 26.2
+      }
+    },
+    "score": 74.4
+  },
+  {
+    "source": "topptur",
+    "name": "Fastdalstinden",
+    "id": 1124,
+    "place": "Rottenvik",
+    "ates": 2,
+    "distFromTromso": 48.5,
+    "descent": {
+      "verticalDrop": 735,
+      "horizDistM": 2814,
+      "avgGradientDeg": 14.6,
+      "peakEle": 1269,
+      "troughEle": 534,
+      "steepSegment": {
+        "verticalDrop": 127,
+        "horizDistM": 262,
+        "avgGradientDeg": 25.8
+      }
+    },
+    "score": 74
+  },
+  {
+    "source": "gpx",
+    "name": "Bjørnskartinden med Marius",
+    "filename": "activity_21956037260.gpx",
+    "date": "2026-02-21T07:57:15.000Z",
+    "descent": {
+      "verticalDrop": 814,
+      "horizDistM": 2941,
+      "avgGradientDeg": 15.5,
+      "peakEle": 791,
+      "troughEle": -23,
+      "steepSegment": {
+        "verticalDrop": 54,
+        "horizDistM": 108,
+        "avgGradientDeg": 26.4
+      }
+    },
+    "score": 73.2
+  },
+  {
+    "source": "gpx",
+    "name": "Burshammaren med Marius",
+    "filename": "activity_6580356456.gpx",
+    "date": "2021-04-10T06:45:35.000Z",
+    "descent": {
+      "verticalDrop": 797,
+      "horizDistM": 2631,
+      "avgGradientDeg": 16.8,
+      "peakEle": 794,
+      "troughEle": -3,
+      "steepSegment": {
+        "verticalDrop": 61,
+        "horizDistM": 106,
+        "avgGradientDeg": 29.7
+      }
+    },
+    "score": 72.5
+  },
+  {
+    "source": "gpx",
+    "name": "Bjørnskartind med Kristina, Jonna og Ylvi",
+    "filename": "activity_14620279052.gpx",
+    "date": "2024-03-28T11:06:18.000Z",
+    "descent": {
+      "verticalDrop": 804,
+      "horizDistM": 2937,
+      "avgGradientDeg": 15.3,
+      "peakEle": 779,
+      "troughEle": -25,
+      "steepSegment": {
+        "verticalDrop": 54,
+        "horizDistM": 102,
+        "avgGradientDeg": 27.9
+      }
+    },
+    "score": 72.4
+  },
+  {
+    "source": "topptur",
+    "name": "Laksvatnfjellet",
+    "id": 1129,
+    "place": "Laksvatn",
+    "ates": 2,
+    "distFromTromso": 34.4,
+    "descent": {
+      "verticalDrop": 869,
+      "horizDistM": 3699,
+      "avgGradientDeg": 13.2,
+      "peakEle": 876,
+      "troughEle": 7,
+      "steepSegment": null
+    },
+    "score": 72.4
+  },
+  {
+    "source": "gpx",
+    "name": "Trolltinden med Marius Lyngen Lodge ",
+    "filename": "activity_15589702585.gpx",
+    "date": "2024-05-26T08:41:07.000Z",
+    "descent": {
+      "verticalDrop": 765,
+      "horizDistM": 4104,
+      "avgGradientDeg": 10.6,
+      "peakEle": 757,
+      "troughEle": -8,
+      "steepSegment": {
+        "verticalDrop": 84,
+        "horizDistM": 163,
+        "avgGradientDeg": 27.3
+      }
+    },
+    "score": 72.2
+  },
+  {
+    "source": "topptur",
+    "name": "Skittentinden",
+    "id": 1029,
+    "place": "Nordfjordbotn",
+    "ates": 2,
+    "distFromTromso": 17.9,
+    "descent": {
+      "verticalDrop": 821,
+      "horizDistM": 3814,
+      "avgGradientDeg": 12.1,
+      "peakEle": 971,
+      "troughEle": 150,
+      "steepSegment": {
+        "verticalDrop": 33,
+        "horizDistM": 64,
+        "avgGradientDeg": 27.3
+      }
+    },
+    "score": 71.7
+  },
+  {
+    "source": "topptur",
+    "name": "Breidalfjellet",
+    "id": 1063,
+    "place": "Ramfjordbotn",
+    "ates": 2,
+    "distFromTromso": 21.2,
+    "descent": {
+      "verticalDrop": 858,
+      "horizDistM": 5000,
+      "avgGradientDeg": 9.7,
+      "peakEle": 881,
+      "troughEle": 23,
+      "steepSegment": null
+    },
+    "score": 71.5
+  },
+  {
+    "source": "topptur",
+    "name": "Russelvfjellet",
+    "id": 1594,
+    "place": "Russelv",
+    "ates": 2,
+    "distFromTromso": 60.6,
+    "descent": {
+      "verticalDrop": 799,
+      "horizDistM": 2884,
+      "avgGradientDeg": 15.5,
+      "peakEle": 803,
+      "troughEle": 4,
+      "steepSegment": {
+        "verticalDrop": 48,
+        "horizDistM": 96,
+        "avgGradientDeg": 26.4
+      }
+    },
+    "score": 71.4
+  },
+  {
+    "source": "topptur",
+    "name": "Durmålstinden",
+    "id": 1011,
+    "place": "Kvaløysletta",
+    "ates": 2,
+    "distFromTromso": 18.6,
+    "descent": {
+      "verticalDrop": 810,
+      "horizDistM": 4036,
+      "avgGradientDeg": 11.3,
+      "peakEle": 920,
+      "troughEle": 110,
+      "steepSegment": {
+        "verticalDrop": 37,
+        "horizDistM": 67,
+        "avgGradientDeg": 28.9
+      }
+    },
+    "score": 71.2
+  },
+  {
+    "source": "gpx",
+    "name": "Bjørnskartinden Skitopp Marius, Jonna, Kristina og Ylvi",
+    "filename": "activity_10875419734.gpx",
+    "date": "2023-04-10T08:32:04.000Z",
+    "descent": {
+      "verticalDrop": 811,
+      "horizDistM": 2969,
+      "avgGradientDeg": 15.3,
+      "peakEle": 791,
+      "troughEle": -20,
+      "steepSegment": {
+        "verticalDrop": 31,
+        "horizDistM": 51,
+        "avgGradientDeg": 31.2
+      }
+    },
+    "score": 70.7
+  },
+  {
+    "source": "gpx",
+    "name": "Steinskartinden alene",
+    "filename": "activity_4922243601.gpx",
+    "date": "2020-05-12T17:26:37.000Z",
+    "descent": {
+      "verticalDrop": 714,
+      "horizDistM": 2718,
+      "avgGradientDeg": 14.7,
+      "peakEle": 843,
+      "troughEle": 129,
+      "steepSegment": {
+        "verticalDrop": 111,
+        "horizDistM": 211,
+        "avgGradientDeg": 27.9
+      }
+    },
+    "score": 70.6
+  },
+  {
+    "source": "topptur",
+    "name": "Fagerfjellet",
+    "id": 1071,
+    "place": "Ramfjordbotn",
+    "ates": 1,
+    "distFromTromso": 13.4,
+    "descent": {
+      "verticalDrop": 847,
+      "horizDistM": 2972,
+      "avgGradientDeg": 15.9,
+      "peakEle": 869,
+      "troughEle": 22,
+      "steepSegment": null
+    },
+    "score": 70.6
+  },
+  {
+    "source": "topptur",
+    "name": "Rema1000 Soltindan fortopp",
+    "id": 1049,
+    "place": "Hansnes",
+    "ates": 2,
+    "distFromTromso": 31,
+    "descent": {
+      "verticalDrop": 795,
+      "horizDistM": 4039,
+      "avgGradientDeg": 11.1,
+      "peakEle": 805,
+      "troughEle": 10,
+      "steepSegment": {
+        "verticalDrop": 42,
+        "horizDistM": 84,
+        "avgGradientDeg": 26.5
+      }
+    },
+    "score": 70.5
+  },
+  {
+    "source": "topptur",
+    "name": "Kvannfjellet",
+    "id": 1001,
+    "place": "Mortenhals",
+    "ates": 1,
+    "distFromTromso": 30.3,
+    "descent": {
+      "verticalDrop": 845,
+      "horizDistM": 4369,
+      "avgGradientDeg": 10.9,
+      "peakEle": 1010,
+      "troughEle": 165,
+      "steepSegment": null
+    },
+    "score": 70.4
+  },
+  {
+    "source": "gpx",
+    "name": "Lille Blåmann",
+    "filename": "activity_6229559183.gpx",
+    "date": "2021-02-06T12:37:57.000Z",
+    "descent": {
+      "verticalDrop": 839,
+      "horizDistM": 4432,
+      "avgGradientDeg": 10.7,
+      "peakEle": 850,
+      "troughEle": 11,
+      "steepSegment": null
+    },
+    "score": 69.9
+  },
+  {
+    "source": "topptur",
+    "name": "Botnfjellet",
+    "id": 1025,
+    "place": "Kvaløysletta",
+    "ates": 1,
+    "distFromTromso": 9.3,
+    "descent": {
+      "verticalDrop": 831,
+      "horizDistM": 4819,
+      "avgGradientDeg": 9.8,
+      "peakEle": 842,
+      "troughEle": 11,
+      "steepSegment": null
+    },
+    "score": 69.3
+  },
+  {
+    "source": "topptur",
+    "name": "Vågtinden",
+    "id": 1007,
+    "place": "Vikran",
+    "ates": 2,
+    "distFromTromso": 18.3,
+    "descent": {
+      "verticalDrop": 832,
+      "horizDistM": 3029,
+      "avgGradientDeg": 15.4,
+      "peakEle": 844,
+      "troughEle": 12,
+      "steepSegment": null
+    },
+    "score": 69.3
+  },
+  {
+    "source": "topptur",
+    "name": "Middagstinden",
+    "id": 1732,
+    "place": "Bentsjord",
+    "ates": 3,
+    "distFromTromso": 18,
+    "descent": {
+      "verticalDrop": 773,
+      "horizDistM": 3314,
+      "avgGradientDeg": 13.1,
+      "peakEle": 1096,
+      "troughEle": 323,
+      "steepSegment": {
+        "verticalDrop": 49,
+        "horizDistM": 74,
+        "avgGradientDeg": 33.5
+      }
+    },
+    "score": 69.3
+  },
+  {
+    "source": "gpx",
+    "name": "Burshammaern med Marius, Jonna og Heikki",
+    "filename": "activity_4792760626.gpx",
+    "date": "2020-04-16T12:44:00.000Z",
+    "descent": {
+      "verticalDrop": 795,
+      "horizDistM": 3429,
+      "avgGradientDeg": 13.1,
+      "peakEle": 767,
+      "troughEle": -29,
+      "steepSegment": {
+        "verticalDrop": 28,
+        "horizDistM": 58,
+        "avgGradientDeg": 25.5
+      }
+    },
+    "score": 69.1
+  },
+  {
+    "source": "topptur",
+    "name": "Botnfjellet",
+    "id": 1024,
+    "place": "Kvaløysletta",
+    "ates": 1,
+    "distFromTromso": 9.3,
+    "descent": {
+      "verticalDrop": 829,
+      "horizDistM": 4439,
+      "avgGradientDeg": 10.6,
+      "peakEle": 841,
+      "troughEle": 12,
+      "steepSegment": null
+    },
+    "score": 69.1
+  },
+  {
+    "source": "topptur",
+    "name": "Rundtinden",
+    "id": 1655,
+    "place": "Lyngseidet",
+    "ates": 1,
+    "distFromTromso": 48.8,
+    "descent": {
+      "verticalDrop": 829,
+      "horizDistM": 4326,
+      "avgGradientDeg": 10.8,
+      "peakEle": 894,
+      "troughEle": 65,
+      "steepSegment": null
+    },
+    "score": 69.1
+  },
+  {
+    "source": "topptur",
+    "name": "Straumsaksla",
+    "id": 1040,
+    "place": "Nordfjordbotn",
+    "ates": 2,
+    "distFromTromso": 18.3,
+    "descent": {
+      "verticalDrop": 642,
+      "horizDistM": 2328,
+      "avgGradientDeg": 15.4,
+      "peakEle": 779,
+      "troughEle": 137,
+      "steepSegment": {
+        "verticalDrop": 141,
+        "horizDistM": 267,
+        "avgGradientDeg": 27.8
+      }
+    },
+    "score": 67.6
+  },
+  {
+    "source": "topptur",
+    "name": "Nordfjordtinden",
+    "id": 1242,
+    "place": "Nordfjordbotn",
+    "ates": 3,
+    "distFromTromso": 22.3,
+    "descent": {
+      "verticalDrop": 761,
+      "horizDistM": 2124,
+      "avgGradientDeg": 19.7,
+      "peakEle": 767,
+      "troughEle": 6,
+      "steepSegment": {
+        "verticalDrop": 40,
+        "horizDistM": 71,
+        "avgGradientDeg": 29.5
+      }
+    },
+    "score": 67.4
+  },
+  {
+    "source": "gpx",
+    "name": "Steinskarstind med Marius og Ylvi ",
+    "filename": "activity_18738688346.gpx",
+    "date": "2025-04-05T07:48:04.000Z",
+    "descent": {
+      "verticalDrop": 701,
+      "horizDistM": 2597,
+      "avgGradientDeg": 15.1,
+      "peakEle": 837,
+      "troughEle": 136,
+      "steepSegment": {
+        "verticalDrop": 82,
+        "horizDistM": 159,
+        "avgGradientDeg": 27.4
+      }
+    },
+    "score": 66.6
+  },
+  {
+    "source": "topptur",
+    "name": "Finnheimfjellet",
+    "id": 1065,
+    "place": "Breivikeidet",
+    "ates": 2,
+    "distFromTromso": 19.2,
+    "descent": {
+      "verticalDrop": 761,
+      "horizDistM": 3977,
+      "avgGradientDeg": 10.8,
+      "peakEle": 1147,
+      "troughEle": 386,
+      "steepSegment": {
+        "verticalDrop": 32,
+        "horizDistM": 66,
+        "avgGradientDeg": 25.8
+      }
+    },
+    "score": 66.6
+  },
+  {
+    "source": "topptur",
+    "name": "884",
+    "id": 1584,
+    "place": "Nordfjordbotn",
+    "ates": 2,
+    "distFromTromso": 17.3,
+    "descent": {
+      "verticalDrop": 693,
+      "horizDistM": 1889,
+      "avgGradientDeg": 20.1,
+      "peakEle": 880,
+      "troughEle": 187,
+      "steepSegment": {
+        "verticalDrop": 80,
+        "horizDistM": 162,
+        "avgGradientDeg": 26.3
+      }
+    },
+    "score": 66.3
+  },
+  {
+    "source": "gpx",
+    "name": "Steinskartinden med Marius",
+    "filename": "activity_6549817518.gpx",
+    "date": "2021-04-04T15:03:05.000Z",
+    "descent": {
+      "verticalDrop": 723,
+      "horizDistM": 2733,
+      "avgGradientDeg": 14.8,
+      "peakEle": 855,
+      "troughEle": 132,
+      "steepSegment": {
+        "verticalDrop": 59,
+        "horizDistM": 106,
+        "avgGradientDeg": 29.4
+      }
+    },
+    "score": 66.2
+  },
+  {
+    "source": "gpx",
+    "name": "Laksvattenfjellet med Ylvi, Jonna, Thomas, Maja, Kirsten ++",
+    "filename": "activity_8328653588.gpx",
+    "date": "2022-02-20T10:21:25.000Z",
+    "descent": {
+      "verticalDrop": 791,
+      "horizDistM": 4114,
+      "avgGradientDeg": 10.9,
+      "peakEle": 781,
+      "troughEle": -10,
+      "steepSegment": null
+    },
+    "score": 65.9
+  },
+  {
+    "source": "topptur",
+    "name": "Steinfjellet",
+    "id": 1165,
+    "place": "Svensby",
+    "ates": 2,
+    "distFromTromso": 41.9,
+    "descent": {
+      "verticalDrop": 688,
+      "horizDistM": 2848,
+      "avgGradientDeg": 13.6,
+      "peakEle": 693,
+      "troughEle": 5,
+      "steepSegment": {
+        "verticalDrop": 81,
+        "horizDistM": 168,
+        "avgGradientDeg": 25.7
+      }
+    },
+    "score": 65.4
+  },
+  {
+    "source": "gpx",
+    "name": "Skittentind med Jonna",
+    "filename": "activity_6507342524.gpx",
+    "date": "2021-03-28T07:56:23.000Z",
+    "descent": {
+      "verticalDrop": 712,
+      "horizDistM": 3237,
+      "avgGradientDeg": 12.4,
+      "peakEle": 820,
+      "troughEle": 108,
+      "steepSegment": {
+        "verticalDrop": 52,
+        "horizDistM": 103,
+        "avgGradientDeg": 26.9
+      }
+    },
+    "score": 64.5
+  },
+  {
+    "source": "topptur",
+    "name": "Russelvfjellet",
+    "id": 1190,
+    "place": "Russelv",
+    "ates": 1,
+    "distFromTromso": 58.5,
+    "descent": {
+      "verticalDrop": 774,
+      "horizDistM": 5063,
+      "avgGradientDeg": 8.7,
+      "peakEle": 787,
+      "troughEle": 13,
+      "steepSegment": null
+    },
+    "score": 64.5
+  },
+  {
+    "source": "gpx",
+    "name": "Straumsaksla med Ylvi, Kristina, Thomas og Maja",
+    "filename": "activity_8856154458.gpx",
+    "date": "2022-05-19T15:45:46.000Z",
+    "descent": {
+      "verticalDrop": 673,
+      "horizDistM": 3065,
+      "avgGradientDeg": 12.4,
+      "peakEle": 799,
+      "troughEle": 126,
+      "steepSegment": {
+        "verticalDrop": 83,
+        "horizDistM": 159,
+        "avgGradientDeg": 27.5
+      }
+    },
+    "score": 64.4
+  },
+  {
+    "source": "topptur",
+    "name": "Glimfjellet / Nordfjellet",
+    "id": 1046,
+    "place": "Kårvik",
+    "ates": 1,
+    "distFromTromso": 22.9,
+    "descent": {
+      "verticalDrop": 769,
+      "horizDistM": 3528,
+      "avgGradientDeg": 12.3,
+      "peakEle": 772,
+      "troughEle": 3,
+      "steepSegment": null
+    },
+    "score": 64.1
+  },
+  {
+    "source": "gpx",
+    "name": "Steinskarstind med Jonna og Kristina ",
+    "filename": "activity_5045174737.gpx",
+    "date": "2020-06-05T17:09:26.000Z",
+    "descent": {
+      "verticalDrop": 657,
+      "horizDistM": 2871,
+      "avgGradientDeg": 12.9,
+      "peakEle": 827,
+      "troughEle": 170,
+      "steepSegment": {
+        "verticalDrop": 89,
+        "horizDistM": 162,
+        "avgGradientDeg": 28.8
+      }
+    },
+    "score": 63.7
+  },
+  {
+    "source": "topptur",
+    "name": "Rundfjellet",
+    "id": 1740,
+    "place": "Ramfjordbotn",
+    "ates": 2,
+    "distFromTromso": 13.9,
+    "descent": {
+      "verticalDrop": 718,
+      "horizDistM": 2788,
+      "avgGradientDeg": 14.4,
+      "peakEle": 782,
+      "troughEle": 64,
+      "steepSegment": {
+        "verticalDrop": 36,
+        "horizDistM": 62,
+        "avgGradientDeg": 30
+      }
+    },
+    "score": 63.4
+  },
+  {
+    "source": "topptur",
+    "name": "Fiskefjellet",
+    "id": 1004,
+    "place": "Mortenhals",
+    "ates": 1,
+    "distFromTromso": 28.3,
+    "descent": {
+      "verticalDrop": 699,
+      "horizDistM": 3238,
+      "avgGradientDeg": 12.2,
+      "peakEle": 825,
+      "troughEle": 126,
+      "steepSegment": {
+        "verticalDrop": 46,
+        "horizDistM": 83,
+        "avgGradientDeg": 28.9
+      }
+    },
+    "score": 62.9
+  },
+  {
+    "source": "gpx",
+    "name": "Steinskartinden med Andreas",
+    "filename": "activity_4962350940.gpx",
+    "date": "2020-05-20T16:00:32.000Z",
+    "descent": {
+      "verticalDrop": 722,
+      "horizDistM": 4098,
+      "avgGradientDeg": 10,
+      "peakEle": 835,
+      "troughEle": 113,
+      "steepSegment": {
+        "verticalDrop": 26,
+        "horizDistM": 54,
+        "avgGradientDeg": 25.2
+      }
+    },
+    "score": 62.8
+  },
+  {
+    "source": "gpx",
+    "name": "Storstolpan med Rune og Jonna",
+    "filename": "activity_3625018124.gpx",
+    "date": "2019-05-06T16:03:56.000Z",
+    "descent": {
+      "verticalDrop": 671,
+      "horizDistM": 2139,
+      "avgGradientDeg": 17.4,
+      "peakEle": 972,
+      "troughEle": 301,
+      "steepSegment": {
+        "verticalDrop": 60,
+        "horizDistM": 105,
+        "avgGradientDeg": 29.9
+      }
+    },
+    "score": 61.9
+  },
+  {
+    "source": "topptur",
+    "name": "Nordfjordtinden",
+    "id": 1583,
+    "place": "Kvaløysletta",
+    "ates": 2,
+    "distFromTromso": 20.7,
+    "descent": {
+      "verticalDrop": 677,
+      "horizDistM": 4006,
+      "avgGradientDeg": 9.6,
+      "peakEle": 705,
+      "troughEle": 28,
+      "steepSegment": {
+        "verticalDrop": 55,
+        "horizDistM": 115,
+        "avgGradientDeg": 25.6
+      }
+    },
+    "score": 61.9
+  },
+  {
+    "source": "gpx",
+    "name": "Skjelelvfjellet Skredkurs dag 2",
+    "filename": "activity_10541698049.gpx",
+    "date": "2023-02-19T08:43:07.000Z",
+    "descent": {
+      "verticalDrop": 742,
+      "horizDistM": 4153,
+      "avgGradientDeg": 10.1,
+      "peakEle": 786,
+      "troughEle": 44,
+      "steepSegment": null
+    },
+    "score": 61.8
+  },
+  {
+    "source": "gpx",
+    "name": "Steinskarstind med Kristina og Ylvi ",
+    "filename": "activity_19284553247.gpx",
+    "date": "2025-05-30T14:32:06.000Z",
+    "descent": {
+      "verticalDrop": 677,
+      "horizDistM": 3138,
+      "avgGradientDeg": 12.2,
+      "peakEle": 825,
+      "troughEle": 148,
+      "steepSegment": {
+        "verticalDrop": 54,
+        "horizDistM": 104,
+        "avgGradientDeg": 27.6
+      }
+    },
+    "score": 61.8
+  },
+  {
+    "source": "gpx",
+    "name": "Steinskartinden med Jonna",
+    "filename": "activity_4352596970.gpx",
+    "date": "2019-12-20T08:56:26.000Z",
+    "descent": {
+      "verticalDrop": 708,
+      "horizDistM": 2995,
+      "avgGradientDeg": 13.3,
+      "peakEle": 846,
+      "troughEle": 139,
+      "steepSegment": {
+        "verticalDrop": 28,
+        "horizDistM": 50,
+        "avgGradientDeg": 29.2
+      }
+    },
+    "score": 61.8
+  },
+  {
+    "source": "gpx",
+    "name": "Rundfjellet med Marius, Rune, Maja og Thomas",
+    "filename": "activity_4743549474.gpx",
+    "date": "2020-04-05T16:47:41.000Z",
+    "descent": {
+      "verticalDrop": 708,
+      "horizDistM": 2785,
+      "avgGradientDeg": 14.3,
+      "peakEle": 730,
+      "troughEle": 22,
+      "steepSegment": {
+        "verticalDrop": 26,
+        "horizDistM": 53,
+        "avgGradientDeg": 26.3
+      }
+    },
+    "score": 61.6
+  },
+  {
+    "source": "topptur",
+    "name": "Bjørnskartindan",
+    "id": 1658,
+    "place": "Hansnes",
+    "ates": 2,
+    "distFromTromso": 29.4,
+    "descent": {
+      "verticalDrop": 736,
+      "horizDistM": 2651,
+      "avgGradientDeg": 15.5,
+      "peakEle": 757,
+      "troughEle": 21,
+      "steepSegment": null
+    },
+    "score": 61.3
+  },
+  {
+    "source": "gpx",
+    "name": "Steinskartinden med Marius, Ylvi, Tommaso og Lotta",
+    "filename": "activity_14949276778.gpx",
+    "date": "2024-04-17T16:15:47.000Z",
+    "descent": {
+      "verticalDrop": 699,
+      "horizDistM": 3026,
+      "avgGradientDeg": 13,
+      "peakEle": 863,
+      "troughEle": 165,
+      "steepSegment": {
+        "verticalDrop": 25,
+        "horizDistM": 52,
+        "avgGradientDeg": 25.5
+      }
+    },
+    "score": 60.8
+  },
+  {
+    "source": "gpx",
+    "name": "Breikogen med Thomas og Lyngen Lodge",
+    "filename": "activity_19231269791.gpx",
+    "date": "2025-05-25T08:39:54.000Z",
+    "descent": {
+      "verticalDrop": 691,
+      "horizDistM": 3083,
+      "avgGradientDeg": 12.6,
+      "peakEle": 695,
+      "troughEle": 4,
+      "steepSegment": {
+        "verticalDrop": 30,
+        "horizDistM": 58,
+        "avgGradientDeg": 27.7
+      }
+    },
+    "score": 60.6
+  },
+  {
+    "source": "topptur",
+    "name": "Steinskarstinden",
+    "id": 1031,
+    "place": "Ersfjordbotn",
+    "ates": 2,
+    "distFromTromso": 14,
+    "descent": {
+      "verticalDrop": 647,
+      "horizDistM": 2365,
+      "avgGradientDeg": 15.3,
+      "peakEle": 812,
+      "troughEle": 165,
+      "steepSegment": {
+        "verticalDrop": 64,
+        "horizDistM": 124,
+        "avgGradientDeg": 27.3
+      }
+    },
+    "score": 60.3
+  },
+  {
+    "source": "gpx",
+    "name": "Rundfjellet med Ylvi og Kristina",
+    "filename": "activity_10896623176.gpx",
+    "date": "2023-04-13T13:11:07.000Z",
+    "descent": {
+      "verticalDrop": 722,
+      "horizDistM": 3331,
+      "avgGradientDeg": 12.2,
+      "peakEle": 766,
+      "troughEle": 44,
+      "steepSegment": null
+    },
+    "score": 60.2
+  },
+  {
+    "source": "gpx",
+    "name": "Buren",
+    "filename": "activity_3554935867.gpx",
+    "date": "2019-04-14T10:06:02.000Z",
+    "descent": {
+      "verticalDrop": 690,
+      "horizDistM": 2267,
+      "avgGradientDeg": 16.9,
+      "peakEle": 678,
+      "troughEle": -12,
+      "steepSegment": {
+        "verticalDrop": 27,
+        "horizDistM": 51,
+        "avgGradientDeg": 27.9
+      }
+    },
+    "score": 60.2
+  },
+  {
+    "source": "gpx",
+    "name": "Steinskartind med Kolbjørn",
+    "filename": "activity_3670812893.gpx",
+    "date": "2019-05-21T17:06:17.000Z",
+    "descent": {
+      "verticalDrop": 677,
+      "horizDistM": 3070,
+      "avgGradientDeg": 12.4,
+      "peakEle": 823,
+      "troughEle": 145,
+      "steepSegment": {
+        "verticalDrop": 37,
+        "horizDistM": 59,
+        "avgGradientDeg": 31.8
+      }
+    },
+    "score": 60.1
+  },
+  {
+    "source": "gpx",
+    "name": "Steinskartinden med Rune",
+    "filename": "activity_6514590881.gpx",
+    "date": "2021-03-29T16:33:51.000Z",
+    "descent": {
+      "verticalDrop": 689,
+      "horizDistM": 2898,
+      "avgGradientDeg": 13.4,
+      "peakEle": 834,
+      "troughEle": 145,
+      "steepSegment": {
+        "verticalDrop": 27,
+        "horizDistM": 53,
+        "avgGradientDeg": 27.4
+      }
+    },
+    "score": 60.1
+  },
+  {
+    "source": "topptur",
+    "name": "Straumsaksla",
+    "id": 1039,
+    "place": "Nordfjordbotn",
+    "ates": 2,
+    "distFromTromso": 16.2,
+    "descent": {
+      "verticalDrop": 615,
+      "horizDistM": 1699,
+      "avgGradientDeg": 19.9,
+      "peakEle": 781,
+      "troughEle": 166,
+      "steepSegment": {
+        "verticalDrop": 87,
+        "horizDistM": 160,
+        "avgGradientDeg": 28.6
+      }
+    },
+    "score": 60
+  },
+  {
+    "source": "gpx",
+    "name": "Sollidalsaksla med Jonna, Marius, Thomas, Maja, Stig, Marianne og Ylvi ",
+    "filename": "activity_18845234811.gpx",
+    "date": "2025-04-16T12:10:34.000Z",
+    "descent": {
+      "verticalDrop": 716,
+      "horizDistM": 3621,
+      "avgGradientDeg": 11.2,
+      "peakEle": 752,
+      "troughEle": 36,
+      "steepSegment": null
+    },
+    "score": 59.7
+  },
+  {
+    "source": "topptur",
+    "name": "Haugafjellet",
+    "id": 1735,
+    "place": "Nordby",
+    "ates": 1,
+    "distFromTromso": 32.7,
+    "descent": {
+      "verticalDrop": 714,
+      "horizDistM": 4517,
+      "avgGradientDeg": 9,
+      "peakEle": 833,
+      "troughEle": 119,
+      "steepSegment": null
+    },
+    "score": 59.5
+  },
+  {
+    "source": "gpx",
+    "name": "Langfjellaksla med Kristina",
+    "filename": "activity_3659968133.gpx",
+    "date": "2019-05-18T10:08:08.000Z",
+    "descent": {
+      "verticalDrop": 619,
+      "horizDistM": 1863,
+      "avgGradientDeg": 18.4,
+      "peakEle": 769,
+      "troughEle": 150,
+      "steepSegment": {
+        "verticalDrop": 78,
+        "horizDistM": 155,
+        "avgGradientDeg": 26.8
+      }
+    },
+    "score": 59.4
+  },
+  {
+    "source": "gpx",
+    "name": "Steinskartinden",
+    "filename": "activity_3558872921.gpx",
+    "date": "2019-04-15T16:03:37.000Z",
+    "descent": {
+      "verticalDrop": 683,
+      "horizDistM": 2728,
+      "avgGradientDeg": 14.1,
+      "peakEle": 832,
+      "troughEle": 149,
+      "steepSegment": {
+        "verticalDrop": 24,
+        "horizDistM": 50,
+        "avgGradientDeg": 25.7
+      }
+    },
+    "score": 59.3
+  },
+  {
+    "source": "gpx",
+    "name": "Straumsaksla med Jonna og Ylvi",
+    "filename": "activity_19273035547.gpx",
+    "date": "2025-05-29T08:53:34.000Z",
+    "descent": {
+      "verticalDrop": 643,
+      "horizDistM": 2094,
+      "avgGradientDeg": 17.1,
+      "peakEle": 786,
+      "troughEle": 144,
+      "steepSegment": {
+        "verticalDrop": 56,
+        "horizDistM": 109,
+        "avgGradientDeg": 27.3
+      }
+    },
+    "score": 59.2
+  },
+  {
+    "source": "gpx",
+    "name": "Sesongavslutning med Jonna, Marius og Kristina",
+    "filename": "activity_5115042064.gpx",
+    "date": "2020-06-19T17:43:07.000Z",
+    "descent": {
+      "verticalDrop": 678,
+      "horizDistM": 5682,
+      "avgGradientDeg": 6.8,
+      "peakEle": 844,
+      "troughEle": 166,
+      "steepSegment": {
+        "verticalDrop": 26,
+        "horizDistM": 54,
+        "avgGradientDeg": 25.7
+      }
+    },
+    "score": 59.1
+  },
+  {
+    "source": "gpx",
+    "name": "Tromsø Topptur Ski",
+    "filename": "activity_2699719564.gpx",
+    "date": "2018-05-14T16:41:38.000Z",
+    "descent": {
+      "verticalDrop": 639,
+      "horizDistM": 2325,
+      "avgGradientDeg": 15.4,
+      "peakEle": 967,
+      "troughEle": 328,
+      "steepSegment": {
+        "verticalDrop": 57,
+        "horizDistM": 104,
+        "avgGradientDeg": 28.8
+      }
+    },
+    "score": 59
+  },
+  {
+    "source": "topptur",
+    "name": "Tromsdalstinden (´normalrute´)",
+    "id": 1108,
+    "place": "Tromsdalen",
+    "ates": 2,
+    "distFromTromso": 11.5,
+    "descent": {
+      "verticalDrop": 706,
+      "horizDistM": 3950,
+      "avgGradientDeg": 10.1,
+      "peakEle": 758,
+      "troughEle": 52,
+      "steepSegment": null
+    },
+    "score": 58.8
+  },
+  {
+    "source": "topptur",
+    "name": "Stetinden",
+    "id": 1235,
+    "place": "Sør-Lenangen",
+    "ates": 2,
+    "distFromTromso": 47.4,
+    "descent": {
+      "verticalDrop": 540,
+      "horizDistM": 2127,
+      "avgGradientDeg": 14.2,
+      "peakEle": 913,
+      "troughEle": 373,
+      "steepSegment": {
+        "verticalDrop": 138,
+        "horizDistM": 257,
+        "avgGradientDeg": 28.2
+      }
+    },
+    "score": 58.8
+  },
+  {
+    "source": "topptur",
+    "name": "Gråtinden",
+    "id": 1013,
+    "place": "Straumsbukta",
+    "ates": 1,
+    "distFromTromso": 19.5,
+    "descent": {
+      "verticalDrop": 706,
+      "horizDistM": 2967,
+      "avgGradientDeg": 13.4,
+      "peakEle": 709,
+      "troughEle": 3,
+      "steepSegment": null
+    },
+    "score": 58.8
+  },
+  {
+    "source": "topptur",
+    "name": "Stormheimfjellet",
+    "id": 1095,
+    "place": "Breivikeidet",
+    "ates": 1,
+    "distFromTromso": 22.5,
+    "descent": {
+      "verticalDrop": 614,
+      "horizDistM": 2477,
+      "avgGradientDeg": 13.9,
+      "peakEle": 752,
+      "troughEle": 138,
+      "steepSegment": {
+        "verticalDrop": 71,
+        "horizDistM": 137,
+        "avgGradientDeg": 27.3
+      }
+    },
+    "score": 58.3
+  },
+  {
+    "source": "gpx",
+    "name": "Kvaløya Klatring",
+    "filename": "activity_2404727536.gpx",
+    "date": "2017-12-30T10:53:12.000Z",
+    "descent": {
+      "verticalDrop": 695,
+      "horizDistM": 3360,
+      "avgGradientDeg": 11.7,
+      "peakEle": 1174,
+      "troughEle": 479,
+      "steepSegment": null
+    },
+    "score": 57.9
+  },
+  {
+    "source": "gpx",
+    "name": "Langfjellsaksla med Andreas",
+    "filename": "activity_4822294298.gpx",
+    "date": "2020-04-22T15:47:49.000Z",
+    "descent": {
+      "verticalDrop": 663,
+      "horizDistM": 4198,
+      "avgGradientDeg": 9,
+      "peakEle": 792,
+      "troughEle": 129,
+      "steepSegment": {
+        "verticalDrop": 26,
+        "horizDistM": 54,
+        "avgGradientDeg": 25.7
+      }
+    },
+    "score": 57.9
+  },
+  {
+    "source": "topptur",
+    "name": "Djeveltanna",
+    "id": 1593,
+    "place": "Nordfjordbotn",
+    "ates": 3,
+    "distFromTromso": 18.6,
+    "descent": {
+      "verticalDrop": 551,
+      "horizDistM": 1555,
+      "avgGradientDeg": 19.5,
+      "peakEle": 930,
+      "troughEle": 379,
+      "steepSegment": {
+        "verticalDrop": 118,
+        "horizDistM": 186,
+        "avgGradientDeg": 32.3
+      }
+    },
+    "score": 57.7
+  },
+  {
+    "source": "topptur",
+    "name": "Breifjellet",
+    "id": 1737,
+    "place": "Vikran",
+    "ates": 2,
+    "distFromTromso": 20,
+    "descent": {
+      "verticalDrop": 686,
+      "horizDistM": 3088,
+      "avgGradientDeg": 12.5,
+      "peakEle": 897,
+      "troughEle": 211,
+      "steepSegment": null
+    },
+    "score": 57.2
+  },
+  {
+    "source": "topptur",
+    "name": "Storstolpen",
+    "id": 1038,
+    "place": "Rekvik",
+    "ates": 3,
+    "distFromTromso": 25.5,
+    "descent": {
+      "verticalDrop": 633,
+      "horizDistM": 1870,
+      "avgGradientDeg": 18.7,
+      "peakEle": 972,
+      "troughEle": 339,
+      "steepSegment": {
+        "verticalDrop": 26,
+        "horizDistM": 55,
+        "avgGradientDeg": 25.2
+      }
+    },
+    "score": 55.4
+  },
+  {
+    "source": "topptur",
+    "name": "Eriksaksla",
+    "id": 1650,
+    "place": "Svensby",
+    "ates": 1,
+    "distFromTromso": 44.9,
+    "descent": {
+      "verticalDrop": 659,
+      "horizDistM": 3556,
+      "avgGradientDeg": 10.5,
+      "peakEle": 665,
+      "troughEle": 6,
+      "steepSegment": null
+    },
+    "score": 54.9
+  },
+  {
+    "source": "gpx",
+    "name": "Tromsø Topptur Ski",
+    "filename": "activity_2693832638.gpx",
+    "date": "2018-05-12T14:24:07.000Z",
+    "descent": {
+      "verticalDrop": 657,
+      "horizDistM": 3101,
+      "avgGradientDeg": 12,
+      "peakEle": 817,
+      "troughEle": 160,
+      "steepSegment": null
+    },
+    "score": 54.8
+  },
+  {
+    "source": "topptur",
+    "name": "Hatten",
+    "id": 1229,
+    "place": "Kvaløysletta",
+    "ates": 2,
+    "distFromTromso": 14.4,
+    "descent": {
+      "verticalDrop": 651,
+      "horizDistM": 2185,
+      "avgGradientDeg": 16.6,
+      "peakEle": 655,
+      "troughEle": 4,
+      "steepSegment": null
+    },
+    "score": 54.3
+  },
+  {
+    "source": "topptur",
+    "name": "Breitinden",
+    "id": 1241,
+    "place": "Vasstrand",
+    "ates": 2,
+    "distFromTromso": 27.2,
+    "descent": {
+      "verticalDrop": 614,
+      "horizDistM": 3589,
+      "avgGradientDeg": 9.7,
+      "peakEle": 836,
+      "troughEle": 222,
+      "steepSegment": {
+        "verticalDrop": 29,
+        "horizDistM": 53,
+        "avgGradientDeg": 28.9
+      }
+    },
+    "score": 54.1
+  },
+  {
+    "source": "gpx",
+    "name": "Tromsø Topptur Ski",
+    "filename": "activity_3246961060.gpx",
+    "date": "2018-12-25T15:16:22.000Z",
+    "descent": {
+      "verticalDrop": 609,
+      "horizDistM": 2782,
+      "avgGradientDeg": 12.3,
+      "peakEle": 605,
+      "troughEle": -3,
+      "steepSegment": {
+        "verticalDrop": 25,
+        "horizDistM": 52,
+        "avgGradientDeg": 25.8
+      }
+    },
+    "score": 53.3
+  },
+  {
+    "source": "topptur",
+    "name": "Mortenhalsskolten",
+    "id": 1005,
+    "place": "Mortenhals",
+    "ates": 1,
+    "distFromTromso": 28.3,
+    "descent": {
+      "verticalDrop": 639,
+      "horizDistM": 2838,
+      "avgGradientDeg": 12.7,
+      "peakEle": 765,
+      "troughEle": 126,
+      "steepSegment": null
+    },
+    "score": 53.3
+  },
+  {
+    "source": "topptur",
+    "name": "Kinnbeinet",
+    "id": 1017,
+    "place": "Kvaløysletta",
+    "ates": 1,
+    "distFromTromso": 23.2,
+    "descent": {
+      "verticalDrop": 638,
+      "horizDistM": 3990,
+      "avgGradientDeg": 9.1,
+      "peakEle": 645,
+      "troughEle": 7,
+      "steepSegment": null
+    },
+    "score": 53.2
+  },
+  {
+    "source": "topptur",
+    "name": "Rørneshytta",
+    "id": 1144,
+    "place": "Lyngseidet",
+    "ates": 1,
+    "distFromTromso": 49.9,
+    "descent": {
+      "verticalDrop": 636,
+      "horizDistM": 3812,
+      "avgGradientDeg": 9.5,
+      "peakEle": 658,
+      "troughEle": 22,
+      "steepSegment": null
+    },
+    "score": 53
+  },
+  {
+    "source": "topptur",
+    "name": "Tromsdalstinden (via rødryggen)",
+    "id": 1105,
+    "place": "Tromsø",
+    "ates": 1,
+    "distFromTromso": 6.9,
+    "descent": {
+      "verticalDrop": 626,
+      "horizDistM": 5694,
+      "avgGradientDeg": 6.3,
+      "peakEle": 921,
+      "troughEle": 295,
+      "steepSegment": null
+    },
+    "score": 52.2
+  },
+  {
+    "source": "gpx",
+    "name": "Akselkollen",
+    "filename": "activity_4677217388.gpx",
+    "date": "2020-03-20T15:34:23.000Z",
+    "descent": {
+      "verticalDrop": 514,
+      "horizDistM": 1977,
+      "avgGradientDeg": 14.6,
+      "peakEle": 513,
+      "troughEle": -1,
+      "steepSegment": {
+        "verticalDrop": 87,
+        "horizDistM": 155,
+        "avgGradientDeg": 29.4
+      }
+    },
+    "score": 51.5
+  },
+  {
+    "source": "topptur",
+    "name": "Stortinden",
+    "id": 1230,
+    "place": "Kårvik",
+    "ates": 1,
+    "distFromTromso": 17.5,
+    "descent": {
+      "verticalDrop": 613,
+      "horizDistM": 3948,
+      "avgGradientDeg": 8.8,
+      "peakEle": 623,
+      "troughEle": 10,
+      "steepSegment": null
+    },
+    "score": 51.1
+  },
+  {
+    "source": "gpx",
+    "name": "Rundfjellet med Lars",
+    "filename": "activity_8230949721.gpx",
+    "date": "2022-02-03T12:14:49.000Z",
+    "descent": {
+      "verticalDrop": 602,
+      "horizDistM": 3849,
+      "avgGradientDeg": 8.9,
+      "peakEle": 568,
+      "troughEle": -34,
+      "steepSegment": null
+    },
+    "score": 50.2
+  },
+  {
+    "source": "topptur",
+    "name": "Skarlitinden",
+    "id": 1090,
+    "place": "Ramfjordbotn",
+    "ates": 2,
+    "distFromTromso": 14.8,
+    "descent": {
+      "verticalDrop": 592,
+      "horizDistM": 4007,
+      "avgGradientDeg": 8.4,
+      "peakEle": 851,
+      "troughEle": 259,
+      "steepSegment": null
+    },
+    "score": 49.3
+  },
+  {
+    "source": "gpx",
+    "name": "Tromsø Topptur Ski",
+    "filename": "activity_2607679550.gpx",
+    "date": "2018-04-07T14:49:10.000Z",
+    "descent": {
+      "verticalDrop": 590,
+      "horizDistM": 3097,
+      "avgGradientDeg": 10.8,
+      "peakEle": 587,
+      "troughEle": -3,
+      "steepSegment": null
+    },
+    "score": 49.2
+  },
+  {
+    "source": "topptur",
+    "name": "Middagstinden",
+    "id": 1028,
+    "place": "Nordfjordbotn",
+    "ates": 3,
+    "distFromTromso": 21,
+    "descent": {
+      "verticalDrop": 409,
+      "horizDistM": 1094,
+      "avgGradientDeg": 20.5,
+      "peakEle": 987,
+      "troughEle": 578,
+      "steepSegment": {
+        "verticalDrop": 124,
+        "horizDistM": 214,
+        "avgGradientDeg": 30
+      }
+    },
+    "score": 49
+  },
+  {
+    "source": "gpx",
+    "name": "Trolltinden 850 Arnøya Lyngen Lodge ",
+    "filename": "activity_8816427438.gpx",
+    "date": "2022-05-13T09:06:03.000Z",
+    "descent": {
+      "verticalDrop": 513,
+      "horizDistM": 2611,
+      "avgGradientDeg": 11.1,
+      "peakEle": 456,
+      "troughEle": -58,
+      "steepSegment": {
+        "verticalDrop": 59,
+        "horizDistM": 106,
+        "avgGradientDeg": 29.1
+      }
+    },
+    "score": 48.7
+  },
+  {
+    "source": "topptur",
+    "name": "Gabrielfjellet",
+    "id": 1589,
+    "place": "Ramfjordbotn",
+    "ates": 2,
+    "distFromTromso": 16.6,
+    "descent": {
+      "verticalDrop": 483,
+      "horizDistM": 1930,
+      "avgGradientDeg": 14,
+      "peakEle": 551,
+      "troughEle": 68,
+      "steepSegment": {
+        "verticalDrop": 81,
+        "horizDistM": 168,
+        "avgGradientDeg": 25.7
+      }
+    },
+    "score": 48.4
+  },
+  {
+    "source": "topptur",
+    "name": "Middagsfjellet",
+    "id": 1701,
+    "place": "Kvaløysletta",
+    "ates": 1,
+    "distFromTromso": 18.6,
+    "descent": {
+      "verticalDrop": 577,
+      "horizDistM": 2992,
+      "avgGradientDeg": 10.9,
+      "peakEle": 676,
+      "troughEle": 99,
+      "steepSegment": null
+    },
+    "score": 48.1
+  },
+  {
+    "source": "gpx",
+    "name": "Akselkollen",
+    "filename": "activity_4763590835.gpx",
+    "date": "2020-04-10T10:41:35.000Z",
+    "descent": {
+      "verticalDrop": 510,
+      "horizDistM": 1878,
+      "avgGradientDeg": 15.2,
+      "peakEle": 515,
+      "troughEle": 5,
+      "steepSegment": {
+        "verticalDrop": 55,
+        "horizDistM": 110,
+        "avgGradientDeg": 26.7
+      }
+    },
+    "score": 48
+  },
+  {
+    "source": "topptur",
+    "name": "Rundfjellnasen",
+    "id": 1651,
+    "place": "Nord-lenangen",
+    "ates": 1,
+    "distFromTromso": 53.3,
+    "descent": {
+      "verticalDrop": 575,
+      "horizDistM": 2690,
+      "avgGradientDeg": 12.1,
+      "peakEle": 591,
+      "troughEle": 16,
+      "steepSegment": null
+    },
+    "score": 47.9
+  },
+  {
+    "source": "gpx",
+    "name": "Akselkollen",
+    "filename": "activity_4653518035.gpx",
+    "date": "2020-03-14T07:52:24.000Z",
+    "descent": {
+      "verticalDrop": 499,
+      "horizDistM": 1851,
+      "avgGradientDeg": 15.1,
+      "peakEle": 507,
+      "troughEle": 8,
+      "steepSegment": {
+        "verticalDrop": 61,
+        "horizDistM": 112,
+        "avgGradientDeg": 28.6
+      }
+    },
+    "score": 47.7
+  },
+  {
+    "source": "gpx",
+    "name": "Akselkollen med Marius, Kristina og Jonna",
+    "filename": "activity_4711515503.gpx",
+    "date": "2020-03-29T07:59:05.000Z",
+    "descent": {
+      "verticalDrop": 535,
+      "horizDistM": 2389,
+      "avgGradientDeg": 12.6,
+      "peakEle": 532,
+      "troughEle": -3,
+      "steepSegment": {
+        "verticalDrop": 30,
+        "horizDistM": 55,
+        "avgGradientDeg": 28.3
+      }
+    },
+    "score": 47.6
+  },
+  {
+    "source": "gpx",
+    "name": "Akselkollen med Jonna, Marius, Kolbjørn, Bård, Terje, Rune og Thomas",
+    "filename": "activity_14003252254.gpx",
+    "date": "2024-02-17T11:37:37.000Z",
+    "descent": {
+      "verticalDrop": 538,
+      "horizDistM": 2528,
+      "avgGradientDeg": 12,
+      "peakEle": 509,
+      "troughEle": -29,
+      "steepSegment": {
+        "verticalDrop": 25,
+        "horizDistM": 51,
+        "avgGradientDeg": 25.7
+      }
+    },
+    "score": 47.3
+  },
+  {
+    "source": "gpx",
+    "name": "Rødtinden via Kaldfjorden med Maja, Thomas, Jonna, Marius og Marianne",
+    "filename": "activity_8031012392.gpx",
+    "date": "2021-12-30T09:39:29.000Z",
+    "descent": {
+      "verticalDrop": 534,
+      "horizDistM": 2278,
+      "avgGradientDeg": 13.2,
+      "peakEle": 512,
+      "troughEle": -23,
+      "steepSegment": {
+        "verticalDrop": 28,
+        "horizDistM": 54,
+        "avgGradientDeg": 27.7
+      }
+    },
+    "score": 47.3
+  },
+  {
+    "source": "gpx",
+    "name": "Akselkollen med Jonna, Thomas og Ylvi",
+    "filename": "activity_8281949966.gpx",
+    "date": "2022-02-12T09:37:39.000Z",
+    "descent": {
+      "verticalDrop": 526,
+      "horizDistM": 2403,
+      "avgGradientDeg": 12.4,
+      "peakEle": 552,
+      "troughEle": 26,
+      "steepSegment": {
+        "verticalDrop": 35,
+        "horizDistM": 50,
+        "avgGradientDeg": 34.6
+      }
+    },
+    "score": 47.3
+  },
+  {
+    "source": "topptur",
+    "name": "Kvitbergfjellet",
+    "id": 1014,
+    "place": "Straumsbukta",
+    "ates": 1,
+    "distFromTromso": 17.1,
+    "descent": {
+      "verticalDrop": 559,
+      "horizDistM": 2652,
+      "avgGradientDeg": 11.9,
+      "peakEle": 561,
+      "troughEle": 2,
+      "steepSegment": null
+    },
+    "score": 46.6
+  },
+  {
+    "source": "gpx",
+    "name": "AK med Jonna, Marius og Ylvi",
+    "filename": "activity_10713594554.gpx",
+    "date": "2023-03-17T14:15:06.000Z",
+    "descent": {
+      "verticalDrop": 524,
+      "horizDistM": 2373,
+      "avgGradientDeg": 12.4,
+      "peakEle": 538,
+      "troughEle": 14,
+      "steepSegment": {
+        "verticalDrop": 26,
+        "horizDistM": 51,
+        "avgGradientDeg": 27.1
+      }
+    },
+    "score": 46.3
+  },
+  {
+    "source": "gpx",
+    "name": "Tromsø Topptur Ski",
+    "filename": "activity_3212166119.gpx",
+    "date": "2018-12-08T14:25:57.000Z",
+    "descent": {
+      "verticalDrop": 525,
+      "horizDistM": 2527,
+      "avgGradientDeg": 11.7,
+      "peakEle": 548,
+      "troughEle": 23,
+      "steepSegment": {
+        "verticalDrop": 25,
+        "horizDistM": 53,
+        "avgGradientDeg": 25.2
+      }
+    },
+    "score": 46.3
+  },
+  {
+    "source": "topptur",
+    "name": "Lavangstinden",
+    "id": 1078,
+    "place": "Sjursnes",
+    "ates": 3,
+    "distFromTromso": 26.4,
+    "descent": {
+      "verticalDrop": 553,
+      "horizDistM": 3147,
+      "avgGradientDeg": 10,
+      "peakEle": 1213,
+      "troughEle": 660,
+      "steepSegment": null
+    },
+    "score": 46.1
+  },
+  {
+    "source": "gpx",
+    "name": "Solotur til Akselkollen",
+    "filename": "activity_6217383276.gpx",
+    "date": "2021-02-04T08:47:23.000Z",
+    "descent": {
+      "verticalDrop": 520,
+      "horizDistM": 2469,
+      "avgGradientDeg": 11.9,
+      "peakEle": 510,
+      "troughEle": -10,
+      "steepSegment": {
+        "verticalDrop": 26,
+        "horizDistM": 54,
+        "avgGradientDeg": 26
+      }
+    },
+    "score": 45.9
+  },
+  {
+    "source": "gpx",
+    "name": "Tromsø Topptur Ski",
+    "filename": "activity_3248324555.gpx",
+    "date": "2018-12-26T10:52:14.000Z",
+    "descent": {
+      "verticalDrop": 521,
+      "horizDistM": 2455,
+      "avgGradientDeg": 12,
+      "peakEle": 508,
+      "troughEle": -12,
+      "steepSegment": {
+        "verticalDrop": 24,
+        "horizDistM": 50,
+        "avgGradientDeg": 25.1
+      }
+    },
+    "score": 45.8
+  },
+  {
+    "source": "gpx",
+    "name": "Akselkollen",
+    "filename": "activity_4633389008.gpx",
+    "date": "2020-03-08T11:57:17.000Z",
+    "descent": {
+      "verticalDrop": 513,
+      "horizDistM": 2165,
+      "avgGradientDeg": 13.3,
+      "peakEle": 529,
+      "troughEle": 16,
+      "steepSegment": {
+        "verticalDrop": 28,
+        "horizDistM": 53,
+        "avgGradientDeg": 28.2
+      }
+    },
+    "score": 45.6
+  },
+  {
+    "source": "gpx",
+    "name": "Akselkollen med Ylvi",
+    "filename": "activity_8733410901.gpx",
+    "date": "2022-04-29T17:48:21.000Z",
+    "descent": {
+      "verticalDrop": 514,
+      "horizDistM": 2310,
+      "avgGradientDeg": 12.5,
+      "peakEle": 506,
+      "troughEle": -8,
+      "steepSegment": {
+        "verticalDrop": 26,
+        "horizDistM": 51,
+        "avgGradientDeg": 26.7
+      }
+    },
+    "score": 45.4
+  },
+  {
+    "source": "gpx",
+    "name": "Tromsø Klatring",
+    "filename": "activity_2563588194.gpx",
+    "date": "2018-03-18T13:32:42.000Z",
+    "descent": {
+      "verticalDrop": 481,
+      "horizDistM": 2011,
+      "avgGradientDeg": 13.4,
+      "peakEle": 523,
+      "troughEle": 42,
+      "steepSegment": {
+        "verticalDrop": 51,
+        "horizDistM": 105,
+        "avgGradientDeg": 25.7
+      }
+    },
+    "score": 45.2
+  },
+  {
+    "source": "gpx",
+    "name": "AK med Jonna, Rune og Ylvi",
+    "filename": "activity_14454282344.gpx",
+    "date": "2024-03-17T10:17:47.000Z",
+    "descent": {
+      "verticalDrop": 541,
+      "horizDistM": 2286,
+      "avgGradientDeg": 13.3,
+      "peakEle": 525,
+      "troughEle": -16,
+      "steepSegment": null
+    },
+    "score": 45.1
+  },
+  {
+    "source": "gpx",
+    "name": "Akselkollen med Kristina, Ylvi, Paula, Ellen",
+    "filename": "activity_8036221105.gpx",
+    "date": "2021-12-31T09:21:37.000Z",
+    "descent": {
+      "verticalDrop": 540,
+      "horizDistM": 3803,
+      "avgGradientDeg": 8.1,
+      "peakEle": 502,
+      "troughEle": -38,
+      "steepSegment": null
+    },
+    "score": 45
+  },
+  {
+    "source": "topptur",
+    "name": "Amundnasen (Slettinden fortopp)",
+    "id": 1738,
+    "place": "Selnes",
+    "ates": 1,
+    "distFromTromso": 21.3,
+    "descent": {
+      "verticalDrop": 536,
+      "horizDistM": 2632,
+      "avgGradientDeg": 11.5,
+      "peakEle": 731,
+      "troughEle": 195,
+      "steepSegment": null
+    },
+    "score": 44.7
+  },
+  {
+    "source": "gpx",
+    "name": "Akselkollen med Thomas",
+    "filename": "activity_6206216376.gpx",
+    "date": "2021-02-02T07:55:10.000Z",
+    "descent": {
+      "verticalDrop": 533,
+      "horizDistM": 2684,
+      "avgGradientDeg": 11.2,
+      "peakEle": 514,
+      "troughEle": -19,
+      "steepSegment": null
+    },
+    "score": 44.4
+  },
+  {
+    "source": "gpx",
+    "name": "AK med Jonna og Thomas",
+    "filename": "activity_6279693546.gpx",
+    "date": "2021-02-16T07:58:55.000Z",
+    "descent": {
+      "verticalDrop": 500,
+      "horizDistM": 2481,
+      "avgGradientDeg": 11.4,
+      "peakEle": 519,
+      "troughEle": 19,
+      "steepSegment": {
+        "verticalDrop": 26,
+        "horizDistM": 53,
+        "avgGradientDeg": 26.5
+      }
+    },
+    "score": 44.3
+  },
+  {
+    "source": "topptur",
+    "name": "Rørnestinden",
+    "id": 1149,
+    "place": "Lyngseidet",
+    "ates": 2,
+    "distFromTromso": 48.6,
+    "descent": {
+      "verticalDrop": 530,
+      "horizDistM": 2620,
+      "avgGradientDeg": 11.4,
+      "peakEle": 592,
+      "troughEle": 62,
+      "steepSegment": null
+    },
+    "score": 44.2
+  },
+  {
+    "source": "gpx",
+    "name": "Rødtind med Marius og Jonna",
+    "filename": "activity_4736176499.gpx",
+    "date": "2020-04-04T08:51:15.000Z",
+    "descent": {
+      "verticalDrop": 499,
+      "horizDistM": 2874,
+      "avgGradientDeg": 9.8,
+      "peakEle": 502,
+      "troughEle": 3,
+      "steepSegment": {
+        "verticalDrop": 24,
+        "horizDistM": 51,
+        "avgGradientDeg": 25.1
+      }
+    },
+    "score": 44
+  },
+  {
+    "source": "gpx",
+    "name": "Rødtinden med Jonna",
+    "filename": "activity_6449968827.gpx",
+    "date": "2021-03-18T12:03:58.000Z",
+    "descent": {
+      "verticalDrop": 488,
+      "horizDistM": 3031,
+      "avgGradientDeg": 9.1,
+      "peakEle": 504,
+      "troughEle": 16,
+      "steepSegment": {
+        "verticalDrop": 33,
+        "horizDistM": 53,
+        "avgGradientDeg": 32
+      }
+    },
+    "score": 44
+  },
+  {
+    "source": "gpx",
+    "name": "Finnlandsfjellet med Ylvi og Kristina",
+    "filename": "activity_17912251821.gpx",
+    "date": "2025-01-04T09:21:47.000Z",
+    "descent": {
+      "verticalDrop": 524,
+      "horizDistM": 2904,
+      "avgGradientDeg": 10.2,
+      "peakEle": 509,
+      "troughEle": -15,
+      "steepSegment": null
+    },
+    "score": 43.7
+  },
+  {
+    "source": "gpx",
+    "name": "Akselkollen",
+    "filename": "activity_3300289030.gpx",
+    "date": "2019-01-14T18:24:40.000Z",
+    "descent": {
+      "verticalDrop": 523,
+      "horizDistM": 2489,
+      "avgGradientDeg": 11.9,
+      "peakEle": 576,
+      "troughEle": 53,
+      "steepSegment": null
+    },
+    "score": 43.6
+  },
+  {
+    "source": "gpx",
+    "name": "Akselkollen med Ylvi, Minos, Thomas, Snorre og Rune ",
+    "filename": "activity_17908089524.gpx",
+    "date": "2025-01-03T18:30:37.000Z",
+    "descent": {
+      "verticalDrop": 522,
+      "horizDistM": 2452,
+      "avgGradientDeg": 12,
+      "peakEle": 512,
+      "troughEle": -10,
+      "steepSegment": null
+    },
+    "score": 43.5
+  },
+  {
+    "source": "gpx",
+    "name": "Finnlandsfjellet med Jonna, Marius og Ylvi",
+    "filename": "activity_13806499101.gpx",
+    "date": "2024-02-04T08:25:55.000Z",
+    "descent": {
+      "verticalDrop": 519,
+      "horizDistM": 2533,
+      "avgGradientDeg": 11.6,
+      "peakEle": 499,
+      "troughEle": -20,
+      "steepSegment": null
+    },
+    "score": 43.3
+  },
+  {
+    "source": "gpx",
+    "name": "Finnlandsfjellet med Kristina, Jonna og Ylvi",
+    "filename": "activity_21088502547.gpx",
+    "date": "2025-11-22T11:23:04.000Z",
+    "descent": {
+      "verticalDrop": 515,
+      "horizDistM": 2683,
+      "avgGradientDeg": 10.9,
+      "peakEle": 524,
+      "troughEle": 9,
+      "steepSegment": null
+    },
+    "score": 42.9
+  },
+  {
+    "source": "gpx",
+    "name": "Tromsø Topptur Ski",
+    "filename": "activity_2566217685.gpx",
+    "date": "2018-03-19T19:23:39.000Z",
+    "descent": {
+      "verticalDrop": 515,
+      "horizDistM": 2283,
+      "avgGradientDeg": 12.7,
+      "peakEle": 522,
+      "troughEle": 7,
+      "steepSegment": null
+    },
+    "score": 42.9
+  },
+  {
+    "source": "gpx",
+    "name": "Akselkollen by night med Thomas og Maja",
+    "filename": "activity_8044358719.gpx",
+    "date": "2022-01-01T19:05:56.000Z",
+    "descent": {
+      "verticalDrop": 515,
+      "horizDistM": 2339,
+      "avgGradientDeg": 12.4,
+      "peakEle": 515,
+      "troughEle": 0,
+      "steepSegment": null
+    },
+    "score": 42.9
+  },
+  {
+    "source": "gpx",
+    "name": "Finnlandsfjellet med Marius og Lars",
+    "filename": "activity_6295254381.gpx",
+    "date": "2021-02-19T07:26:46.000Z",
+    "descent": {
+      "verticalDrop": 507,
+      "horizDistM": 2631,
+      "avgGradientDeg": 10.9,
+      "peakEle": 563,
+      "troughEle": 57,
+      "steepSegment": null
+    },
+    "score": 42.3
+  },
+  {
+    "source": "gpx",
+    "name": "Finnlandsfjellet for å prøve foten",
+    "filename": "activity_7879819165.gpx",
+    "date": "2021-11-27T09:30:44.000Z",
+    "descent": {
+      "verticalDrop": 508,
+      "horizDistM": 3075,
+      "avgGradientDeg": 9.4,
+      "peakEle": 660,
+      "troughEle": 152,
+      "steepSegment": null
+    },
+    "score": 42.3
+  },
+  {
+    "source": "gpx",
+    "name": "Akselkollen med Marius og Kristina",
+    "filename": "activity_4532102864.gpx",
+    "date": "2020-02-09T12:14:01.000Z",
+    "descent": {
+      "verticalDrop": 506,
+      "horizDistM": 3273,
+      "avgGradientDeg": 8.8,
+      "peakEle": 531,
+      "troughEle": 25,
+      "steepSegment": null
+    },
+    "score": 42.2
+  },
+  {
+    "source": "gpx",
+    "name": "Finnlandsfjellet med Kristina og Ylvi",
+    "filename": "activity_8295894182.gpx",
+    "date": "2022-02-14T15:09:50.000Z",
+    "descent": {
+      "verticalDrop": 505,
+      "horizDistM": 2522,
+      "avgGradientDeg": 11.3,
+      "peakEle": 514,
+      "troughEle": 9,
+      "steepSegment": null
+    },
+    "score": 42.1
+  },
+  {
+    "source": "gpx",
+    "name": "Finnlandsfjellet alene",
+    "filename": "activity_6137701009.gpx",
+    "date": "2021-01-20T10:35:50.000Z",
+    "descent": {
+      "verticalDrop": 503,
+      "horizDistM": 2873,
+      "avgGradientDeg": 9.9,
+      "peakEle": 478,
+      "troughEle": -25,
+      "steepSegment": null
+    },
+    "score": 41.9
+  },
+  {
+    "source": "gpx",
+    "name": "Akselkollen med Ylvi, Marius og Jonna",
+    "filename": "activity_10442735746.gpx",
+    "date": "2023-02-04T08:28:10.000Z",
+    "descent": {
+      "verticalDrop": 502,
+      "horizDistM": 2080,
+      "avgGradientDeg": 13.6,
+      "peakEle": 521,
+      "troughEle": 19,
+      "steepSegment": null
+    },
+    "score": 41.8
+  },
+  {
+    "source": "gpx",
+    "name": "Fløyfjellet med Thomas",
+    "filename": "activity_5110129717.gpx",
+    "date": "2020-06-18T18:13:05.000Z",
+    "descent": {
+      "verticalDrop": 467,
+      "horizDistM": 3451,
+      "avgGradientDeg": 7.7,
+      "peakEle": 607,
+      "troughEle": 140,
+      "steepSegment": {
+        "verticalDrop": 29,
+        "horizDistM": 52,
+        "avgGradientDeg": 29.2
+      }
+    },
+    "score": 41.8
+  },
+  {
+    "source": "gpx",
+    "name": "Skjelelvhøgda med Kristina",
+    "filename": "activity_10732573466.gpx",
+    "date": "2023-03-18T15:05:08.000Z",
+    "descent": {
+      "verticalDrop": 468,
+      "horizDistM": 1943,
+      "avgGradientDeg": 13.5,
+      "peakEle": 502,
+      "troughEle": 34,
+      "steepSegment": {
+        "verticalDrop": 26,
+        "horizDistM": 56,
+        "avgGradientDeg": 25.3
+      }
+    },
+    "score": 41.6
+  },
+  {
+    "source": "topptur",
+    "name": "Revbergtinden",
+    "id": 1703,
+    "place": "Tromvik",
+    "ates": 3,
+    "distFromTromso": 20.6,
+    "descent": {
+      "verticalDrop": 407,
+      "horizDistM": 1242,
+      "avgGradientDeg": 18.1,
+      "peakEle": 947,
+      "troughEle": 540,
+      "steepSegment": {
+        "verticalDrop": 76,
+        "horizDistM": 133,
+        "avgGradientDeg": 29.7
+      }
+    },
+    "score": 41.5
+  },
+  {
+    "source": "gpx",
+    "name": "Akselkollen med Alfred og Ylvi ",
+    "filename": "activity_12823159600.gpx",
+    "date": "2023-11-21T18:37:18.000Z",
+    "descent": {
+      "verticalDrop": 497,
+      "horizDistM": 2543,
+      "avgGradientDeg": 11.1,
+      "peakEle": 522,
+      "troughEle": 26,
+      "steepSegment": null
+    },
+    "score": 41.4
+  },
+  {
+    "source": "gpx",
+    "name": "Rødtinden med Ylvi",
+    "filename": "activity_13999896765.gpx",
+    "date": "2025-03-09T08:13:50.000Z",
+    "descent": {
+      "verticalDrop": 493,
+      "horizDistM": 2897,
+      "avgGradientDeg": 9.6,
+      "peakEle": 476,
+      "troughEle": -17,
+      "steepSegment": null
+    },
+    "score": 41.1
+  },
+  {
+    "source": "gpx",
+    "name": "Tverrfjellet",
+    "filename": "activity_4359722971.gpx",
+    "date": "2019-12-22T09:24:18.000Z",
+    "descent": {
+      "verticalDrop": 460,
+      "horizDistM": 2111,
+      "avgGradientDeg": 12.3,
+      "peakEle": 555,
+      "troughEle": 95,
+      "steepSegment": {
+        "verticalDrop": 26,
+        "horizDistM": 54,
+        "avgGradientDeg": 25.4
+      }
+    },
+    "score": 40.9
+  },
+  {
+    "source": "gpx",
+    "name": "Solotur til Finnlandsfjellet",
+    "filename": "activity_6500510154.gpx",
+    "date": "2021-03-27T12:23:46.000Z",
+    "descent": {
+      "verticalDrop": 490,
+      "horizDistM": 2733,
+      "avgGradientDeg": 10.2,
+      "peakEle": 470,
+      "troughEle": -20,
+      "steepSegment": null
+    },
+    "score": 40.8
+  },
+  {
+    "source": "gpx",
+    "name": "Tverrfjellet med familien",
+    "filename": "activity_4791318671.gpx",
+    "date": "2020-04-16T08:51:49.000Z",
+    "descent": {
+      "verticalDrop": 450,
+      "horizDistM": 2015,
+      "avgGradientDeg": 12.6,
+      "peakEle": 559,
+      "troughEle": 109,
+      "steepSegment": {
+        "verticalDrop": 31,
+        "horizDistM": 50,
+        "avgGradientDeg": 32.1
+      }
+    },
+    "score": 40.6
+  },
+  {
+    "source": "gpx",
+    "name": "Steinskartinden med Ylvi",
+    "filename": "activity_8569671064.gpx",
+    "date": "2022-04-02T16:23:17.000Z",
+    "descent": {
+      "verticalDrop": 449,
+      "horizDistM": 1779,
+      "avgGradientDeg": 14.2,
+      "peakEle": 565,
+      "troughEle": 116,
+      "steepSegment": {
+        "verticalDrop": 30,
+        "horizDistM": 52,
+        "avgGradientDeg": 29.8
+      }
+    },
+    "score": 40.4
+  },
+  {
+    "source": "gpx",
+    "name": "Tverrfjellet med Marius og Jonna",
+    "filename": "activity_5920420523.gpx",
+    "date": "2020-12-06T09:34:49.000Z",
+    "descent": {
+      "verticalDrop": 451,
+      "horizDistM": 2670,
+      "avgGradientDeg": 9.6,
+      "peakEle": 558,
+      "troughEle": 108,
+      "steepSegment": {
+        "verticalDrop": 26,
+        "horizDistM": 54,
+        "avgGradientDeg": 25.6
+      }
+    },
+    "score": 40.2
+  },
+  {
+    "source": "gpx",
+    "name": "Rødtind alene",
+    "filename": "activity_6236397460.gpx",
+    "date": "2021-02-07T16:19:51.000Z",
+    "descent": {
+      "verticalDrop": 481,
+      "horizDistM": 3161,
+      "avgGradientDeg": 8.6,
+      "peakEle": 495,
+      "troughEle": 15,
+      "steepSegment": null
+    },
+    "score": 40.1
+  },
+  {
+    "source": "gpx",
+    "name": "Finnlandsfjellet med Ylvi, TB og Terje",
+    "filename": "activity_8129725857.gpx",
+    "date": "2022-01-16T15:48:19.000Z",
+    "descent": {
+      "verticalDrop": 479,
+      "horizDistM": 2205,
+      "avgGradientDeg": 12.2,
+      "peakEle": 552,
+      "troughEle": 73,
+      "steepSegment": null
+    },
+    "score": 39.9
+  },
+  {
+    "source": "gpx",
+    "name": "Rødtind med TB og Andreas",
+    "filename": "activity_6272595591.gpx",
+    "date": "2021-02-14T16:23:55.000Z",
+    "descent": {
+      "verticalDrop": 478,
+      "horizDistM": 2689,
+      "avgGradientDeg": 10.1,
+      "peakEle": 509,
+      "troughEle": 31,
+      "steepSegment": null
+    },
+    "score": 39.8
+  },
+  {
+    "source": "gpx",
+    "name": "Rødtinden med Lars og Ylvi",
+    "filename": "activity_8306719644.gpx",
+    "date": "2022-02-16T12:18:01.000Z",
+    "descent": {
+      "verticalDrop": 477,
+      "horizDistM": 2712,
+      "avgGradientDeg": 10,
+      "peakEle": 487,
+      "troughEle": 11,
+      "steepSegment": null
+    },
+    "score": 39.8
+  },
+  {
+    "source": "gpx",
+    "name": "Rødtinden med Ylvi og Kristina",
+    "filename": "activity_12345330183.gpx",
+    "date": "2023-10-14T07:24:12.000Z",
+    "descent": {
+      "verticalDrop": 476,
+      "horizDistM": 3490,
+      "avgGradientDeg": 7.8,
+      "peakEle": 483,
+      "troughEle": 7,
+      "steepSegment": null
+    },
+    "score": 39.7
+  },
+  {
+    "source": "gpx",
+    "name": "Rødtind med Kristina og Ylvi",
+    "filename": "activity_8614630354.gpx",
+    "date": "2022-04-10T10:14:31.000Z",
+    "descent": {
+      "verticalDrop": 473,
+      "horizDistM": 3056,
+      "avgGradientDeg": 8.8,
+      "peakEle": 474,
+      "troughEle": 1,
+      "steepSegment": null
+    },
+    "score": 39.4
+  },
+  {
+    "source": "gpx",
+    "name": "Rødtinden med Kristina og Ylvi",
+    "filename": "activity_10841709616.gpx",
+    "date": "2023-04-05T10:50:23.000Z",
+    "descent": {
+      "verticalDrop": 470,
+      "horizDistM": 2633,
+      "avgGradientDeg": 10.1,
+      "peakEle": 473,
+      "troughEle": 3,
+      "steepSegment": null
+    },
+    "score": 39.2
+  },
+  {
+    "source": "topptur",
+    "name": "Akselkollen",
+    "id": 1021,
+    "place": "Kvaløysletta",
+    "ates": 1,
+    "distFromTromso": 7.6,
+    "descent": {
+      "verticalDrop": 466,
+      "horizDistM": 1788,
+      "avgGradientDeg": 14.6,
+      "peakEle": 494,
+      "troughEle": 28,
+      "steepSegment": null
+    },
+    "score": 38.8
+  },
+  {
+    "source": "topptur",
+    "name": "Skogsgrense Njoskefjellet, naturlig plass å stoppe før terrenget blir mer utfordrende.",
+    "id": 1656,
+    "place": "Sjursnes",
+    "ates": 1,
+    "distFromTromso": 33.5,
+    "descent": {
+      "verticalDrop": 462,
+      "horizDistM": 2081,
+      "avgGradientDeg": 12.5,
+      "peakEle": 466,
+      "troughEle": 4,
+      "steepSegment": null
+    },
+    "score": 38.5
+  },
+  {
+    "source": "gpx",
+    "name": "Krokenløypa",
+    "filename": "activity_4679567533.gpx",
+    "date": "2020-03-21T10:52:44.000Z",
+    "descent": {
+      "verticalDrop": 430,
+      "horizDistM": 2127,
+      "avgGradientDeg": 11.4,
+      "peakEle": 435,
+      "troughEle": 6,
+      "steepSegment": {
+        "verticalDrop": 26,
+        "horizDistM": 50,
+        "avgGradientDeg": 27
+      }
+    },
+    "score": 38.4
+  },
+  {
+    "source": "gpx",
+    "name": "Tverrfjellet med Kristina og Maja",
+    "filename": "activity_3639602476.gpx",
+    "date": "2019-05-11T10:18:01.000Z",
+    "descent": {
+      "verticalDrop": 424,
+      "horizDistM": 2222,
+      "avgGradientDeg": 10.8,
+      "peakEle": 540,
+      "troughEle": 115,
+      "steepSegment": {
+        "verticalDrop": 30,
+        "horizDistM": 52,
+        "avgGradientDeg": 29.8
+      }
+    },
+    "score": 38.3
+  },
+  {
+    "source": "topptur",
+    "name": "Njoskefjellet",
+    "id": 1657,
+    "place": "Stordal",
+    "ates": 2,
+    "distFromTromso": 32.3,
+    "descent": {
+      "verticalDrop": 288,
+      "horizDistM": 826,
+      "avgGradientDeg": 19.2,
+      "peakEle": 754,
+      "troughEle": 466,
+      "steepSegment": {
+        "verticalDrop": 142,
+        "horizDistM": 270,
+        "avgGradientDeg": 27.7
+      }
+    },
+    "score": 38.2
+  },
+  {
+    "source": "gpx",
+    "name": "Tverrfjellet med Ylvi, Jonna og Kristina",
+    "filename": "activity_8574322320.gpx",
+    "date": "2022-04-03T08:10:14.000Z",
+    "descent": {
+      "verticalDrop": 456,
+      "horizDistM": 1980,
+      "avgGradientDeg": 13,
+      "peakEle": 530,
+      "troughEle": 74,
+      "steepSegment": null
+    },
+    "score": 38
+  },
+  {
+    "source": "gpx",
+    "name": "Tverrfjellet med Olivia, Jakob, Kristina og Ylvi",
+    "filename": "activity_14634600360.gpx",
+    "date": "2024-03-29T10:33:12.000Z",
+    "descent": {
+      "verticalDrop": 450,
+      "horizDistM": 2518,
+      "avgGradientDeg": 10.1,
+      "peakEle": 568,
+      "troughEle": 118,
+      "steepSegment": null
+    },
+    "score": 37.5
+  },
+  {
+    "source": "topptur",
+    "name": "Rødtinden",
+    "id": 1022,
+    "place": "Kvaløysletta",
+    "ates": 1,
+    "distFromTromso": 7.7,
+    "descent": {
+      "verticalDrop": 450,
+      "horizDistM": 2474,
+      "avgGradientDeg": 10.3,
+      "peakEle": 469,
+      "troughEle": 19,
+      "steepSegment": null
+    },
+    "score": 37.5
+  },
+  {
+    "source": "gpx",
+    "name": "Tverrfjellet med Ylvi Kristina, Marius og Jonna",
+    "filename": "activity_8012542664.gpx",
+    "date": "2021-12-26T09:58:10.000Z",
+    "descent": {
+      "verticalDrop": 448,
+      "horizDistM": 2640,
+      "avgGradientDeg": 9.6,
+      "peakEle": 522,
+      "troughEle": 74,
+      "steepSegment": null
+    },
+    "score": 37.3
+  },
+  {
+    "source": "topptur",
+    "name": "Slettinden",
+    "id": 1002,
+    "place": "Meistervik",
+    "ates": 3,
+    "distFromTromso": 23.8,
+    "descent": {
+      "verticalDrop": 383,
+      "horizDistM": 1237,
+      "avgGradientDeg": 17.2,
+      "peakEle": 1113,
+      "troughEle": 730,
+      "steepSegment": {
+        "verticalDrop": 54,
+        "horizDistM": 78,
+        "avgGradientDeg": 34.8
+      }
+    },
+    "score": 37.3
+  },
+  {
+    "source": "gpx",
+    "name": "Tverrfjellet med Lars, Olivia og Vilde",
+    "filename": "activity_6412430726.gpx",
+    "date": "2021-03-11T10:17:18.000Z",
+    "descent": {
+      "verticalDrop": 444,
+      "horizDistM": 2222,
+      "avgGradientDeg": 11.3,
+      "peakEle": 543,
+      "troughEle": 98,
+      "steepSegment": null
+    },
+    "score": 37
+  },
+  {
+    "source": "topptur",
+    "name": "Innmarsj Bjørndalen",
+    "id": 1234,
+    "place": "Nord-lenangen",
+    "ates": 1,
+    "distFromTromso": 45.6,
+    "descent": {
+      "verticalDrop": 372,
+      "horizDistM": 2113,
+      "avgGradientDeg": 10,
+      "peakEle": 375,
+      "troughEle": 3,
+      "steepSegment": {
+        "verticalDrop": 58,
+        "horizDistM": 117,
+        "avgGradientDeg": 26.3
+      }
+    },
+    "score": 36.8
+  },
+  {
+    "source": "topptur",
+    "name": "Breitinden",
+    "id": 1595,
+    "place": "Rekvik",
+    "ates": 3,
+    "distFromTromso": 25.4,
+    "descent": {
+      "verticalDrop": 407,
+      "horizDistM": 1266,
+      "avgGradientDeg": 17.8,
+      "peakEle": 407,
+      "troughEle": 0,
+      "steepSegment": {
+        "verticalDrop": 29,
+        "horizDistM": 57,
+        "avgGradientDeg": 27.1
+      }
+    },
+    "score": 36.8
+  },
+  {
+    "source": "topptur",
+    "name": "Rørnestinden",
+    "id": 1652,
+    "place": "Lyngseidet",
+    "ates": 2,
+    "distFromTromso": 46.8,
+    "descent": {
+      "verticalDrop": 442,
+      "horizDistM": 1670,
+      "avgGradientDeg": 14.8,
+      "peakEle": 1029,
+      "troughEle": 587,
+      "steepSegment": null
+    },
+    "score": 36.8
+  },
+  {
+    "source": "gpx",
+    "name": "Whiteout på Rødtinden, Rune, Ylvi, Jonna og Kristoffer",
+    "filename": "activity_10489531675.gpx",
+    "date": "2023-02-11T09:38:16.000Z",
+    "descent": {
+      "verticalDrop": 438,
+      "horizDistM": 2559,
+      "avgGradientDeg": 9.7,
+      "peakEle": 468,
+      "troughEle": 30,
+      "steepSegment": null
+    },
+    "score": 36.5
+  },
+  {
+    "source": "topptur",
+    "name": "Durmålstinden",
+    "id": 1012,
+    "place": "Nordfjordbotn",
+    "ates": 2,
+    "distFromTromso": 18.6,
+    "descent": {
+      "verticalDrop": 438,
+      "horizDistM": 2135,
+      "avgGradientDeg": 11.6,
+      "peakEle": 919,
+      "troughEle": 481,
+      "steepSegment": null
+    },
+    "score": 36.5
+  },
+  {
+    "source": "gpx",
+    "name": "Finnlandsfjellet med Ylvi",
+    "filename": "activity_14454271094.gpx",
+    "date": "2024-03-16T10:22:59.000Z",
+    "descent": {
+      "verticalDrop": 433,
+      "horizDistM": 2305,
+      "avgGradientDeg": 10.6,
+      "peakEle": 425,
+      "troughEle": -8,
+      "steepSegment": null
+    },
+    "score": 36.1
+  },
+  {
+    "source": "gpx",
+    "name": "Finnlandsfjellet med Thomas, Maja og Ylvi",
+    "filename": "activity_13402916293.gpx",
+    "date": "2024-01-07T15:41:48.000Z",
+    "descent": {
+      "verticalDrop": 432,
+      "horizDistM": 2015,
+      "avgGradientDeg": 12.1,
+      "peakEle": 390,
+      "troughEle": -41,
+      "steepSegment": null
+    },
+    "score": 36
+  },
+  {
+    "source": "topptur",
+    "name": "Vågtinden",
+    "id": 1702,
+    "place": "Grøtfjorden",
+    "ates": 3,
+    "distFromTromso": 19.1,
+    "descent": {
+      "verticalDrop": 383,
+      "horizDistM": 1233,
+      "avgGradientDeg": 17.3,
+      "peakEle": 792,
+      "troughEle": 409,
+      "steepSegment": {
+        "verticalDrop": 40,
+        "horizDistM": 73,
+        "avgGradientDeg": 28.8
+      }
+    },
+    "score": 35.9
+  },
+  {
+    "source": "gpx",
+    "name": "Tverrfjellet Ylvi, Jonna og Marius",
+    "filename": "activity_12739860496.gpx",
+    "date": "2023-11-12T10:27:55.000Z",
+    "descent": {
+      "verticalDrop": 429,
+      "horizDistM": 2320,
+      "avgGradientDeg": 10.5,
+      "peakEle": 525,
+      "troughEle": 96,
+      "steepSegment": null
+    },
+    "score": 35.8
+  },
+  {
+    "source": "topptur",
+    "name": "Buren",
+    "id": 1010,
+    "place": "Ersfjordbotn",
+    "ates": 3,
+    "distFromTromso": 16,
+    "descent": {
+      "verticalDrop": 319,
+      "horizDistM": 1078,
+      "avgGradientDeg": 16.5,
+      "peakEle": 792,
+      "troughEle": 473,
+      "steepSegment": {
+        "verticalDrop": 86,
+        "horizDistM": 127,
+        "avgGradientDeg": 34.1
+      }
+    },
+    "score": 35.2
+  },
+  {
+    "source": "gpx",
+    "name": "Tromsø Topptur Ski",
+    "filename": "activity_3246960181.gpx",
+    "date": "2018-12-23T09:49:52.000Z",
+    "descent": {
+      "verticalDrop": 421,
+      "horizDistM": 2075,
+      "avgGradientDeg": 11.5,
+      "peakEle": 672,
+      "troughEle": 252,
+      "steepSegment": null
+    },
+    "score": 35.1
+  },
+  {
+    "source": "topptur",
+    "name": "Tverrfjellet",
+    "id": 1470,
+    "place": "Nordfjordbotn",
+    "ates": 1,
+    "distFromTromso": 18.7,
+    "descent": {
+      "verticalDrop": 413,
+      "horizDistM": 1911,
+      "avgGradientDeg": 12.2,
+      "peakEle": 519,
+      "troughEle": 106,
+      "steepSegment": null
+    },
+    "score": 34.4
+  },
+  {
+    "source": "topptur",
+    "name": "Djeveltanna",
+    "id": 1592,
+    "place": "Nordfjordbotn",
+    "ates": 3,
+    "distFromTromso": 17.9,
+    "descent": {
+      "verticalDrop": 358,
+      "horizDistM": 1009,
+      "avgGradientDeg": 19.5,
+      "peakEle": 930,
+      "troughEle": 572,
+      "steepSegment": {
+        "verticalDrop": 36,
+        "horizDistM": 57,
+        "avgGradientDeg": 32.2
+      }
+    },
+    "score": 33.4
+  },
+  {
+    "source": "gpx",
+    "name": "Skredkurs MSM Steinskarstind ",
+    "filename": "activity_10539463957.gpx",
+    "date": "2023-02-18T08:49:34.000Z",
+    "descent": {
+      "verticalDrop": 388,
+      "horizDistM": 2402,
+      "avgGradientDeg": 9.2,
+      "peakEle": 518,
+      "troughEle": 130,
+      "steepSegment": null
+    },
+    "score": 32.3
+  },
+  {
+    "source": "topptur",
+    "name": "Rundfjellet",
+    "id": 1236,
+    "place": "Sør-Lenangen",
+    "ates": 1,
+    "distFromTromso": 47.4,
+    "descent": {
+      "verticalDrop": 387,
+      "horizDistM": 2042,
+      "avgGradientDeg": 10.7,
+      "peakEle": 762,
+      "troughEle": 375,
+      "steepSegment": null
+    },
+    "score": 32.3
+  },
+  {
+    "source": "topptur",
+    "name": "Durmålshamran",
+    "id": 1706,
+    "place": "Tromvik",
+    "ates": 1,
+    "distFromTromso": 24.1,
+    "descent": {
+      "verticalDrop": 359,
+      "horizDistM": 2093,
+      "avgGradientDeg": 9.7,
+      "peakEle": 366,
+      "troughEle": 7,
+      "steepSegment": null
+    },
+    "score": 29.9
+  },
+  {
+    "source": "topptur",
+    "name": "Gråtinden",
+    "id": 1016,
+    "place": "Mjelde",
+    "ates": 2,
+    "distFromTromso": 18.4,
+    "descent": {
+      "verticalDrop": 318,
+      "horizDistM": 1713,
+      "avgGradientDeg": 10.5,
+      "peakEle": 871,
+      "troughEle": 553,
+      "steepSegment": {
+        "verticalDrop": 25,
+        "horizDistM": 50,
+        "avgGradientDeg": 26.4
+      }
+    },
+    "score": 29
+  },
+  {
+    "source": "topptur",
+    "name": "Middagstinden anmarsj",
+    "id": 1027,
+    "place": "Nordfjordbotn",
+    "ates": 1,
+    "distFromTromso": 19.3,
+    "descent": {
+      "verticalDrop": 345,
+      "horizDistM": 2776,
+      "avgGradientDeg": 7.1,
+      "peakEle": 601,
+      "troughEle": 256,
+      "steepSegment": null
+    },
+    "score": 28.8
+  },
+  {
+    "source": "topptur",
+    "name": "Jiehkkevárri",
+    "id": 1180,
+    "place": "Hundberg",
+    "ates": 3,
+    "distFromTromso": 38.2,
+    "descent": {
+      "verticalDrop": 325,
+      "horizDistM": 2570,
+      "avgGradientDeg": 7.2,
+      "peakEle": 1830,
+      "troughEle": 1505,
+      "steepSegment": null
+    },
+    "score": 27.1
+  },
+  {
+    "source": "gpx",
+    "name": "Forsøk på Finnlandsfjellet med Ylvi sesongstart",
+    "filename": "activity_17449893352.gpx",
+    "date": "2024-11-03T15:51:42.000Z",
+    "descent": {
+      "verticalDrop": 321,
+      "horizDistM": 1645,
+      "avgGradientDeg": 11,
+      "peakEle": 332,
+      "troughEle": 11,
+      "steepSegment": null
+    },
+    "score": 26.8
+  },
+  {
+    "source": "topptur",
+    "name": "Svarthammartinden",
+    "id": 1110,
+    "place": "Oldervik",
+    "ates": 1,
+    "distFromTromso": 28.7,
+    "descent": {
+      "verticalDrop": 309,
+      "horizDistM": 1476,
+      "avgGradientDeg": 11.8,
+      "peakEle": 886,
+      "troughEle": 577,
+      "steepSegment": null
+    },
+    "score": 25.8
+  },
+  {
+    "source": "gpx",
+    "name": "Buren med Kristina og Ylvi",
+    "filename": "activity_8533238438.gpx",
+    "date": "2022-03-27T09:05:19.000Z",
+    "descent": {
+      "verticalDrop": 308,
+      "horizDistM": 2287,
+      "avgGradientDeg": 7.7,
+      "peakEle": 279,
+      "troughEle": -29,
+      "steepSegment": null
+    },
+    "score": 25.7
+  },
+  {
+    "source": "topptur",
+    "name": "Store Lakselvtinden",
+    "id": 1138,
+    "place": "Vollstad",
+    "ates": 4,
+    "distFromTromso": 40.7,
+    "descent": {
+      "verticalDrop": 269,
+      "horizDistM": 290,
+      "avgGradientDeg": 42.9,
+      "peakEle": 1616,
+      "troughEle": 1347,
+      "steepSegment": null
+    },
+    "score": 22.4
+  },
+  {
+    "source": "gpx",
+    "name": "Hatten med Marius og Ylvi",
+    "filename": "activity_8159029139.gpx",
+    "date": "2022-01-21T19:27:45.000Z",
+    "descent": {
+      "verticalDrop": 266,
+      "horizDistM": 1036,
+      "avgGradientDeg": 14.4,
+      "peakEle": 291,
+      "troughEle": 25,
+      "steepSegment": null
+    },
+    "score": 22.2
+  },
+  {
+    "source": "topptur",
+    "name": "Nordfjellet topp",
+    "id": 1640,
+    "place": "Finnkrokan",
+    "ates": 2,
+    "distFromTromso": 24.1,
+    "descent": {
+      "verticalDrop": 226,
+      "horizDistM": 1484,
+      "avgGradientDeg": 8.7,
+      "peakEle": 998,
+      "troughEle": 772,
+      "steepSegment": null
+    },
+    "score": 18.8
+  }
+]
