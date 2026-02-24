@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mellow Descents (25-29°)</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; color: #333;
+      max-width: 1100px; margin: 0 auto; padding: 16px; line-height: 1.5;
+      background: #f5f5f5; }
+
+    .header { text-align: center; margin-bottom: 20px; }
+    .header h1 { font-size: 24px; margin-bottom: 2px; }
+    .header .subtitle { color: #888; font-size: 14px; }
+
+    .loading { text-align: center; padding: 40px; color: #888; }
+    .error { background: #fee; color: #c00; padding: 12px; border-radius: 8px;
+      margin-bottom: 16px; font-size: 13px; }
+
+    .info-box { background: white; border-radius: 12px; padding: 14px 16px;
+      margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.08);
+      font-size: 13px; color: #555; text-align: center; }
+    .info-box strong { color: #333; }
+
+    .stats-bar { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+      margin-bottom: 16px; font-size: 13px; color: #666; }
+    .stats-bar span { background: white; padding: 6px 14px; border-radius: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+
+    .filter-bar { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;
+      margin-bottom: 16px; }
+    .filter-btn { padding: 6px 14px; border-radius: 20px; border: 1px solid #ddd;
+      background: white; cursor: pointer; font-size: 13px; color: #555;
+      transition: all 0.15s; }
+    .filter-btn:hover { border-color: #0070C0; color: #0070C0; }
+    .filter-btn.active { background: #0070C0; color: white; border-color: #0070C0; }
+
+    .table-wrap { background: white; border-radius: 12px; overflow-x: auto;
+      box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    thead { position: sticky; top: 0; z-index: 1; }
+    th { background: #f8f8f8; padding: 10px 12px; text-align: left; font-weight: 600;
+      font-size: 12px; color: #666; border-bottom: 2px solid #eee;
+      cursor: pointer; user-select: none; white-space: nowrap; }
+    th:hover { color: #0070C0; }
+    th .sort-arrow { display: inline-block; margin-left: 4px; font-size: 10px;
+      color: #ccc; }
+    th.sorted-asc .sort-arrow, th.sorted-desc .sort-arrow { color: #0070C0; }
+    td { padding: 8px 12px; border-bottom: 1px solid #f0f0f0; }
+    tr:hover td { background: #fafafa; }
+
+    .name-cell a { color: #0070C0; text-decoration: none; font-weight: 600; }
+    .name-cell a:hover { text-decoration: underline; }
+    .name-cell .gpx-name { font-weight: 600; color: #333; }
+
+    .source-badge { display: inline-block; padding: 2px 7px; border-radius: 4px;
+      font-size: 11px; font-weight: 600; color: white; }
+    .source-topptur { background: #ff9900; }
+    .source-gpx { background: #0070C0; }
+
+    .ates-badge { display: inline-block; width: 20px; height: 20px; border-radius: 50%;
+      font-size: 11px; font-weight: 700; color: white; text-align: center;
+      line-height: 20px; }
+    .ates-1 { background: #00B050; }
+    .ates-2 { background: #0070C0; }
+    .ates-3 { background: #FF0000; }
+    .ates-4 { background: #000; }
+
+    .num { text-align: right; font-variant-numeric: tabular-nums; }
+    .muted { color: #999; }
+
+    .back-link { display: inline-block; margin-bottom: 16px; color: #0070C0;
+      text-decoration: none; font-size: 14px; font-weight: 600; }
+    .back-link:hover { text-decoration: underline; }
+
+    @media (max-width: 700px) {
+      body { padding: 10px; }
+      table { font-size: 12px; }
+      th, td { padding: 6px 8px; }
+      .hide-mobile { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="back-link" href="index.html">&larr; Home</a>
+  <div class="header">
+    <h1>Mellow Descents</h1>
+    <p class="subtitle">Best runs under 30° — sweet spot 25-29° for skiing with friends</p>
+  </div>
+
+  <div class="info-box">
+    Showing only routes where the steepest section stays <strong>under 30°</strong>.
+    Ranked by vertical drop and proximity to <strong>27°</strong>.
+  </div>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="topptur">Topptur.guide</button>
+    <button class="filter-btn" data-filter="gpx">My tracks</button>
+  </div>
+
+  <div class="stats-bar" id="stats-bar"></div>
+
+  <div id="content">
+    <div class="loading">Loading descent data...</div>
+  </div>
+
+  <script>
+    const MIN_GRAD = 25;
+    const MAX_GRAD = 29;
+    const TARGET_GRAD = 27;
+
+    let allData = [];
+    let currentSort = { col: 'score', dir: 'desc' };
+    let currentFilter = 'all';
+
+    async function main() {
+      try {
+        const resp = await fetch('descent-analysis.json');
+        if (!resp.ok) throw new Error('Failed to load descent-analysis.json');
+        const raw = await resp.json();
+
+        // Filter: no section over 30 degrees
+        // Keep routes where overall gradient < 30 AND steep segment (if any) < 30
+        allData = raw.filter(d => {
+          const overallOk = d.descent.avgGradientDeg < 30;
+          const steepOk = !d.descent.steepSegment || d.descent.steepSegment.avgGradientDeg < 30;
+          return overallOk && steepOk;
+        });
+
+        // Re-score: favor vertical drop + proximity to 27 degrees
+        allData.forEach(d => {
+          const grad = d.descent.steepSegment
+            ? d.descent.steepSegment.avgGradientDeg
+            : d.descent.avgGradientDeg;
+          // How close to the 25-29 sweet spot
+          const gradPenalty = Math.abs(grad - TARGET_GRAD);
+          const gradScore = Math.max(0, 10 - gradPenalty * 2);
+          // Vertical drop (steep section preferred, fall back to overall)
+          const drop = d.descent.steepSegment
+            ? d.descent.steepSegment.verticalDrop
+            : d.descent.verticalDrop;
+          d.mellowScore = Math.round((drop * 0.3 + d.descent.verticalDrop * 0.1 + gradScore * 20) * 10) / 10;
+        });
+
+        render();
+      } catch (e) {
+        document.getElementById('content').innerHTML =
+          '<div class="error">Could not load descent data: ' + e.message + '</div>';
+      }
+    }
+
+    function getFiltered() {
+      return allData.filter(d => {
+        if (currentFilter === 'topptur') return d.source === 'topptur';
+        if (currentFilter === 'gpx') return d.source === 'gpx';
+        return true;
+      });
+    }
+
+    function getValue(d, col) {
+      switch (col) {
+        case 'score': return d.mellowScore;
+        case 'name': return d.name.toLowerCase();
+        case 'source': return d.source;
+        case 'drop': return d.descent.verticalDrop;
+        case 'run': return d.descent.horizDistM;
+        case 'gradient': return d.descent.avgGradientDeg;
+        case 'peak': return d.descent.peakEle;
+        case 'steepDrop': return d.descent.steepSegment ? d.descent.steepSegment.verticalDrop : -1;
+        case 'steepGrad': return d.descent.steepSegment ? d.descent.steepSegment.avgGradientDeg : -1;
+        case 'steepEle': return d.descent.steepSegment ? d.descent.steepSegment.startEle : -1;
+        case 'ates': return d.ates || 99;
+        case 'dist': return d.distFromTromso || 999;
+        default: return 0;
+      }
+    }
+
+    function render() {
+      const filtered = getFiltered();
+
+      filtered.sort((a, b) => {
+        const va = getValue(a, currentSort.col);
+        const vb = getValue(b, currentSort.col);
+        const cmp = typeof va === 'string' ? va.localeCompare(vb) : va - vb;
+        return currentSort.dir === 'asc' ? cmp : -cmp;
+      });
+
+      const withSteep = filtered.filter(d => d.descent.steepSegment);
+      document.getElementById('stats-bar').innerHTML =
+        `<span><strong>${filtered.length}</strong> runs under 30°</span>` +
+        `<span><strong>${withSteep.length}</strong> with 25-29° section</span>` +
+        `<span>Avg drop: <strong>${filtered.length ? Math.round(filtered.reduce((s, d) => s + d.descent.verticalDrop, 0) / filtered.length) : 0}m</strong></span>`;
+
+      const cols = [
+        { key: 'rank', label: '#', cls: 'num' },
+        { key: 'name', label: 'Name' },
+        { key: 'source', label: 'Source', cls: 'hide-mobile' },
+        { key: 'drop', label: 'Drop (m)', cls: 'num' },
+        { key: 'run', label: 'Run (m)', cls: 'num' },
+        { key: 'gradient', label: 'Grad (°)', cls: 'num' },
+        { key: 'peak', label: 'Peak (m)', cls: 'num hide-mobile' },
+        { key: 'steepDrop', label: 'Steep (m)', cls: 'num' },
+        { key: 'steepGrad', label: 'Steep (°)', cls: 'num' },
+        { key: 'steepEle', label: 'From-To', cls: 'num hide-mobile' },
+        { key: 'ates', label: 'ATES', cls: 'hide-mobile' },
+        { key: 'dist', label: 'Dist (km)', cls: 'num hide-mobile' },
+        { key: 'score', label: 'Score', cls: 'num' },
+      ];
+
+      let html = '<div class="table-wrap"><table>';
+      html += '<thead><tr>';
+      for (const c of cols) {
+        if (c.key === 'rank') { html += `<th class="${c.cls || ''}">#</th>`; continue; }
+        const sorted = currentSort.col === c.key;
+        const arrow = sorted ? (currentSort.dir === 'asc' ? '&#9650;' : '&#9660;') : '&#9660;';
+        const cls = [c.cls || '', sorted ? `sorted-${currentSort.dir}` : ''].join(' ').trim();
+        html += `<th class="${cls}" data-col="${c.key}">${c.label} <span class="sort-arrow">${arrow}</span></th>`;
+      }
+      html += '</tr></thead><tbody>';
+
+      filtered.forEach((d, i) => {
+        const s = d.descent.steepSegment;
+        const nameHtml = d.source === 'topptur' && d.id
+          ? `<a href="https://topptur.guide/${d.id}" target="_blank" rel="noopener">${esc(d.name)}</a>`
+          : `<span class="gpx-name">${esc(d.name)}</span>`;
+        const placeHtml = d.place ? `<br><span class="muted" style="font-size:11px">${esc(d.place)}</span>` : '';
+        const sourceBadge = `<span class="source-badge source-${d.source}">${d.source === 'topptur' ? 'Tour' : 'GPX'}</span>`;
+        const atesHtml = d.ates ? `<span class="ates-badge ates-${d.ates}">${d.ates}</span>` : '<span class="muted">-</span>';
+
+        html += '<tr>';
+        html += `<td class="num">${i + 1}</td>`;
+        html += `<td class="name-cell">${nameHtml}${placeHtml}</td>`;
+        html += `<td class="hide-mobile">${sourceBadge}</td>`;
+        html += `<td class="num">${d.descent.verticalDrop}</td>`;
+        html += `<td class="num">${d.descent.horizDistM}</td>`;
+        html += `<td class="num">${d.descent.avgGradientDeg}°</td>`;
+        html += `<td class="num hide-mobile">${d.descent.peakEle}</td>`;
+        html += `<td class="num">${s ? s.verticalDrop : '<span class="muted">-</span>'}</td>`;
+        html += `<td class="num">${s ? s.avgGradientDeg + '°' : '<span class="muted">-</span>'}</td>`;
+        html += `<td class="num hide-mobile">${s ? s.startEle + '→' + s.endEle : '<span class="muted">-</span>'}</td>`;
+        html += `<td class="hide-mobile">${atesHtml}</td>`;
+        html += `<td class="num hide-mobile">${d.distFromTromso ? d.distFromTromso : '<span class="muted">-</span>'}</td>`;
+        html += `<td class="num"><strong>${d.mellowScore}</strong></td>`;
+        html += '</tr>';
+      });
+
+      html += '</tbody></table></div>';
+      document.getElementById('content').innerHTML = html;
+
+      document.querySelectorAll('th[data-col]').forEach(th => {
+        th.addEventListener('click', () => {
+          const col = th.dataset.col;
+          if (currentSort.col === col) {
+            currentSort.dir = currentSort.dir === 'asc' ? 'desc' : 'asc';
+          } else {
+            currentSort.col = col;
+            currentSort.dir = col === 'name' ? 'asc' : 'desc';
+          }
+          render();
+        });
+      });
+    }
+
+    function esc(s) {
+      const d = document.createElement('div');
+      d.textContent = s;
+      return d.innerHTML;
+    }
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentFilter = btn.dataset.filter;
+        render();
+      });
+    });
+
+    main();
+  </script>
+</body>
+</html>
