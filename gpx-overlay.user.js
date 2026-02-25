@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Topptur GPX Overlay
 // @namespace    https://github.com/randonee-overlay
-// @version      1.6.0
+// @version      1.6.1
 // @description  Overlay GPX tracks on the topptur.guide Leaflet map
 // @match        https://topptur.guide/*
 // @run-at       document-idle
